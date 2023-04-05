@@ -1,0 +1,889 @@
+/* Handle CSS style related to the Match */
+.msg-add-funds {
+  font-weight: 700;
+  border-bottom: 1px solid var(--dig_neutral5);
+}
+
+#dig-invite-players .row {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+}
+
+.team-group {
+  background: var(--dig_neutral2);
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+
+.team-group .row {
+  margin-top: 10px;
+}
+
+.team-group .team-name {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.team-info {
+  position: relative;
+}
+
+.team-info img {
+  left: 0;
+  z-index: 1;
+  top: 0px;
+  border: 1px solid var(--dig_neutral1);
+  height: 35px;
+  width: auto;
+}
+
+.team-info .match-owner {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: 0;
+  padding: 10px 10px 10px 0;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  background: var(--dig_neutral1);
+}
+
+/* Accordion */
+.start-match-accordion-title {
+  padding: 10px 15px;
+  text-align: left;
+  width: 100%;
+  font-size: 1.2em !important;
+  color: var(--dig_secondary2) !important;
+  display: flex !important;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.start-match-accordion-title::before {
+  content: "1";
+  background: var(--dig_secondary2);
+  color: var(--dig_neutral2);
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-direction: row;
+  position: relative;
+}
+
+.start-match-accordion-title.game::before {
+  content: "2";
+  flex: 0 0 auto;
+}
+
+.start-match-accordion-title.region::before {
+  content: "3";
+  flex: 0 0 auto;
+}
+
+.start-match-accordion-title.mode::before {
+  content: "4";
+  flex: 0 0 auto;
+}
+
+.start-match-accordion-title.fee::before {
+  content: "5";
+  flex: 0 0 auto;
+}
+
+.start-match-accordion-title.platforms::before {
+  content: "6";
+  flex: 0 0 auto;
+}
+
+.start-match-accordion-title.datetime::before {
+  content: "7";
+  flex: 0 0 auto;
+}
+
+.start-match-accordion-title.best-of::before {
+  content: "8";
+  flex: 0 0 auto;
+}
+
+.dig-accordion-heading-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.dig-accordion-heading-group span {
+  padding-right: 15px;
+  font-size: 0.8em;
+  color: var(--dig_neutral3);
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  position: absolute;
+  right: 22px;
+}
+
+h2.dig_buy_in_header {
+  width: 300px;
+  color: var(--dig_secondary2);
+  text-align: center;
+}
+
+#gamertag_form,
+#custom_buy_in_form {
+  padding: 0 15px;
+}
+
+/* Match detail */
+.dig-user-action-group.match-detail {
+  background: none !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.match-detail-img-wrapper {
+  width: 400px;
+  height: 200px;
+  background: var(--dig_neutral1);
+}
+
+.match-detail-img-wrapper svg path,
+.match-detail-img-wrapper svg {
+  max-width: 400px;
+  fill: var(--dig_secondary2);
+}
+
+.dig-user-action-group.match-detail .match-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dig-user-action-group.match-detail .match-description h4 {
+  color: var(--dig_secondary2);
+  text-transform: none !important;
+  font-weight: 600;
+}
+
+#match-accordion .dig-user-action-group {
+  margin-top: 10px !important;
+  background: var(--dig_neutral2);
+}
+
+/* Add custom buy-in */
+#custom_buy_in_form {
+  margin-top: 20px;
+  display: block;
+}
+
+.invite_gamertag_wrapper {
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.custom_buy_in_wrapper,
+.platform_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 0 20px 0;
+}
+
+.custom_buy_in_wrapper input,
+.invite_gamertag_wrapper input,
+.platform_wrapper input {
+  width: 300px !important;
+}
+
+.custom_buy_in_wrapper select,
+.invite_gamertag_wrapper select,
+.platform_wrapper select {
+  width: 300px;
+  height: 35px;
+  font-size: 1.1em;
+  line-height: 1.1em;
+  color: var(--dig_background_1);
+  font-weight: 700;
+  padding: 0 0 0 10px;
+  opacity: 0.9;
+  border-radius: 3px;
+  border: 1px solid var(--dig_highlight_2);
+  text-align: center;
+  text-align-last: center;
+  -moz-text-align-last: center;
+  margin: 10px 0;
+  outline: none;
+}
+
+#dig-platforms-selector-guide-block {
+  display: none;
+  padding-left: 15px;
+  padding-bottom: 25px;
+}
+
+/* START MATCH SELECTOR */
+#dig-mode-startmatch-group {
+  padding-top: 1em;
+  background: none !important;
+}
+
+.dig-user-action-group.create-match {
+  display: flex;
+  justify-content: center;
+}
+
+a#dig-mode-startmatch-action {
+  margin-top: 25px;
+}
+
+.dig-primary-button-action.start-match {
+  background: var(--dig_secondary2);
+  font-size: 1.2em;
+  width: 180px;
+  line-height: 44px;
+}
+
+.dig-primary-button-action.start-match.disabled {
+  opacity: 0.5;
+}
+
+#dig-invite-players-container {
+  text-align: center;
+  margin-top: 25px;
+  width: 100%;
+}
+
+#dig-invite-players-action,
+#dig-invite-players-toggle {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 2;
+  padding: 5px 15px;
+  border: none !important;
+  color: var(--dig_neutral5);
+  background: var(--dig_secondary2);
+  height: auto;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: auto;
+  display: block;
+  text-align: center;
+  opacity: 1 !important;
+}
+
+.other-team-table {
+  background-color: var(--dig_neutral6);
+  width: 100%;
+}
+
+.other-team-table tbody td {
+  padding: 10px;
+}
+
+input.dig-kill-scores,
+input.dig-invite-players {
+  height: 35px;
+  width: 100%;
+  border-radius: 0px;
+  border: none !important;
+  color: var(--dig_background_1);
+  opacity: 0.9;
+  padding: 10px;
+  line-height: 1;
+  box-shadow: none !important;
+  text-align: left;
+}
+
+input.dig-kill-scores {
+  margin: 0 !important;
+  width: 75%;
+}
+
+input.dig-invite-players:-moz-read-only {
+  color: var(--dig_neutral5);
+  background-color: var(--dig_neutral1) !important;
+  padding-left: 40px;
+}
+
+input.dig-invite-players:read-only {
+  color: var(--dig_neutral5);
+  background-color: var(--dig_neutral1) !important;
+  padding-left: 40px;
+}
+
+.ui-menu-item .ui-menu-item-wrapper.ui-state-active {
+  background: var(--dig_secondary1) !important;
+  font-weight: 700 !important;
+  color: var(--dig_highlight_2) !important;
+  border: 0px;
+  padding: 10px;
+}
+
+.dig-invite-players-status {
+  font-size: 0.9em;
+  line-height: 1;
+  text-align: left;
+  padding-left: 10px;
+  margin-top: -5px;
+}
+
+#dig-declare-winner {
+  width: 100%;
+  min-width: 400px;
+  margin: auto;
+  text-align: center;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+#dig-declare-winner.dig-status-2 {
+  width: auto;
+  min-width: 400px;
+}
+
+#dig-winner-selector-group,
+#dig-team-selector-group {
+  margin-top: 0px;
+}
+
+img#dig-declare-winner-uploaded-file {
+  max-width: 300px;
+  min-width: 300px;
+  height: auto;
+  margin-bottom: 50px;
+  border: 3px solid var(--dig_highlight_2);
+  border-radius: 7px;
+}
+
+/* WINNER SELECTOR */
+.dig-winner-selector-block,
+.dig-team-selector-block,
+#dig-declare-winnder-uploaded {
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-left: 0px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.dig-winner-selector-block li {
+  position: relative;
+  list-style-type: none !important;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.dig-team-selector-block li {
+  position: relative;
+  list-style-type: none !important;
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.dig-winner-selector-block li.closed {
+  cursor: default !important;
+}
+
+.dig-winner-selector,
+.dig-team-selector {
+  float: left;
+  width: 8vw;
+  height: 2.5vw;
+  line-height: 2.5vw;
+  color: var(--dig_highlight_2);
+  font-weight: 700;
+  font-size: 0.75vw;
+  text-align: center;
+  background: var(--dig_neutral1);
+  border: 1px solid var(--dig_highlight_2);
+  border-right: 1px solid;
+  margin-right: 10px;
+  border-radius: 0;
+  padding: 0 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.dig-winner-selector.ui-selected,
+.dig-team-selector.ui-selected {
+  background: var(--dig_primary_color);
+}
+
+.dig-team-selector.first {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.dig-winner-selector.last,
+.dig-team-selector.last {
+  margin-right: 0px;
+}
+
+.dig-winner-selector.single,
+.dig-team-selector.single {
+  border-radius: 0;
+  margin-right: 0px;
+  border: 1px solid var(--dig_secondary4);
+}
+
+#dig-declare-winnder-uploaded {
+  display: none;
+  margin-bottom: 0px;
+}
+
+#dig-declare-winner-dropzone input[type=file] {
+  display: none;
+}
+
+#dig-declare-winner-dropzone {
+  border: 3px solid var(--dig_highlight_2);
+  border-radius: 5px;
+  opacity: 0.9;
+  margin: 15px auto;
+  overflow: auto;
+  max-width: 400px;
+  min-height: 150px;
+  background: var(--dig_neutral5);
+  color: var(--dig_neutral2);
+}
+
+#dig-declare-winner-dropzone.dz-clickable .dz-message,
+#dig-declare-winner-dropzone.dz-clickable .dz-message * {
+  cursor: pointer;
+  line-height: 1;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+#dig-declare-winner-dropzone .dz-preview .dz-progress {
+  height: 10px;
+  margin-top: -6px;
+  width: 66px;
+  margin-left: -33px;
+}
+
+#dig-declare-winner-dropzone .dz-clickable .dz-message a {
+  color: var(--dig_highlight_1);
+}
+
+.dz-message .fas {
+  font-size: 5em;
+  margin: 10px;
+}
+
+#dig-declare-winner-dropzone .dz-preview .dz-image {
+  border-radius: 7px !important;
+  width: 70px !important;
+  height: 70px !important;
+}
+
+#dig-declare-winner-dropzone .dz-preview {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 8px;
+  min-height: auto;
+}
+
+#dig-upload-carousel {
+  margin-bottom: 35px;
+}
+
+#dig-declare-winner-dropzone .dz-preview.dz-image-preview {
+  background: transparent;
+}
+
+.match-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: var(--dig_neutral5);
+  font-weight: 700;
+  align-items: center;
+}
+
+.match-header span {
+  font-size: 2em;
+}
+
+/* Kill race style */
+.dig_kill_race_label {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.dig_kill_race_wrapper {
+  padding: 0px 17px;
+  box-sizing: border-box;
+  line-height: 0px !important;
+}
+
+[class^=col-sm-].kr_has_border {
+  border-left: 3px solid var(--dig_primary_color);
+}
+
+.dig-kill-scores[disabled] {
+  background-color: var(--dig_highlight_7);
+}
+
+div#dig-declare-winner .row {
+  margin: 10px 0;
+  align-items: center;
+}
+
+.dig-kill-race-coundown-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+[class^="row score_game_"].score_hide {
+  display: none !important;
+}
+
+.kill_score_text {
+  display: inline-block;
+  min-width: 100px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.kill_race_label_responsive {
+  display: none;
+}
+
+/*------------------------------------*\
+    DISPUTE MATCHES
+\*------------------------------------*/
+select#dig-dispute-team,
+select#dig-dispute-reason,
+input#dig-dispute-external,
+textarea#dig-dispute-reason-description {
+  width: 100%;
+  font-size: 1.1em;
+  line-height: 1.1em;
+  color: var(--dig_neutral2);
+  padding: 5px;
+  opacity: 0.9;
+  border-radius: 0;
+  border: 1px solid var(--dig_highlight_2);
+  margin-bottom: 10px;
+}
+
+form#dig-dispute-form {
+  margin-top: -7px;
+}
+
+textarea#dig-dispute-reason-description {
+  height: 8em;
+  margin-bottom: 1px;
+}
+
+#dig-declare-winnder-uploaded h3 {
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+input#dig-mode-dispute-winner-submit {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 0px 15px 0px 15px;
+  background: var(--dig_secondary2);
+  border: 1px solid var(--dig_highlight_2);
+  border-radius: 0;
+  margin-top: 2px;
+  color: var(--dig_highlight_2);
+  line-height: 1.1em;
+  font-size: 1.1em;
+  height: 3em;
+  width: 250px;
+  margin: auto;
+  margin-top: 25px;
+  opacity: 1 !important;
+}
+
+#dig-dispute-window-container {
+  text-transform: uppercase;
+  background: var(--dig_primary_color);
+  border: 0;
+  border-radius: 0;
+  margin: auto;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 1.1em;
+  width: 415px;
+  padding: 10px;
+}
+
+#dig-dispute-window-container i.fas {
+  margin-right: 10px;
+}
+
+.btn-group.match-modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#dig_match_score_warning {
+  text-transform: uppercase;
+  text-align: center;
+  background: var(--dig_highlight_4);
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  margin: auto;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 1.1em;
+  width: 415px;
+  padding: 10px;
+}
+
+a.dig_match_score_update {
+  display: block;
+  width: 300px;
+  color: var(--dig_neutral5);
+  background: var(--dig_secondary4);
+  font-weight: 700;
+  font-size: 1.5em;
+  margin: 20px auto;
+  text-transform: uppercase;
+  line-height: 50px;
+  text-align: center;
+}
+
+/* Responsive */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .wrapper.tournaments, .wrapper.matches {
+    padding: 10px !important;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .dig-game-selector-block.match_start li:last-child {
+    margin-bottom: 10px !important;
+  }
+  .dig-game-selector-block.match_start li {
+    height: 17vw !important;
+    width: 37vw;
+    margin-bottom: 0 !important;
+  }
+  .dig-game-selector-block.match_start li svg {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  #kill-race-score-board .col-sm-6 {
+    width: 50% !important;
+    padding: 0 !important;
+  }
+  .dig_kill_race_wrapper {
+    line-height: 30px !important;
+    padding: 0 !important;
+  }
+  #kill-race-score-board .dig_kill_race_wrapper .col-sm-6 {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .dig_kill_race_label {
+    justify-content: center !important;
+    margin-bottom: 5px;
+  }
+  .tooltip {
+    display: none !important;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  #dig-declare-winner-dropzone {
+    max-width: 100% !important;
+  }
+  #kill-race-score-board .col-sm-6 {
+    width: 50% !important;
+    padding: 0 !important;
+  }
+  .dig_kill_race_wrapper {
+    line-height: 30px !important;
+    padding: 0 !important;
+  }
+  #kill-race-score-board .dig_kill_race_wrapper .col-sm-6 {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .dig_kill_race_label {
+    justify-content: center !important;
+    margin-bottom: 5px;
+  }
+  .team-group {
+    min-width: auto !important;
+  }
+  .dig-game-selector-block.match_start li:last-child {
+    margin-bottom: 10px !important;
+  }
+  .dig-game-selector-block.match_start li {
+    height: 25vw !important;
+    width: 37vw;
+    margin-bottom: 0 !important;
+  }
+  .dig-game-selector-block.match_start li svg {
+    max-width: 10em;
+    margin: 0 auto;
+    display: block;
+  }
+  .dig-selector,
+  .dig-mode-selector,
+  .dig-buy-selector,
+  .dig-buy-selector-custom,
+  .dig-platforms-selector,
+  .dig-best-of-selector,
+  .dig-your-platform-selector,
+  .dig-region-selector {
+    min-width: 38vw;
+    height: 20vw;
+    line-height: 4vw;
+    font-size: 4vw;
+    padding: 20px;
+  }
+  a.dig-game-rules {
+    margin: 0 0 15px 0;
+  }
+  .tooltip {
+    display: none !important;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .dig-winner-selector,
+  .dig-team-selector {
+    width: 40vw;
+    height: 13vw;
+    line-height: 12vw;
+    font-size: 4vw;
+  }
+  .alert div,
+  .alert p {
+    text-align: left !important;
+  }
+  .match-detail-img-wrapper {
+    max-width: 300px;
+    height: auto;
+  }
+  .match-detail-img-wrapper svg {
+    max-width: 300px;
+  }
+  .wrapper.tournaments, .wrapper.matches {
+    padding: 10px !important;
+  }
+  .dig-game-selector-block.match_start li:nth-child(even) {
+    margin-right: 0 !important;
+  }
+  .dig-game-selector-block.match_start li:last-child {
+    margin-bottom: 10px !important;
+  }
+  .dig-game-selector-block.match_start li {
+    height: 25vw !important;
+    width: 40vw;
+    margin-bottom: 0 !important;
+  }
+  .dig-game-selector-block.match_start li svg {
+    max-width: 10em;
+    margin: 0 auto;
+    display: block;
+  }
+  .dig-accordion-heading-group span {
+    padding-right: 0 !important;
+  }
+  .dig-mode-selector-block-wrapper {
+    justify-content: space-between;
+  }
+  .custom_buy_in_wrapper {
+    padding: 0 15px;
+  }
+  .custom_buy_in_wrapper input,
+  .custom_buy_in_wrapper select {
+    width: 100% !important;
+  }
+  a.dig-game-rules {
+    margin: 0 0 15px 0;
+  }
+  #main-user-actions {
+    margin-top: 10px !important;
+  }
+  .dig-user-action-group {
+    margin-top: 5px !important;
+  }
+  .team-group {
+    min-width: auto !important;
+  }
+  .tooltip {
+    display: none !important;
+  }
+}
+.dig-match-start-time {
+  min-width: 400px;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  background: var(--dig_primary_color);
+  font-weight: 700;
+}
+
+div#dig-declare-winner-matches-selector-group {
+  margin-top: 0px;
+}
+
+.dig-rules-content {
+  display: none;
+  font-size: 14px;
+}
+
+.dig-rules-excerpt {
+  font-size: 14px;
+}
+
+.dig-rules-container {
+  max-width: 500px;
+  font-size: 0.8em;
+  margin-top: 25px;
+  color: var(--dig_neutral4);
+}
+
+.dig-rules-container h2 {
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.dig-rules-container p:last-of-type {
+  display: inline;
+}
+
+.dig-rules-container a {
+  font-weight: 700;
+  color: var(--dig_secondary2);
+}
+
+/*# sourceMappingURL=match.css.map */

@@ -1,0 +1,850 @@
+/* CSS for the custom Profile page */
+.woocommerce-billing-fields__field-wrapper .row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+#dig-main-wrapper .dig_profile_page {
+  margin-top: 2em;
+}
+
+.upcoming-invitations,
+#dig-main-wrapper .dig_profile_page .upcoming-events {
+  background: transparent !important;
+}
+
+.dig_profile_page article {
+  border-top: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+  margin: 0 !important;
+}
+
+.um-profile-note {
+  color: var(--dig_text_body) !important;
+}
+
+.um-profile-nav {
+  position: relative;
+  margin-bottom: 10px;
+  max-width: 1280px;
+  padding: 0 !important;
+  background: var(--dig_neutral2) !important;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: space-evenly !important;
+}
+
+.um-profile-body {
+  padding: 25px 25px 0px 25px !important;
+}
+
+.dig-um-name-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dig_um_overflow_menu .um-profile-nav-item.um-profile-nav-item a:nth-child(2) {
+  display: flex !important;
+  align-items: center;
+}
+
+.dig_um_overflow_menu .um-profile-nav-item.um-profile-nav-item a:nth-child(2) i {
+  padding-right: 5px;
+}
+
+.dig_um_overflow_menu .um-profile-nav-item.um-profile-nav-item a:first-child {
+  display: none !important;
+}
+
+.um .um-field-group-head,
+.picker__box,
+.picker__nav--prev:hover,
+.picker__nav--next:hover,
+.um .um-members-pagi span.current,
+.um .um-members-pagi span.current:hover,
+.um .um-profile-nav-item.active a,
+.um .um-profile-nav-item.active a:hover div.uimob800 .um-account-side li a.current,
+div.uimob800 .um-account-side li a.current:hover {
+  background: none !important;
+}
+
+.um-modal-header,
+.upload {
+  background: var(--dig_primary_color) !important;
+}
+
+.um-profile-nav-item.um-profile-nav-main.active a {
+  background: none !important;
+  margin-left: 0 !important;
+}
+
+.dig_um_my_games .um-profile-nav-item a {
+  padding: 15px 0 10px 0 !important;
+  margin-right: 0;
+  margin-bottom: 0 !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+.um-profile-nav-item.active a,
+.um-profile-nav-item.active a:hover {
+  border-bottom: 1px solid var(--dig_highlight_2) !important;
+}
+
+.um-profile-nav-item a:hover {
+  color: var(--dig_highlight_2) !important;
+  border-bottom: 1px solid var(--dig_highlight_2) !important;
+  background: none !important;
+}
+
+.um-profile-nav-item i {
+  top: 13px !important;
+  display: none !important;
+}
+
+.um-profile-nav-item span.title {
+  padding: 0 10px !important;
+}
+
+.um-header {
+  padding: 0 15px 25px 15px !important;
+  border-bottom: 0px !important;
+}
+
+um a,
+um a:hover,
+um a:focus {
+  text-decoration: none !important;
+}
+
+.um-cover-add {
+  color: var(--dig_object_body) !important;
+}
+
+.um-cover-add:hover {
+  color: var(--dig_highlight_1) !important;
+}
+
+.um-dropdown li a {
+  color: var(--dig_highlight_1) !important;
+  font-weight: 600;
+}
+
+.um-dropdown li a:hover {
+  color: var(--dig_primary_color) !important;
+  background-color: var(--dig_neutral4) !important;
+}
+
+.um-name {
+  position: relative;
+  margin-right: 0 !important;
+}
+
+.um-profile.um .dig-um-name-block > a {
+  color: var(--dig_highlight_2) !important;
+  text-transform: uppercase;
+}
+
+.um-profile-edit {
+  top: 0px !important;
+  right: 0 !important;
+  margin-left: 10px !important;
+  position: relative !important;
+  height: auto !important;
+}
+
+.um-cover-e {
+  margin-top: 0px !important;
+  background-color: transparent !important;
+}
+
+.um-cover {
+  background-color: var(--dig_highlight_2);
+  margin: -25px !important;
+}
+
+.um-profile.um .um-profile-headericon a {
+  font-size: 0.5em !important;
+}
+
+.um-profile.um .um-profile-headericon a:hover,
+.um-profile.um .um-profile-edit-a.active {
+  color: var(--dig_primary_color) !important;
+}
+
+.um-profile-note a {
+  color: var(--dig_highlight_2) !important;
+  font-weight: 700;
+}
+
+.um-account-main div.um-account-heading {
+  color: var(--dig_highlight_2) !important;
+}
+
+#dig-main-wrapper .um-profile-photo a.um-profile-photo-img {
+  border: 2px solid var(--dig_neutral5) !important;
+  border-radius: 8px !important;
+  width: 70px;
+  height: 70px;
+  top: 0;
+}
+
+.um .um-profile-photo a.um-profile-photo-img,
+.um .um-profile-photo a.um-profile-photo-img img,
+.um .um-profile-photo span.um-profile-photo-overlay {
+  border-radius: 2px !important;
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+}
+
+.um .um-tip:hover,
+.um .um-field-radio.active:not(.um-field-radio-state-disabled) i,
+.um .um-field-checkbox.active:not(.um-field-radio-state-disabled) i,
+.um .um-member-name a:hover,
+.um .um-member-more a:hover,
+.um .um-member-less a:hover,
+.um .um-members-pagi a:hover,
+.um .um-cover-add:hover,
+.um .um-profile-subnav a.active,
+.um .um-item-meta a,
+.um-account-name a:hover,
+.um-account-nav a.current,
+.um-account-side li a.current span.um-account-icon,
+.um-account-side li a.current:hover span.um-account-icon,
+.um-dropdown li a:hover,
+i.um-active-color,
+span.um-active-color,
+.um-request-button {
+  color: var(--dig_primary_color) !important;
+}
+
+.um a.um-link {
+  color: var(--dig_highlight_7);
+}
+
+.um-account-main .um-account-nav a {
+  color: var(--dig_highlight_2) !important;
+}
+
+.um-request-button {
+  background-color: var(--dig_highlight_1) !important;
+  color: var(--dig_highlight_2) !important;
+  font-weight: 600;
+}
+
+.um-account-main label {
+  text-transform: none;
+  margin-bottom: 10px;
+}
+
+.um-account-profile-link a {
+  font-weight: 800 !important;
+}
+
+.um-account-name a {
+  color: var(--dig_highlight_2) !important;
+}
+
+.um-account-side li a.current,
+.um-account-side li a.current:hover,
+.um-account-side li a.current span.um-account-title {
+  color: var(--dig_highlight_1) !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+}
+
+.um *,
+.um ::before,
+.um ::after {
+  box-sizing: border-box !important;
+}
+
+#um_messaging_hidden_login .um-modal {
+  background-color: var(--dig_neutral1) !important;
+  top: 55px;
+}
+
+.um-message-header {
+  color: var(--dig_highlight_2) !important;
+}
+
+.um {
+  color: var(--dig_text_body) !important;
+}
+
+.um-account-side li a {
+  font-size: 0.8em !important;
+  height: 40px !important;
+  line-height: 30px !important;
+}
+
+.um-directory .um-members-wrapper .um-members.um-members-grid .um-member .um-member-cover {
+  background-color: transparent !important;
+}
+
+.um-directory .um-members-wrapper .um-members.um-members-grid .um-member {
+  background: none !important;
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.um-directory .um-members-wrapper .um-members.um-members-grid .um-member.with-cover .um-member-photo a img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  top: -35px;
+  margin-bottom: -45px;
+  float: none;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.um-directory .um-members-wrapper .um-members .um-member {
+  border: 0px !important;
+}
+
+div.um-member-name a {
+  color: var(--dig_highlight_2) !important;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+a.um-edit-profile-btn.um-button.um-alt {
+  background-color: var(--dig_primary_color) !important;
+  color: var(--dig_highlight_2) !important;
+  border: 0 solid white !important;
+}
+
+.um-directory .um-members-wrapper .um-members.um-members-grid .um-member .um-member-card .um-members-edit-btn a.um-edit-profile-btn:before {
+  color: white !important;
+}
+
+.um-directory .um-members-wrapper .um-members.um-members-grid .um-member .um-member-cover .um-member-cover-e {
+  display: none !important;
+}
+
+/* UM FRIENDS */
+.um-profile-subnav {
+  background: transparent !important;
+}
+
+.um-profile-subnav a {
+  color: var(--dig_text_body) !important;
+}
+
+.um-profile-subnav a:hover {
+  color: var(--dig_neutral4) !important;
+}
+
+.dig_um_my_games .um-profile-subnav span {
+  background: var(--dig_text_body) !important;
+  color: var(--dig_primary_color) !important;
+}
+
+/* UM profile meta */
+.um-main-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 !important;
+  flex-wrap: wrap;
+}
+
+.um-profile-meta {
+  padding-left: 90px !important;
+  padding-right: 0px !important;
+}
+
+.um-profile-photo {
+  margin: 0px !important;
+}
+
+.um-cover-overlay,
+.um-profile-photo-overlay {
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+.um-cover-overlay i,
+.um-profile-photo-overlay i {
+  font-size: 1.5em !important;
+}
+
+.um-cover-overlay span.um-cover-overlay-s {
+  display: table;
+  height: auto !important;
+  margin-top: 25px;
+  text-align: right;
+}
+
+.um-profile-photo-overlay span.um-profile-photo-overlay-s {
+  display: table;
+  height: 100%;
+  width: 100%;
+  vertical-align: bottom;
+}
+
+span.um-cover-overlay-t {
+  display: none;
+}
+
+.ajax-upload-dragdrop span.icon {
+  color: var(--dig_neutral3) !important;
+}
+
+.ajax-upload-dragdrop span.str {
+  color: var(--dig_neutral3) !important;
+}
+
+.um-modal-btn.disabled,
+.um-modal-btn.disabled:hover {
+  background: var(--dig_neutral3);
+}
+
+.um-modal-btn,
+.um-modal-btn.alt {
+  color: var(--dig_highlight_2) !important;
+  background: var(--dig_primary_color) !important;
+}
+
+.um .um-tip {
+  color: var(--dig_text_body) !important;
+}
+
+.main .um-row._um_row_2 {
+  padding-top: 30px;
+}
+
+.um-tip-text {
+  font-size: 0.75em !important;
+  line-height: 1 !important;
+  font-weight: 500 !important;
+}
+
+.um-viewing .main .um-field-text, .um-viewing .main .um-field-date {
+  padding-top: 30px !important;
+  padding-left: 25px !important;
+  background: var(--dig_neutral1);
+  margin-bottom: 10px !important;
+}
+
+/*.um-field-label {*/
+/*    text-transform: capitalize !important;*/
+/*}*/
+.um-viewing .main .um-field-label {
+  margin: 0 0 0px 0 !important;
+  text-transform: capitalize !important;
+}
+
+.um-viewing .main .um-field {
+  margin-bottom: 15px;
+  position: relative;
+  padding: 15px 0 0 0;
+  margin-bottom: -30px;
+}
+
+.um-viewing .main .um-field-label {
+  border-bottom: 0px !important;
+}
+
+.um-viewing .main .um-field-area {
+  margin: 0px 0px 20px 0px !important;
+  position: relative;
+  top: -30px;
+  padding-left: 250px;
+}
+
+.um-viewing .main .um-field-value {
+  color: var(--dig_neutral4);
+}
+
+.um span.um-req {
+  color: var(--dig_accent_color) !important;
+}
+
+.um-field-error {
+  background: var(--dig_accent_color) !important;
+  color: var(--dig_text_body) !important;
+}
+
+.um-field-arrow {
+  color: var(--dig_accent_color) !important;
+}
+
+.picker__header, .picker__box {
+  background: var(--dig_object_body) !important;
+}
+
+.um .um-field-group-head:hover,
+.picker__footer,
+.picker__header,
+.picker--focused .picker__day--highlighted,
+.picker__list-item:hover,
+.picker__list-item--highlighted:hover,
+.picker--focused .picker__list-item--highlighted,
+.picker__list-item--selected {
+  background: var(--dig_object_body) !important;
+}
+
+.um .picker__button--today,
+.um .picker__button--clear {
+  display: none;
+}
+
+.picker--focused .picker__day--highlighted,
+.picker__day--infocus:hover,
+.picker__day--outfocus:hover,
+.picker__day--highlighted:hover,
+.picker__list-item--selected:hover,
+.picker--focused .picker__list-item--selected {
+  background-color: var(--dig_highlight_1) !important;
+}
+
+button.picker__button--close {
+  display: none;
+}
+
+.um .picker__box {
+  background: var(--dig_object_body) !important;
+}
+
+.um .picker__footer {
+  display: none;
+}
+
+.um-profile-nav-item.um-profile-nav-purchases {
+  display: none;
+}
+
+.dig_custom_profile_sub_bar .um-followers-rc a,
+.dig_custom_profile_sub_bar .um-friends-rc a,
+.dig_custom_profile_sub_bar .um-followers-rc a span,
+.dig_custom_profile_sub_bar .um-friends-rc a span {
+  text-transform: none !important;
+  font-size: 1em !important;
+}
+
+.dig_custom_profile_sub_bar .um-followers-rc a,
+.dig_custom_profile_sub_bar .um-friends-rc a {
+  color: var(--dig_neutral4) !important;
+  border-right: 0 !important;
+  padding-right: 20px !important;
+  padding-left: 0 !important;
+}
+
+.dig_custom_profile_sub_bar .um-followers-rc a span,
+.dig_custom_profile_sub_bar .um-friends-rc a span {
+  color: var(--dig_highlight_2) !important;
+  display: inline;
+  padding-right: 4px;
+}
+
+.dig_custom_profile_sub_bar .um-followers-rc.notification span svg {
+  width: 15px;
+  fill: var(--dig_highlight_2) !important;
+}
+
+.dig_um_game_invite,
+.dig_um_my_games {
+  background: transparent;
+  padding: 15px;
+}
+
+.dig_um_game_invite h1,
+.dig_um_my_games h1 {
+  font-size: 1.7em;
+  text-transform: none;
+  margin-bottom: 10px;
+}
+
+.dig_um_game_invite .title {
+  display: flex;
+  align-items: center;
+}
+
+.dig_um_game_invite .title a {
+  margin: 0 0 5px 10px;
+  color: var(--dig_neutral3);
+}
+
+.profile_balance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--dig_neutral5);
+  border-left: 1px solid var(--dig_neutral2);
+  padding-left: 50px;
+}
+
+.profile_balance.not_logged_in {
+  flex-direction: row !important;
+}
+
+.profile_balance.not_logged_in .um-friends-btn {
+  margin-top: 0 !important;
+  margin-left: 10px;
+}
+
+.profile_balance_main {
+  display: flex;
+  align-items: center;
+}
+
+.profile_balance_main a {
+  padding: 0 10px;
+}
+
+.profile_balance .action-tray-balance {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.create-match-button {
+  position: absolute;
+  right: 0;
+  display: none !important;
+}
+
+.dig_um_overflow_menu {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.dig_um_game_invite .col-xs-6 {
+  margin-bottom: 15px;
+}
+
+.game-invites {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--dig_neutral5);
+  color: var(--dig_neutral1);
+  border-radius: 5px;
+  padding: 7px;
+  margin: 0 15px 0 0;
+}
+
+.game-invites h4 {
+  color: var(--dig_neutral1);
+  text-align: left !important;
+  margin-left: 10px;
+}
+
+.game-invites span {
+  margin-left: 10px;
+}
+
+.game-invites .invitation_avatar img {
+  max-width: none !important;
+  border-radius: 5px;
+}
+
+.game-invites .invitation_infos {
+  position: relative;
+  width: 100%;
+}
+
+/*
+.game-invites a::after{
+    display: flex;
+    align-items: center;
+    content: ">";
+    background-color: var(--dig_primary_color);
+    position: absolute;
+    right: 15px;
+    padding: 10px;
+    color: var(--dig_highlight_2);
+    font-size: 2em;
+    top: 0;
+    border-radius: 0 5px 5px 0;
+    height: 100%;
+} */
+.dig_um_my_games {
+  padding: 15px !important;
+}
+
+.dig_um_my_games .um-profile-nav-item a {
+  color: var(--dig_highlight_2) !important;
+  font-size: 1em;
+}
+
+.dig-css-personal-data, .dig-css-gamertag-data, .dig-css-streamer-data {
+  min-height: 25px;
+}
+
+.um.um-profile.um-viewing.um-3918.um-role-um_gamer .dig-css-personal-data {
+  visibility: hidden;
+}
+
+.um-header a.um-button.um-alt,
+.um-header a.um-button {
+  background: var(--dig_primary_color) !important;
+  border: 1px !important;
+  color: var(--dig_neutral5) !important;
+  font-weight: 600 !important;
+  border-radius: 0px !important;
+  text-transform: uppercase !important;
+  font-size: 0.9em;
+}
+
+.um-header a.um-unfollow-btn {
+  background: var(--dig_secondary4) !important;
+  min-height: 34px;
+}
+
+.um .um-button.um-alt::before {
+  color: var(--dig_neutral5) !important;
+  font-weight: 500;
+}
+
+.dig-um-name-block .um-profile-edit i.um-faicon-check {
+  font-size: 20px;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  #dig-main-wrapper .um-profile-photo a.um-profile-photo-img {
+    width: 70px !important;
+    height: 70px !important;
+    top: 0 !important;
+  }
+  .profile_balance {
+    padding-left: 0 !important;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .um-profile-photo {
+    position: relative !important;
+    width: 200px !important;
+    top: 0 !important;
+  }
+  .um-profile-nav {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+    justify-content: space-between !important;
+  }
+  .profile_balance {
+    padding: 20px 10px 0 10px !important;
+    border: 0 !important;
+    width: 100%;
+    border-top: 1px solid var(--dig_neutral2) !important;
+  }
+  .um-name {
+    padding: 0 !important;
+    width: 100%;
+    margin-right: 0 !important;
+  }
+  .um-profile.um .um-name > a {
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+  .um-profile-edit {
+    font-size: 1em !important;
+  }
+  .dig_custom_profile_sub_bar {
+    text-align: left;
+  }
+  .dig-um-name-block .um-dropdown {
+    width: 120px !important;
+  }
+  .dig-um-name-block .um-dropdown .um-dropdown-b li a {
+    font-size: 1.3rem !important;
+  }
+  .game-invites {
+    margin-right: 0 !important;
+  }
+  .game-invites a::after {
+    right: 0 !important;
+  }
+  .um-profile-nav-item span.title {
+    display: none !important;
+  }
+  .um-profile-nav-item i {
+    display: block !important;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .um-profile-photo {
+    min-height: 75px !important;
+  }
+  .dig_profile_page .um-form .um-header .um-profile-meta {
+    padding-top: 0px !important;
+  }
+  .profile_balance {
+    padding: 20px 10px 0 10px !important;
+    border: 0 !important;
+    width: 100%;
+    border-top: 1px solid var(--dig_neutral2) !important;
+  }
+  .um-profile.um .um-name > a {
+    text-align: left;
+    display: block;
+    width: 100%;
+    width: 100%;
+  }
+  .um-profile-edit {
+    font-size: 1em !important;
+    z-index: 1 !important;
+  }
+  .dig_custom_profile_sub_bar {
+    text-align: left;
+  }
+  #um_messaging_hidden_login .um-modal {
+    padding: 15px;
+  }
+  .wrapper.page {
+    padding: 10px !important;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .wrapper.page {
+    padding: 10px !important;
+  }
+  .um-header {
+    margin: 0 !important;
+  }
+  .um-profile.um .um-profile-headericon a {
+    font-size: 0.8em !important;
+  }
+  .um-profile-photo {
+    display: none;
+  }
+  .dig_profile_page .um-form .um-header .um-profile-meta {
+    padding-top: 0px !important;
+  }
+  .profile_balance {
+    padding: 20px 10px 0 10px !important;
+    border: 0 !important;
+    width: 100%;
+    border-top: 1px solid var(--dig_neutral2) !important;
+  }
+  .um-profile.um .um-name > a {
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+  .um-profile-edit {
+    font-size: 0.8em !important;
+  }
+  .dig_custom_profile_sub_bar {
+    text-align: left;
+  }
+  .um-profile-nav-item i {
+    display: flex !important;
+  }
+}
+
+/*# sourceMappingURL=dig_profile_page.css.map */

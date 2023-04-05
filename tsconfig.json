@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "rootDir": "./src/",
+        "baseUrl": "./src/",
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        "esModuleInterop": true,
+        "jsx": "react-jsx",
+        "lib": ["es5", "es2015", "es2016", "dom", "esnext"],
+        "types": ["node"],
+        "module": "es2015",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "noUnusedLocals": true,
+        "outDir": "dist/esm",
+        "sourceMap": true,
+        "declaration": true,
+        "strict": true,
+        "target": "es6",
+        "plugins": [{"name": "ts-css-modules-vite-plugin", "root": "./"}]
+    },
+    "include": ["src/custom.d.ts","src/**/*", "src/index.ts"]
+}

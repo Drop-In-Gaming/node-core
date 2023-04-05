@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>3 Element/Graphic/Matches_16@1x</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.556863 0 0 0 0 0.556863 0 0 0 0 0.556863 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component/Chat/Authoring-(User)" transform="translate(-19.000000, -11.000000)">
+            <g id="Group" transform="translate(18.000000, 11.000000)">
+                <g transform="translate(1.000000, 0.000000)" id="Matches_16" filter="url(#filter-1)">
+                    <g>
+                        <path d="M4.195734,19.2741531 L4.195734,14.3036386 L0,14.3036386 L0,4.97051443 L4.195734,4.97051443 L4.195734,0 L13.8268507,9.63111669 L4.195734,19.2741531 Z M1.81179423,12.5037641 L5.95984944,12.5037641 L5.95984944,14.8877039 L11.2998745,9.63111669 L5.95984944,4.31493099 L5.95984944,6.75846926 L1.78795483,6.75846926 L1.81179423,12.5037641 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                        <polygon id="Path" fill="#000000" fill-rule="nonzero" points="7.3782936 11.8839398 5.12547051 9.63111669 7.3782936 7.3902133 8.64178168 8.65370138 7.65244668 9.63111669 8.64178168 10.6204517"></polygon>
+                        <polygon id="Path" fill="#000000" fill-rule="nonzero" points="14.8519448 19.2622334 10.3582183 14.7685069 11.6217064 13.5050188 13.06399 14.9473024 13.06399 12.5037641 17.259724 12.5037641 17.259724 6.75846926 13.06399 6.75846926 13.06399 4.31493099 11.6217064 5.75721455 10.3582183 4.49372647 14.8519448 0 14.8519448 4.97051443 19.0476788 4.97051443 19.0476788 14.2917189 14.8519448 14.2917189"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+

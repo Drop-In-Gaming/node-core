@@ -1,0 +1,37 @@
+.dig-primary-button-actions {
+  min-height: 3vw;
+  display: block;
+  width: 200px !important;
+  color: var(--dig_neutral5);
+  background: var(--dig_primary_color);
+  border: 1px solid var(--dig_primary_color);
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 15px;
+  line-height: normal;
+  margin: 20px auto;
+}
+
+.selectable {
+  background: transparent;
+}
+
+.selected {
+  background: var(--dig_primary_color);
+  border: 1px solid var(--dig_neutral5);
+}
+.selected div::before {
+  content: "\f058";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "FontAwesome";
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.module.css.map */

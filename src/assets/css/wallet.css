@@ -1,0 +1,711 @@
+.um-profile-nav-item.um-profile-nav-dig_withdraw_tab {
+  display: none;
+}
+
+.dig-user-account-add-funds .alert p,
+.dig-user-account-withdrawl-funds .alert p {
+  display: block !important;
+}
+
+a.dig-wallet-options {
+  padding: 10px;
+  background: var(--dig_neutral2);
+  text-transform: uppercase;
+  display: block;
+  width: 150px;
+  text-align: center;
+}
+
+a.dig-wallet-options.selected {
+  background: var(--dig_secondary4);
+  font-weight: 600;
+}
+
+a.dig-wallet-options.withdraw {
+  margin-left: 10px;
+  margin-bottom: auto;
+}
+
+div.dig-wallet-options {
+  margin: 15px;
+  display: flex;
+}
+
+.deposit.selected {
+  margin-bottom: 30px;
+}
+
+div#dig-deposit-fee-table span.um-field-checkbox-option {
+  margin-left: 30px;
+}
+
+div.woocommerce-billing-fields__field-wrapper {
+  margin-top: 15px;
+}
+
+.woocommerce-billing-fields__field-wrapper label {
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+.dig-add-funds-invalid label,
+span.um-field-checkbox-option.dig-add-funds-invalid {
+  color: var(--dig_accent_color) !important;
+}
+
+.dig-user-account-add-funds .col-md-6,
+.dig-user-account-withdrawl-funds .col-md-6 {
+  flex: 0 0 47%;
+}
+
+p#billing_amount_field {
+  margin-bottom: 0px;
+  margin-left: -3px !important;
+  margin-top: 0px;
+}
+
+.dig-add-funds-amount,
+.dig-withdraw-funds-amount {
+  width: 175px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+p#billing_ccnum_field,
+p#billing_ccexp_field,
+p#billing_ccv_field {
+  margin-bottom: 0px !important;
+  margin-left: 0px;
+  margin-top: -15px !important;
+}
+
+p#billing_ccv_field {
+  margin-top: -10px !important;
+}
+
+div#dig-cc-number,
+div#dig-cc-exp,
+div#billing_amount_field {
+  margin-left: 0px;
+  height: 35px;
+}
+
+div#digCvv {
+  margin-left: 15px;
+}
+
+div#dig_ccexp_ccdvv {
+  padding-top: 15px;
+}
+
+#dig_ccexp_ccdvv .col-md-9,
+#dig_ccexp_ccdvv .col-md-8,
+#dig_ccexp_ccdvv .col-md-6,
+#dig_ccexp_ccdvv .col-md-4,
+#dig_ccexp_ccdvv .col-md-2,
+#dig_ccexp_ccdvv .col-md-1,
+div#dig_add_funds_container .col-md-4,
+div#dig_withdraw_funds_container .col-md-4 {
+  padding: 0px;
+}
+
+.dig-add-funds-amount input.form-control,
+.dig-withdraw-funds-amount input.form-control {
+  border-top-left-radius: 1px !important;
+}
+
+div#dig-add-funds-group input#amount,
+div#dig-withdraw-funds-group input#amount {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.dig-add-funds-amount span.input-group-text,
+.dig-withdraw-funds-amount span.input-group-text {
+  background: var(--dig_highlight_1);
+  border: 0px;
+  color: var(--dig_highlight_2);
+  font-weight: 700;
+}
+
+button#dig-add-funds-button,
+button#dig-withdraw-funds-button {
+  font-size: 1em;
+  line-height: 1em;
+  padding: 13px 20px 13px 20px;
+  margin-top: 10px;
+  margin-left: 0px;
+  height: auto;
+  width: auto;
+  border: 1px solid var(--dig_primary_color);
+  border-radius: 0;
+  opacity: 1;
+  background: var(--dig_primary_color);
+  color: var(--dig_highlight_2);
+}
+
+#dig-add-funds-button:disabled,
+#dig-add-funds-button[disabled],
+#dig-withdraw-funds-button:disabled,
+#dig-withdraw-funds-button[disabled] {
+  opacity: 75%;
+}
+
+input:read-only {
+  opacity: 0.6;
+  height: 40px;
+}
+
+.did-user-withdrawl-label {
+  float: left;
+  margin-top: 31px;
+  margin-right: 10px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 800;
+}
+
+div#dig-transaction-details {
+  font-size: 0.95em;
+  border-left: 3px solid var(--dig_highlight_6);
+  margin-top: 15px;
+  padding: 5px;
+  padding-left: 15px;
+}
+
+span.woocommerce-terms-and-conditions-checkbox-text,
+.wcopc span.required {
+  margin-left: 25px;
+  position: relative;
+  top: -30px;
+  border: 2px;
+}
+
+.wcopc span.required {
+  margin-left: 5px;
+  color: var(--dig_highlight_4);
+}
+
+.form-row {
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.form-row.address-field {
+  margin-bottom: 10px !important;
+}
+
+p.form-row.woocommerce-validated label {
+  margin-top: 0px !important;
+}
+
+.dig-cost-panel {
+  padding-left: 15px;
+  margin-top: -7px;
+}
+
+.dig-cost-panel label {
+  font-size: 0.75em;
+  font-weight: bold;
+  color: var(--dig_highlight_1);
+  margin: 0px 0px 0px 0px;
+}
+
+.dig-cost-panel p {
+  margin: -1px 0px 0px 0px;
+  font-size: 1.17em;
+}
+
+.dig-cost-panel .total {
+  font-weight: 700;
+}
+
+#dig-terms-and-conditions-label a {
+  border-bottom: 1px solid var(--dig_text_body);
+}
+
+p.dig-total-charged,
+p.dig-processing-fee,
+p.dig-transaction-log {
+  font-size: 1em;
+}
+
+p.dig-transaction-log a {
+  color: var(--dig_highlight_7);
+  font-weight: 700;
+}
+
+.um-field-area.dig-cc-test-info {
+  background: var(--dig_highlight_7);
+  font-size: 0.8em;
+  padding: 5px;
+  padding-left: 15px;
+  font-family: monospace;
+}
+
+button.dig-transaction-log {
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 7px 10px 7px 10px;
+  background: var(--dig_neutral3);
+  border: 0px solid var(--dig_highlight_2);
+  border-radius: 3px;
+  font-size: 0.9em;
+  line-height: 2.5em;
+  color: var(--dig_highlight_2);
+}
+
+article#post-3925 {
+  padding-top: 25px;
+}
+
+div#dig-transatcion-history {
+  margin-top: 25px;
+}
+
+.row.dig-transaction-header, .row.dig-transaction-row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.row.dig-transaction-header div,
+.row.dig-transaction-row div {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#dig-transatcion-history amount {
+  text-align: center;
+}
+
+div#dig-transatcion-history h3 {
+  font-size: 1em;
+  text-align: left;
+  padding-left: 0px !important;
+  padding-right: 10px !important;
+}
+
+div#dig-transatcion-history p {
+  font-size: 0.9em;
+  text-transform: capitalize;
+  padding-left: 0px !important;
+  padding-right: 10px !important;
+}
+
+p.dig-negative-transaction {
+  font-weight: 700;
+  color: var(--dig_accent_color);
+  text-align: right;
+  width: 75px;
+}
+
+p.dig-positive-transaction {
+  font-weight: 700;
+  color: var(--dig_secondary4);
+  text-align: right;
+  width: 75px;
+}
+
+.dig-transaction-row {
+  border-bottom: 1px solid var(--dig_highlight_6);
+  padding-bottom: 20px;
+}
+
+.row.dig-transaction-row div p .action a {
+  border-bottom: 1px solid var(--dig_highlight_2) !important;
+}
+
+div#dig-wallet-account-summary {
+  margin-bottom: 35px;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+div#dig-wallet-account-summary td.label {
+  width: 175px;
+}
+
+div#dig-wallet-account-summary p {
+  margin-top: 0px !important;
+}
+
+div#dig-wallet-account-summary p.dig-account-note {
+  font-size: 0.65em;
+  margin-top: 10px !important;
+  text-transform: none;
+}
+
+div.positive {
+  color: var(--dig_secondary4);
+}
+
+div.dig-wallet-account-balance {
+  float: left;
+  padding-top: 10px;
+}
+
+div#dig-wallet-account-summary .dig-wallet-options {
+  float: left;
+  font-size: 0.8em;
+  margin-left: 20px;
+  width: auto;
+}
+
+.row.dig-transaction-row a {
+  text-decoration: underline;
+}
+
+div#dig-wallet-history {
+  font-size: 1em;
+  margin-bottom: 25px;
+}
+
+.dig-transaction-row .trans-comment {
+  font-weight: 700;
+  font-size: 1em !important;
+}
+
+a.dig-wallet-history-information {
+  margin-top: 50px;
+  border-bottom: 0px !important;
+}
+
+.row.dig-transaction-row.first {
+  border-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+a.dig-wallet-history-information {
+  display: block;
+  margin-top: -2em;
+  text-align: center;
+}
+
+.dig-transaction-history-details {
+  font-size: 0.9em;
+  border-left: 3px solid var(--dig_highlight_1);
+  padding-top: 0px !important;
+  padding-left: 15px !important;
+}
+
+.dig-transaction-history-details p.detail {
+  margin-top: 0px !important;
+  line-height: 2.5em !important;
+}
+
+.dig-transaction-history-details p.dig_wallet_deposit {
+  color: var(--dig_highlight_5);
+  font-weight: 700;
+}
+
+.dig-transaction-history-details p.dig_wallet_withdrawal {
+  color: var(--dig_negative_currency);
+  font-weight: 700;
+}
+
+div#dig-add-funds-message.dig-add-funds-message-alert {
+  border-bottom: 2px solid var(--dig_highlight_4);
+}
+
+div#dig-add-funds-message.dig-add-funds-message-declined,
+div#dig-add-funds-message.dig-add-funds-message-error {
+  border-bottom: 2px solid var(--dig_highlight_1);
+}
+
+.dig_deposit_tab-default .alert.alert-notification {
+  margin-top: 5px !important;
+  margin-bottom: 25px !important;
+}
+
+/* Withdrawal-Specific Styles */
+#dig-terms-and-conditions-label small,
+.dig-deposit-funds-payement-type small {
+  display: block;
+  line-height: 1.5em;
+  margin-top: 0.5em;
+  text-transform: none;
+}
+
+.um-field.um-field-c.dig-divider {
+  margin-bottom: 30px;
+}
+
+input#um_account_submit_transaction_history {
+  display: none;
+}
+
+div#dig-maximum-withdrawal-amount-exeeded,
+div#dig-minimum-deposit-amount,
+div#dig-agree-to-terms {
+  width: 100%;
+  display: none;
+  margin-left: 0px;
+  margin-top: -10px !important;
+}
+
+div#dig-add-funds-message {
+  margin-top: -15px;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  color: var(--dig_highlight_7);
+  border-bottom: 2px solid var(--dig_highlight_8);
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.dig-add-funds-symbol {
+  float: left;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 40px;
+  padding-right: 10px;
+  margin-top: 21px;
+  padding-left: 10px;
+  background-color: var(--dig_highlight_1) !important;
+  text-align: center;
+  border-radius: 3px 0px 0px 3px !important;
+}
+
+#dig-wallet-paypal-email-address {
+  margin-left: 34px;
+  max-width: 400px;
+}
+
+small#dig-wallet-paypal-email-message.dig-add-funds-invalid {
+  color: var(--dig_accent_color) !important;
+}
+
+.dig-wallet-payment-container {
+  padding-left: 0px;
+}
+
+.dig-wallet-payment img {
+  height: 30px;
+  display: inline !important;
+  padding-left: 10px;
+}
+
+.dig-wallet-payment span {
+  display: block;
+  float: left;
+  margin-right: 5px;
+  color: var(--dig_text_body);
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+div#paypal-button-container {
+  padding-top: 20px;
+}
+
+p#pp_transaction_success {
+  font-size: 0.9em;
+  padding: 10px;
+  margin-top: 0px;
+  background-color: var(--dig_secondary4);
+}
+
+p#pp_transaction_err {
+  font-size: 0.9em;
+  padding: 10px;
+  margin-top: 0px;
+  background-color: var(--dig_accent_color);
+}
+
+input#amount:readonly {
+  opacity: 0.9 !important;
+  background: #fff;
+}
+
+.alert.alert-notification a {
+  text-decoration: underline !important;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .dig-user-account-add-funds .col-md-6,
+  .dig-user-account-withdrawl-funds .col-md-6 {
+    flex: 0 0 45% !important;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .dig-user-account-add-funds .col-md-6,
+  .dig-user-account-withdrawl-funds .col-md-6 {
+    flex: 0 0 100% !important;
+    padding: 0 !important;
+  }
+  #billing_ccv_field,
+  #digCvv {
+    margin: 0 !important;
+  }
+  .dig-cost-panel {
+    padding: 0 !important;
+  }
+}
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .dig-transaction-header {
+    display: none !important;
+  }
+  a.dig-wallet-history-information {
+    margin-top: 0 !important;
+  }
+  .dig-user-account-add-funds .col-md-6,
+  .dig-user-account-withdrawl-funds .col-md-6 {
+    flex: 0 0 100% !important;
+    padding: 0 !important;
+  }
+  #billing_ccv_field,
+  #digCvv {
+    margin: 0 !important;
+  }
+  .dig-cost-panel {
+    padding: 0 !important;
+  }
+}
+#dig-cc-number iframe,
+#dig-cc-exp iframe,
+#digCvv iframe {
+  height: 35px !important;
+}
+
+#iframe-loader {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 8px;
+  background-color: gray;
+  display: none;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.preset-amount {
+  width: 70px;
+}
+
+.preset-amount.active {
+  background-color: var(--dig_highlight_1) !important;
+}
+
+#detect {
+  display: none;
+  position: absolute;
+  background: grey;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: #fff;
+}
+
+.dig-accepted-payments.nmi {
+  font-size: 1.3em;
+  padding-top: 12px;
+  float: left;
+}
+
+#dig-deposit-details img, #dig-withdrawal-details img {
+  float: left;
+  margin-top: 14px !important;
+  margin-left: 15px !important;
+  max-width: 100px;
+}
+
+#dig-deposit-details img {
+  margin-left: 0px !important;
+}
+
+#dig-withdrawal-details img {
+  margin-left: 0px !important;
+  float: right;
+}
+
+p#billing_first_name_field {
+  width: 50%;
+  float: left;
+  padding-right: 15px !important;
+}
+
+p#billing_last_name_field {
+  width: 50%;
+}
+
+p#billing_country_field {
+  padding-top: 9px;
+}
+
+div#dig-processing-fee {
+  width: 48%;
+  float: left;
+}
+
+div#dig-total-fee {
+  width: 48%;
+}
+
+form#dig-add-funds-form {
+  margin-top: -25px;
+}
+
+div#dig-withdrawal-details {
+  float: left;
+}
+
+.dig-account-desktop {
+  visibility: visible;
+}
+
+.dig-account-mobile {
+  visibility: hidden;
+  padding: 10px;
+  border-bottom: 1px solid var(--dig_neutral3);
+}
+
+@media only screen and (max-width: 768px) {
+  .dig-account-desktop {
+    visibility: hidden;
+  }
+  .dig-account-mobile {
+    visibility: visible;
+  }
+  .preset-amount {
+    width: 45px;
+  }
+  .dig-deposit-amounts-table small {
+    display: none;
+  }
+  #dig-main-wrapper .um-field-checkbox-option, .um-field-radio-option {
+    font-size: 0.8em;
+  }
+  div#dig_ccexp {
+    width: 70%;
+    padding-right: 10px !important;
+  }
+  div#dig_ccdvv {
+    width: 30%;
+  }
+  p#billing_ccv_field {
+    margin-top: -15px !important;
+  }
+  div#dig-wallet-account-summary .dig-wallet-options span {
+    display: none;
+  }
+  div#dig-wallet-account-summary .dig-wallet-options {
+    font-size: 0.7em !important;
+    margin-left: 10px !important;
+  }
+}
+
+/*# sourceMappingURL=wallet.css.map */

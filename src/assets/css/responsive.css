@@ -1,0 +1,771 @@
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+#mobile-menu-wrap {
+  height: 60px;
+}
+
+/* MOBILE SCREENS; PHONES */
+@media only screen and (min-width: 320px) {
+  h1, h1 a {
+    font-size: 2.5em;
+  }
+  div#dig-landing-page-what-dig-is h2 {
+    font-size: 2em !important;
+    margin-top: 15px !important;
+  }
+  #dig-waitlist-matches-selector-group input[type=submit] {
+    font-size: 0.6em;
+    color: var(--dig_highlight_2) !important;
+  }
+  .dig-container .col-md-4 {
+    padding-bottom: 0px !important;
+  }
+  #mobile-menu-wrap {
+    display: inline;
+    position: fixed;
+    width: 100%;
+  }
+  #header-wrap {
+    display: none;
+  }
+  .wrapper {
+    margin-top: 75px;
+    width: 100%;
+  }
+  /* Menu */
+  i.fas.fa-ellipsis-v {
+    padding-top: 0px;
+  }
+  /* TOURNAMENTS & MATCHES */
+  span.dig-toggle-col {
+    display: none;
+  }
+  span.dig-toggle-col-late {
+    display: none;
+  }
+  .container-fluid {
+    /*padding-left: 0px !important;*/
+  }
+  .col-md-3.dig-comp-list-col-4 a {
+    padding: 0% 0 !important;
+  }
+  section.landing-page-main-nav {
+    padding-top: 50px !important;
+    margin-bottom: 0px !important;
+  }
+  .dig-mode-selector,
+  .dig-buy-selector,
+  .dig-buy-selector-custom {
+    white-space: normal !important;
+  }
+  .um-profile-nav {
+    padding-left: 0px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .um-profile-photo {
+    margin: 0px !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  h1, h1 a {
+    font-size: 1.8em;
+  }
+  .dig-social {
+    font-size: 0.7em !important;
+    text-align: center !important;
+  }
+  .footer-slogan {
+    text-align: center !important;
+    font-size: 1.8em !important;
+  }
+  section.landing-page-main-nav {
+    padding-top: 50px !important;
+    margin-bottom: 0px !important;
+  }
+  #dig-waitlist-matches-selector-group input[type=submit] {
+    font-size: 0.6em;
+    color: var(--dig_highlight_2) !important;
+  }
+  .dig-get-started-row {
+    padding-top: 0px !important;
+  }
+  .dig-container .col-md-4 {
+    padding-bottom: 0px !important;
+  }
+  #mobile-menu-wrap {
+    display: inline;
+  }
+  #header-wrap {
+    display: none;
+  }
+  body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-color: var(--dig_neutral8);
+  }
+  input {
+    border: 0px;
+    box-shadow: 0px 0px 0px black !important;
+  }
+  .wrapper {
+    margin-top: 50px;
+    width: 100%;
+    padding: 10px !important;
+  }
+  .dig-mode-selector-block li {
+    white-space: normal;
+  }
+  /* ULTIMATE MEMBER */
+  .um-profile-nav-item a {
+    padding: 12px 15px 12px 15px !important;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  /* GAME SELECTOR */
+  .col-md-3.dig-comp-list-col-1 {
+    padding-left: 2.3%;
+    margin-left: 0px;
+  }
+  .dig-game-selector-block,
+  .dig-mode-selector-block {
+    width: 92vw;
+  }
+  .dig-game-selector-block.dig-match-game {
+    width: 20vw !important;
+  }
+  .dig-comp-list-game .dig-game-selector,
+  .dig-game-selector {
+    width: 99%;
+    height: 15vw;
+    margin-top: 15px;
+    margin-right: 3vw;
+    background-size: 13vw auto;
+  }
+  /* MODE SELECTOR */
+  .dig-mode-selector {
+    min-width: 38vw;
+    height: 20vw;
+    line-height: 4vw;
+    font-size: 3vw;
+    padding: 20px;
+  }
+  #dig-mode-selector-default {
+    width: 300px;
+    line-height: 2.9em;
+  }
+  /* NOW/LATER SELECTOR */
+  .dig-datetime-selector {
+    width: 40vw;
+    height: 12vw;
+    line-height: 12vw;
+    font-size: 5vw;
+  }
+  .dig-datetime-selector-block {
+    width: 100%;
+  }
+  /* SCHEDULE SELECTOR */
+  .dig-schedule-selector-block {
+    width: 95vw;
+  }
+  .dig-schedule-selector {
+    width: 95vw;
+  }
+  /* PRIVACY SELECTOR */
+  .dig-privacy-selector {
+    width: 40vw; /* 18vw */
+    height: 12vw;
+    line-height: 12vw;
+    font-size: 5vw;
+  }
+  .dig-privacy-selector-block {
+    width: 100%;
+  }
+  .dig-countdown-counter {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    min-width: auto;
+    margin-bottom: 10px;
+  }
+  /* WINNER SELECTOR */
+  .dig-winner-selector,
+  .dig-team-selector {
+    width: 40vw;
+    height: 13vw;
+    line-height: 12vw;
+    font-size: 4vw;
+  }
+  #dig-declare-winner-uploaded-file {
+    max-width: 80vw;
+    min-width: 80vw;
+  }
+  #dig-declare-winner,
+  #dig-declare-winnder-uploaded {
+    width: auto !important;
+    min-width: auto !important;
+  }
+  #dig-dispute-window-container {
+    width: 100%;
+  }
+  /* TOURNAMENTS & MATCHES */
+  #dig-enter-tournament,
+  #dig-enter-waitlist,
+  #dig-join-match {
+    color: var(--dig_body_text);
+    line-height: 2.5;
+    font-size: 1em !important;
+    text-transform: uppercase;
+  }
+  span.dig-toggle-col-late {
+    display: none;
+  }
+  ul.dig-call-to-action {
+    font-size: 1.7vw;
+    padding: 0 25px;
+  }
+  ul.dig-call-to-action li {
+    font-size: 3em;
+  }
+  .dig-container p {
+    font-size: 2.5em;
+  }
+  #dig-landing-page-what-dig-is .row {
+    padding: 0;
+  }
+  #dig-landing-page-what-dig-is .col-lg-4 {
+    padding-top: 25px;
+  }
+  #dig-landing-page-what-dig-is ul#dig-game-selector-block {
+    width: 70vw;
+  }
+  #dig-landing-page-what-dig-is .dig-game-selector-block li {
+    width: 27vw;
+    height: 20vw;
+    background-size: 12vw auto;
+    margin: 15px;
+  }
+  .dig-landing-page-content {
+    padding-bottom: 35px;
+  }
+  #dig-landing-page-what-dig-is p {
+    font-size: 1.1em;
+  }
+  .dig-landing-page-content a.dig-primary-button,
+  #dig-landing-page-what-dig-is {
+    width: 100%;
+    font-size: 1.2em;
+  }
+  #dig-landing-page-what-dig-is .fas {
+    font-size: 1.5em;
+  }
+  #dig-landing-page-what-dig-is p {
+    margin-bottom: 2em;
+  }
+  .dig-prize-grid h4 {
+    font-size: 1em;
+  }
+  p.dig-prize {
+    font-size: 1.2em;
+  }
+  .narrow .col-md-6 {
+    margin-bottom: 50px !important;
+  }
+  .dig-landing-page-content a.dig-primary-button,
+  .dig-landing-page-content a.dig-primary-button-alt {
+    font-size: 1.2em;
+    font-weight: 700;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-fluid {
+    /*padding-left: 0px !important;*/
+  }
+  .col-md-3.dig-comp-list-col-4 a {
+    padding: 0% 0 !important;
+  }
+  .dig-comp-stackable-container.dig-comp-stackable-container a {
+    margin-top: 0px !important;
+    padding: 10px 0 !important;
+  }
+  .dig-dashboard-elem-container {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+  .dig-dashboard-actions span {
+    width: 200px;
+  }
+  .dig-dashboard-actions a {
+    font-size: 0.75em !important;
+    display: flex !important;
+    width: 46% !important;
+    margin: 5px !important;
+    text-align: center !important;
+  }
+  #dig-main-wrapper .um .um-field-label {
+    color: var(--dig_text_body) !important;
+    text-transform: uppercase !important;
+    font-weight: 800 !important;
+    height: 30px !important;
+    max-width: 325px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .um-viewing .main .um-field-area {
+    padding-left: 150px !important;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  span.um-tip-text {
+    display: none;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  .dig-dashboard-actions span {
+    float: none;
+  }
+  .dig-dashboard-actions a {
+    width: 160px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+  .col-md-3 {
+    padding: 0 !important;
+    max-width: 45% !important;
+    flex-basis: auto !important;
+  }
+  .right-side-block,
+  .balance-wrapper {
+    display: flex;
+  }
+  .balance-wrapper {
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+  #dig-action-tray-contents {
+    display: none;
+  }
+  /* End Kill race section */
+  #dig-waitlist-matches-selector-group input[type=submit] {
+    font-size: 0.6em;
+    color: var(--dig_highlight_2);
+  }
+  .dig-mode-selector-block li {
+    white-space: normal;
+  }
+  /* GAME SELECTOR */
+  .dig-game-selector-block,
+  .dig-mode-selector-block {
+    width: 100vw;
+  }
+  .dig-game-selector-block.dig-match-game {
+    width: 20vw !important;
+  }
+  .dig-game-selector {
+    width: 46%;
+    height: 15vw;
+    margin-right: 3vw;
+    margin-top: 15px;
+    background-size: 13vw auto;
+  }
+  .dig-comp-list-game .dig-game-selector,
+  .dig-game-selector {
+    width: 27vw !important;
+    height: 15vw;
+    margin-top: 15px;
+    margin-right: 3vw;
+    background-size: 13vw auto;
+  }
+  .dig-game-selector-block.match_start li:nth-child(3) {
+    margin-right: 0 !important;
+  }
+  /* MODE SELECTOR */
+  .dig-mode-selector {
+    width: 27vw;
+    height: 12vw;
+    line-height: 4vw;
+    font-size: 2vw;
+    padding-top: 1.4vw;
+  }
+  #dig-mode-selector-default {
+    width: 300px;
+    line-height: 2.9em;
+  }
+  /* SCHEDULE SELECTOR */
+  .dig-schedule-selector-block {
+    width: 475px;
+  }
+  .dig-schedule-selector {
+    width: 475px;
+  }
+  /* PRIVACY SELECTOR */
+  .dig-privacy-selector {
+    width: 18vw;
+    height: 12vw;
+    line-height: 12vw;
+    font-size: 3vw;
+  }
+  .dig-privacy-selector-block {
+    width: 36vw;
+  }
+  /* WINNER SELECTOR */
+  .dig-winner-selector,
+  .dig-team-selector {
+    width: 22vw;
+    height: 7vw;
+    line-height: 7vw;
+    font-size: 3vw;
+  }
+  .dig-winner-selector-block,
+  .dig-team-selector-block {
+    width: 100%;
+  }
+  div#dig-declare-winner {
+    width: 100%;
+  }
+  /* TOURNAMENTS & MATCHES */
+  span.dig-toggle-col-late {
+    display: inline;
+  }
+  ul.dig-call-to-action {
+    font-size: 1.3vw;
+    padding: 25px;
+    padding-left: 45px;
+  }
+  ul.dig-call-to-action li {
+    font-size: 3em;
+  }
+  .dig-landing-page-content a.dig-primary-button {
+    font-size: 1.4em;
+  }
+  .dig-container p {
+    font-size: 2.5em;
+  }
+  #dig-landing-page-what-dig-is .row {
+    padding: 25px;
+  }
+  #dig-landing-page-what-dig-is .col-lg-4 {
+    padding-top: 25px;
+  }
+  #dig-landing-page-what-dig-is ul#dig-game-selector-block {
+    width: 67vw;
+  }
+  #dig-landing-page-what-dig-is .dig-game-selector-block li {
+    width: 27vw;
+    height: 20vw;
+    background-size: 12vw auto;
+    margin: 15px;
+  }
+  div#dig-landing-page-what-dig-is .dig-primary-button {
+    width: 300px;
+    font-size: 1.2em;
+  }
+  div#dig-landing-page-what-dig-is p {
+    font-size: 1.1em;
+  }
+  div#dig-landing-page-what-dig-is .dig-primary-button {
+    width: 300px;
+    font-size: 1.2em;
+  }
+  div#dig-landing-page-what-dig-is .fas {
+    font-size: 1.5em;
+  }
+  div#dig-landing-page-what-dig-is p {
+    margin-bottom: 2em;
+  }
+  .dig-prize-grid h4 {
+    font-size: 1.1em;
+  }
+  p.dig-prize {
+    font-size: 1.3em;
+  }
+  .narrow .col-md-6 {
+    margin-bottom: 50px !important;
+  }
+  .dig-dashboard-elem-container {
+    flex: 0 0 33%;
+    width: 33%;
+    max-width: 33%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  input.dig-kill-scores,
+  input.dig-invite-players {
+    width: 90% !important;
+  }
+  #dig_match_score_warning {
+    width: auto !important;
+  }
+  #post-3920 div.uimob500 .um-header .um-profile-meta {
+    text-align: left !important;
+  }
+  #post-3920 div.uimob500 .um-header .um-meta-text {
+    padding: 0px !important;
+  }
+  .dropzone.dz-clickable .dz-message,
+  .dropzone.dz-clickable .dz-message * {
+    font-size: 1em;
+  }
+  .dz-message .fas {
+    font-size: 5em !important;
+  }
+  .woocommerce .col2-set .col-1,
+  .woocommerce .col2-set .col-2,
+  .woocommerce-page .col2-set .col-1,
+  .woocommerce-page .col2-set .col-2 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .dig-dashboard-actions span {
+    width: 200px;
+    float: none;
+  }
+  .dig-dashboard-actions a {
+    width: 160px;
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1365px) {
+  /* GAME SELECTOR */
+  #dig-comp-list-filter-contents .col-md-3 {
+    max-width: 50% !important;
+    flex: auto !important;
+  }
+  .dig-game-selector-block.dig-match-game {
+    width: 15vw !important;
+  }
+  .dig-game-selector-block.match_start li {
+    width: 13vw;
+    height: 9vw !important;
+  }
+  .dig-comp-list-game .dig-game-selector {
+    width: 200px;
+  }
+  /* MODE SELECTOR */
+  .dig-mode-selector,
+  .dig-privacy-selector,
+  .dig-datetime-selector,
+  .dig-best-of-selector {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 5vw;
+    line-height: 4vw;
+    font-size: 0.75em;
+  }
+  /* SCHEDULE SELECTOR */
+  .dig-schedule-selector-block {
+    width: 475px;
+  }
+  .dig-schedule-selector {
+    width: 475px;
+  }
+  /* PRIVACY SELECTOR */
+  .dig-privacy-selector-block {
+    width: 32vw;
+  }
+  /* WINNER SELECTOR */
+  .dig-enter-notes .dig-checkbox,
+  .dig-join-notes .dig-checkbox {
+    width: 18vw !important;
+  }
+  .dig-team-selector.in-modal-popup.ui-selected {
+    border: 1px solid var(--dig_secondary4) !important;
+    background: none !important;
+  }
+  .dig-winner-selector,
+  .dig-team-selector {
+    width: auto;
+    font-size: 1.8rem;
+    padding: 6px 15px !important;
+    line-height: normal;
+    height: auto;
+    font-weight: 500;
+  }
+  .dig-winner-selector-block,
+  .dig-team-selector-block {
+    width: 100%;
+  }
+  div#dig-declare-winner {
+    width: 100%;
+  }
+  span.dig-toggle-col-late {
+    display: inline;
+  }
+  ul.dig-call-to-action li {
+    font-size: 1.8rem;
+  }
+  ul.dig-call-to-action {
+    width: 50vw !important;
+  }
+  .dig-landing-page-content a.dig-primary-button {
+    font-size: 1.4vw;
+  }
+  .dig-container p {
+    font-size: 2.5vw;
+  }
+  #dig-landing-page-what-dig-is .dig-game-selector-block li {
+    width: 8vw;
+    height: 8vw;
+    background-size: 6vw auto;
+  }
+  div#dig-landing-page-what-dig-is p {
+    font-size: 1.1vw;
+  }
+  .dig-prize-grid h4 {
+    font-size: 1.2em;
+  }
+  p.dig-prize {
+    font-size: 1.4em;
+  }
+  a.dig-primary-button,
+  a.dig-primary-button-alt {
+    font-size: 1em !important;
+    width: 250px !important;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  a.dig-primary-button-sm {
+    float: none;
+    width: 300px;
+  }
+  div#dig-action-tray-contents {
+    margin: auto;
+  }
+  div#dig-action-tray-contents a {
+    float: left;
+  }
+  #dig-action-tray-contents img.dig-profile-icon {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .um-profile-nav {
+    justify-content: flex-start !important;
+  }
+  .row.dig-enter-comp .dig-comp-list-col-2 {
+    margin-left: -50px !important;
+    min-width: 30%;
+  }
+  .row.dig-enter-comp .dig-comp-list-col-3 {
+    max-width: 20%;
+  }
+  .wrapper {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+  .col-sm-9.search-results, .content-about, .archive {
+    margin-top: 25px;
+  }
+  .wrapper {
+    margin-top: 150px;
+  }
+  #mobile-menu-wrap {
+    display: none;
+  }
+  #header-wrap {
+    display: inline;
+  }
+  /* TOURNAMENTS & MATCHES */
+  span.dig-toggle-col {
+    display: inline;
+  }
+  span.dig-toggle-col-late {
+    display: inline;
+  }
+  .col-md-3.dig-comp-list-col-4 a {
+    padding: 0% 0 !important;
+  }
+  .col-md-3.dig-comp-list-col-1 {
+    margin-right: -5em;
+  }
+  .col-md-3.dig-comp-list-col-2 {
+    margin-top: 0.25em;
+  }
+  .col-md-3.dig-comp-list-col-3 {
+    margin-top: 0.25em;
+  }
+  .col-md-3.dig-comp-list-col-4 {
+    padding: 5% 0;
+    margin-left: 5em;
+  }
+  section.landing-page-main-nav {
+    padding-top: 50px !important;
+    margin-bottom: 50px !important;
+    margin-top: 50px !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  a.dig-primary-button,
+  a.dig-primary-button-alt {
+    font-size: 0.9em !important;
+    width: 200px !important;
+  }
+  div#dig-landing-page-what-dig-is h1 {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1139px) {
+  div#dig-landing-page-what-dig-is h1 {
+    font-size: 2.5em;
+  }
+}
+@media only screen and (min-width: 1140px) and (max-width: 1399px) {
+  .playing-type-pics svg {
+    width: 28vw;
+  }
+  a.dig-primary-button-sm {
+    width: 145px !important;
+  }
+  div#dig-landing-page-what-dig-is h1 {
+    font-size: 3em;
+  }
+  .dig-comp-list-game .dig-game-selector {
+    width: 170px;
+  }
+  .dig-winner-selector-block li,
+  .dig-team-selector-block li,
+  .dig-winner-selector.ui-selected,
+  .dig-team-selector.ui-selected {
+    border: 0px;
+  }
+  .btn-group.match-modal {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  #dig-landing-page-call-to-action #dig-waitlist-matches-selector-group {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+  }
+}
+/* DESKTOP SCREENS */
+@media only screen and (min-width: 1400px) {
+  span.dig-toggle-col-late {
+    display: inline;
+  }
+  #dig-landing-page-call-to-action #dig-waitlist-matches-selector-group {
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+  }
+  .dig-comp-list-game .dig-game-selector {
+    width: 175px;
+  }
+  .btn-group.match-modal {
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

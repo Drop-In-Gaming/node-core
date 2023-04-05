@@ -1,0 +1,212 @@
+#toplevel_page_dig-wallet-history .wp-menu-image.dashicons-before img {
+  width: 20px;
+  height: auto;
+}
+
+td {
+  text-transform: capitalize;
+}
+
+span.dig-positive-transaction,
+span.dig-negative-transaction {
+  text-align: right;
+  width: 75px;
+  display: block;
+}
+
+.dig-cc-transaction-detail-group span.dig-positive-transaction {
+  text-align: left;
+}
+
+span.dig-negative-transaction {
+  color: darkred;
+}
+
+span.dig-positive-transaction {
+  color: darkgreen;
+}
+
+.wallet_page_dig-cc-history th#user_nicename {
+  width: 15%;
+}
+
+.dig-cc-transaction-detail-label {
+  width: 15%;
+}
+
+td.dig-cc-transaction-detail-label {
+  vertical-align: top;
+}
+
+.dig-cc-transaction-detail-group .col-sm-6 {
+  padding-left: 0px;
+}
+
+.dig-cc-transaction-detail-group {
+  max-width: 50%;
+}
+
+a.button.dig-add-comp-submit.nmi,
+a.button.dig-add-comp-submit.kount {
+  float: left;
+  margin-right: 25px;
+}
+
+table.wp-list-table.widefat.fixed.striped.table-view-list.toplevel_page_dig-wallet-history th.column-ID,
+table.wp-list-table.widefat.fixed.striped.table-view-list.wallet_page_dig-cc-history th.column-cc_transaction_id {
+  width: 60px;
+}
+
+.dig-wallet-status {
+  color: #212529 !important;
+}
+
+.alert.alert-warning {
+  padding-top: 15px !important;
+  padding-bottom: 10px !important;
+}
+
+i.fas {
+  font-size: 1em !important;
+}
+
+.alert p {
+  font-size: 0.75em !important;
+}
+
+table.dig-tournaments-ddl-table {
+  margin-top: 10px;
+}
+
+table.dig-tournaments-ddl-table td {
+  padding: 5px;
+}
+
+table.dig-registration-table,
+.dig-registration-empty {
+  margin-top: 15px;
+}
+
+.dig-registration-empty,
+.dig-tournament-ddl-notes {
+  color: #808080;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.dig-tournament-ddl-notes {
+  padding-left: 5px;
+}
+
+table.dig-registration-table,
+table.dig-registration-table th,
+table.dig-registration-table td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+table.dig-registration-table td {
+  padding: 5px;
+}
+
+input.button.button-primary.dig-cancel-request {
+  margin-left: 25px;
+  background: darkred;
+  border-color: darkred;
+}
+
+table#dig-withdrawal-types, table#dig-deposit-types {
+  min-width: 1280px;
+  width: 1280px;
+}
+
+table#dig-withdrawal-types td,
+table#dig-deposit-types td {
+  margin: 0px;
+  padding: 2px 0px;
+}
+
+td.dig-td-nowrap {
+  white-space: nowrap !important;
+}
+
+.dig-action-cell {
+  width: 140px;
+  white-space: nowrap;
+}
+
+.dig-percentage {
+  width: 100px;
+}
+
+.dig-action-cell .delete {
+  background: #dc3232;
+  border-color: #dc3232;
+  width: 66px;
+}
+
+.dig-action-cell .update {
+  width: 66px;
+}
+
+input.button-primary.add {
+  background: green;
+  border-color: green;
+  width: 136px;
+}
+
+#dig-withdrawal-types textarea,
+#dig-deposit-types textarea {
+  margin-top: 3px;
+  height: 30px;
+  padding-top: 5px;
+}
+
+#dig-withdrawal-types .dig_admin_money,
+#dig-deposit-types .dig_admin_money {
+  max-width: 100px;
+}
+
+h2.dig-withdrawal-header {
+  font-size: 23px;
+  font-weight: 400;
+  margin: 0;
+  padding: 9px 0 4px 0;
+  line-height: 1.3;
+}
+
+input[type=decimal] {
+  padding: 0 8px;
+  line-height: 2;
+  min-height: 30px;
+  box-shadow: 0 0 0 transparent;
+  border-radius: 4px;
+  border: 1px solid #7e8993;
+  background-color: #fff;
+  color: #32373c;
+}
+
+.dig-comment-text {
+  font-size: 0.9em;
+  font-family: monospace;
+  padding-right: 25px;
+}
+
+td.dig-comment-text-header {
+  font-weight: 600;
+  padding-right: 25px;
+}
+
+.dig-warning {
+  background: #d63638;
+  color: white;
+  padding: 15px;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.dig-warning i.fas.fa-exclamation-circle {
+  padding-top: 3px;
+}
+
+/*# sourceMappingURL=wallet_admin.css.map */

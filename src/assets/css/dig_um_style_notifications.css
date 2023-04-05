@@ -1,0 +1,163 @@
+/*------------------------------------*\
+    UM NOTIFICATIONS
+\*------------------------------------*/
+div.um-notification-live-feed {
+  background: var(--dig_neutral6);
+  opacity: var(--dig_callout_opacity);
+  border-left: 1px solid var(--dig_highlight_6);
+  box-shadow: none;
+}
+
+div.um-notification-shortcode,
+div.um-notification-live-feed {
+  font-family: "Montserrat", sans-serif;
+}
+
+div.um-notification-live-feed div.um-notifications-none {
+  position: static;
+  padding: 14px;
+}
+
+div.um-notification-shortcode strong,
+div.um-notification-live-feed strong {
+  font-weight: 700;
+}
+
+div.um-notification-shortcode .um-notification span.b2 i,
+div.um-notification-live-feed .um-notification span.b2 i {
+  color: var(--dig_neutral5) !important;
+}
+
+div.um-notification-shortcode a:hover,
+div.um-notification-shortcode i:hover,
+div.um-notification-live-feed a:hover,
+div.um-notification-live-feed a i:hover {
+  color: var(--dig_neutral5);
+}
+
+div.um-notification-shortcode div.um-notification-header,
+div.um-notification-live-feed div.um-notification-header {
+  border-color: var(--dig_primary_color);
+  text-transform: uppercase;
+}
+
+div.um-notification-shortcode div.um-notification-left,
+div.um-notification-live-feed div.um-notification-left {
+  border-bottom: 0;
+}
+
+div.um-notification-shortcode div.um-notification-left {
+  padding-left: 0;
+}
+
+div.um-notification-shortcode div.um-notification-right {
+  padding-right: 10px;
+}
+
+div.um-notification-shortcode .um-notification,
+div.um-notification-live-feed .um-notification {
+  border-color: var(--dig_highlight_7);
+}
+
+div.um-notification-shortcode .um-notification:hover,
+div.um-notification-live-feed .um-notification:hover {
+  background-color: var(--dig_highlight_6);
+}
+
+div.um-notification-shortcode img.um-notification-photo,
+div.um-notification-live-feed img.um-notification-photo {
+  background-color: var(--dig_neutral8);
+  object-fit: contain;
+  position: absolute;
+  left: 17px;
+  top: 12px;
+  width: 33px;
+  height: 33px;
+  border-radius: 8px;
+}
+
+div.um-notification-shortcode .um-notification,
+div.um-notification-shortcode .um-notification span.b2,
+div.um-notification-live-feed .um-notification,
+div.um-notification-live-feed .um-notification span.b2 {
+  color: var(--dig_neutral5);
+}
+
+div.um-notification-shortcode .um-notification.unread {
+  background-color: var(--dig_neutral2);
+}
+
+div.um-notification-live-feed .um-notification.unread {
+  background-color: var(--dig_background_3);
+}
+
+div.um-notification-shortcode .um-notification.read,
+div.um-notification-live-feed .um-notification.read {
+  background-color: transparent;
+}
+
+#dig-action-tray-contents .um-notification-b {
+  position: static;
+  display: block;
+  padding: 0px 15px 15px 22px;
+  margin-bottom: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--dig_highlight_7);
+  font-size: 32px;
+  min-width: 100px;
+}
+
+#dig-action-tray-contents .um-notification-b .um-notification-live-count {
+  width: 21px;
+  height: 21px;
+  right: 0;
+  background: var(--dig_secondary4);
+  color: var(--dig_highlight_2);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  right: 10px !important;
+}
+
+.um-notification-b .um-notification-live-count {
+  background: var(--dig_secondary4);
+}
+
+/* Responsive */
+@media only screen and (max-width: 1023px) {
+  div.um-notification-b {
+    z-index: 2;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  div.um-notification-b {
+    z-index: 2;
+  }
+}
+@media only screen and (max-width: 768px) {
+  div.um-notification-b {
+    position: static !important;
+    background: none;
+    box-shadow: none;
+    color: var(--dig_highlight_7);
+  }
+}
+@media only screen and (max-width: 480px) {
+  div.um-notification-b {
+    position: static !important;
+    background: none;
+    box-shadow: none;
+    color: var(--dig_highlight_7);
+  }
+}
+@media only screen and (max-width: 320px) {
+  div.um-notification-b {
+    position: static !important;
+    background: none;
+    box-shadow: none;
+    color: var(--dig_highlight_7);
+  }
+}
+
+/*# sourceMappingURL=dig_um_style_notifications.css.map */

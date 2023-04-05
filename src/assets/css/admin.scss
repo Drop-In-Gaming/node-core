@@ -1,0 +1,650 @@
+:root{
+    /* bracket */
+    --bracket_team_win_color: #929396;
+    --bracket_final_win_color: #FFA102;
+    --bracket_lose_color: #636466;
+    --bracket_text: #7D7D80;
+
+    --dig_highlight_8: #41B049;
+    --dig_highlight_2: #FFFFFF;
+
+    --dig_neutral4: #edeeef;
+}
+
+.login h1 a {
+    background-image: url('../img/gravatar-blue.png');
+}
+
+.bracket_winner_text{
+    color: var(--bracket_final_win_color) !important;
+}
+
+[id^="toplevel_page_"] .wp-menu-image.dashicons-before img{
+    width: 20px;
+    height: auto;
+}
+
+.payout-loading{
+    position: relative;
+}
+.payout-loading::before{
+    content: "Processing ...";
+    position: absolute;
+    font-size: 3em;
+    color: white;
+    z-index: 2;
+    background: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dig-admin-config-table th,
+.dig-admin-config-table td{
+    padding: 10px 10px !important;
+}
+
+.um-admin-metabox .row {
+    margin: 0px
+}
+
+.um-admin-metabox .col-sm-6 {
+    padding: 0px;
+}
+
+i.fas {
+    float: left;
+    margin-right: 15px;
+    font-size: 2em;
+}
+
+.alert {
+    padding: 1.5rem 1.25rem !important;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 5px !important;
+}
+
+.alert p {
+    font-size: 1.25em !important;
+    margin: 0px !important;
+}
+
+.alert-warning {
+    color: var(--dig_highlight_2);
+    background-color: var(--dig_highlight_8);
+}
+
+.alert.alert-error {
+    background-color: #c80000;
+    color: var(--dig_highlight_2);
+}
+
+form#dig-admin-add-comp {
+    padding-top: 10px;
+}
+
+div#dig-add-comp-datetime-container {
+	width: 800px;
+}
+
+.dig-results-competition-header-container.dig-extra-space {
+    padding-top: 25px;
+}
+
+.dig-results-competition-header-container .row {
+	padding: 15px;
+}
+
+.dig-results-competition-header-container .header .col-sm {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.dig-results-competition-header-container .col-sm {
+    font-size: 1.8rem;
+}
+
+input#dig-add-comp-submit,
+input#dig-add-comp-cancel,
+input#dig-add-comp-delete,
+input#dig-add-comp-dispurse,
+.dig-comp-primary-action,
+.dig-comp-primary-action:hover,
+.dig-comp-primary-action:visited,
+.dig-comp-primary-action:active {
+    background: #007cba;
+    border-color: #007cba;
+    color: var(--dig_highlight_2);
+    text-decoration: none;
+    text-shadow: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    text-decoration: none;
+}
+
+.dig-comp-primary-action {
+    text-align: center;
+}
+
+.dig-dispute {
+    color: #ca4a1f !important;
+}
+
+input#dig-add-comp-dispurse {
+    margin-left: 150px;
+    background-color: #08763d !important;
+    border-color: #08763d !important;
+    float: right;
+}
+
+input#dig-add-comp-cancel {
+    margin-right: 25px;
+    background-color: #ccc !important;
+}
+
+input#dig-add-comp-delete {
+    margin-left: 75px;
+    background-color: #c80000 !important;
+    border-color: #c80000 !important;
+}
+
+div.scale-up .alert {
+    font-size: 1.5rem !important;
+}
+
+button.btn.btn-primary.add-comp {
+    font-size: 1.5rem;
+    background-color: #007cba !important;
+    border-color: #007cba !important
+}
+
+button.btn.btn-primary {
+    background-color: #007cba !important;
+    border-color: #007cba !important;
+}
+
+
+th#competition_name {
+    width: 25%;
+}
+
+th#registered_users {
+    width: 7%;
+}
+
+th#max_players {
+    width: 7%;
+}
+
+th#max_players {
+    width: 7%;
+}
+
+.results {
+    text-transform: capitalize;
+}
+
+.dig-admin-evidence img {
+    width: 100% ;
+}
+
+.dig-cc-transaction-detail-group .col-sm-12.label {
+    padding: 0px;
+    margin-top: 5px;
+}
+
+.aproval-panel small {
+    color: #808080
+}
+
+.col-sm-12.label.dig-is-current-user {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding-bottom: 10px;
+}
+
+p.dig-approver-message {
+    line-height: 0em;
+}
+
+#approval_notes_history {
+    width: 50%;
+    height: 150px;
+    text-align: left;
+}
+
+.dig-transaction-filter-label {
+    float: left;
+    padding-right: 15px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.dig-transaction-filter-label a {
+    text-decoration: none;
+}
+
+span.dig_admin_money {
+    display: block;
+    float: left;
+    padding: 5px;
+    background: #808080;
+    color: #FFF;
+    border: 1px solid #808080;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+input.dig_admin_money,
+input#add_funds_amount {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    margin-left: 0px;
+}
+
+input#add_funds_amount {
+    width: 20.5rem;
+}
+
+div.dig-add-remove-funds-warning {
+    width: 50rem;
+    border: 3px solid orange;
+    border-radius: 3px;
+    padding: 10px;
+    background: lightyellow;
+}
+
+.dig-add-funds .submit td {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+p.dig_warning_extra_bold {
+    font-weight: 600;
+}
+
+p.dig-wallet-description {
+    text-transform: none;
+}
+
+input.button.button-primary.dig-mark-paid {
+    margin-left: 50px;
+}
+
+input.dig_admin_min_key {
+    width: 300px;
+}
+
+p.dig-warning {
+    background: #ca4a1f;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+span.dig-user-email {
+    text-transform: none;
+    border: 1px solid #ccc;
+    background: #ddd;
+    color: #808080;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 3px;
+    display: block;
+    float: left;
+}
+
+.widefat td.status.column-status{
+    color: var(--dig_highlight_2) !important;
+}
+
+.widefat td.status.column-status span{
+    padding:5px;
+}
+
+.widefat td.status.column-status .completed {
+    background-color: red;
+}
+
+.widefat td.status.column-status .started {
+    background-color: var(--dig_highlight_8);
+}
+
+.widefat td.status.column-status .ready {
+    background-color: darkgreen;
+}
+
+.widefat td.status.column-status .waiting {
+    background-color: #7d7d7d;
+}
+
+.widefat td.status.column-status .cancelled {
+    background-color: red;
+}
+
+button.btn.btn-primary {
+    font-size: 1em;
+}
+
+button.btn.btn-primary.secondary {
+    background-color: darkgreen !important;
+    font-size: 0.9em;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+
+.form-table td p {
+    text-transform: none !important;
+}
+.custom-control-input,
+.custom-control-input::before,
+.custom-control-label::after,
+.custom-control-label::before{
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+}
+
+.form-check input[type=checkbox],
+.form-check input[type=radio]{
+    height: 1.5rem !important;
+    width: 1.5rem !important;
+}
+
+.form-check input[type=checkbox]:checked::before{
+    height: auto !important;
+    width: auto !important;
+}
+
+.dig-form-control-lg{
+    font-size: 1.45rem !important;
+}
+.dig-form-select{
+    max-width: 100% !important;
+}
+
+/* The container */
+.dig-password-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.dig-password-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.dig-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.dig-password-container:hover input ~ .dig-checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.dig-password-container input:checked ~ .dig-checkmark {
+    background-color: blue;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.dig-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.dig-password-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.dig-password-container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+
+
+
+/* Advertiser Management Styles */
+
+.dig-form-control-sm {
+    font-size: 0.9em !important;
+}
+
+.dig-admin-subheading {
+    font-size: 1.5em;
+    margin-top: 25px;
+    font-weight: 400;
+}
+
+input.dig-admin-checkbox {
+    height: unset;
+    width: unset;
+    -webkit-appearance: auto;
+}
+
+input[type=checkbox] {
+    height: 1.5rem;
+    width: 1.5rem;
+    -webkit-appearance: inherit;
+}
+
+input[type=checkbox]:checked::before{
+    margin: 0!important;
+}
+
+table#dig-wallet-summary {
+    margin-bottom: 25px;
+    width: 610px;
+}
+
+#dig-report-date-range {
+    width: 700px;
+}
+
+span.badge.badge-neutral {
+    background-color:#ccc;
+    color: white;
+}
+
+table#dig-report th {
+    width: auto;
+}
+
+span.dig-positive-balance {
+    color: darkgreen;
+}
+
+span.dig-negative-balance {
+    color: darkred;
+}
+
+span.dig-zero-balance {
+    color: #777;
+}
+
+div#dig-total-wallet-balance {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 610px;
+}
+
+div#dig-total-wallet-balance p {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    float: left;
+    font-weight: 900;
+    width: 50%;
+}
+
+#dig-wallet-summary td {
+    line-height: 2em;
+}
+
+#dig-wallet-summary td.dig-label {
+    width: 200px;
+    font-weight: 700;
+}
+
+h3.dig-admin-subheading {
+    font-size: 1.25em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h4.dig-admin-subheading {
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#dig-wallet-summary td.dig-value {
+    text-align: right;
+}
+
+#dig-report td span.dig-positive-balance,
+#dig-report td span.dig-negative-balance,
+#dig-report td span.dig-zero-balance {
+    text-align: right;
+    display: block;
+    margin-right: 25px;
+}
+
+.dig-reporting.tablenav a {
+    box-shadow: 0 0 0 transparent;
+    border-radius: 4px;
+    border: 1px solid #8c8f94;
+    background-color: #fff;
+    color: #2c3338;
+    padding: 8px;
+    line-height: 2;
+    min-height: 30px;
+    margin: 2px;
+    font-size: 13px;
+    text-align: center;
+    color: #2271b1;
+    background: #f6f7f7;
+
+}
+
+.dig-additional-controls {
+    float: left;
+}
+
+td.dig-label.summary {
+    border-bottom: 1px solid;
+    font-size: 1.1em;
+    padding-top: 15px;
+}
+
+td.dig-value.summary .dig-negative-balance {
+    font-weight: 900;
+}
+
+td.dig-label.dig-sub-item {
+    padding-left: 15px;
+    font-weight: normal !important;
+}
+
+tr.lineitem {
+    padding-top: 0px !important;
+}
+
+tr.dig-total.lineitem.summary td {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+tr.dig-total.emphasis td {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+tr.dig-total.lineitem td {
+    font-size: 1em;
+    font-weight: 900;
+    border-bottom: 1px solid;
+}
+
+textarea#game-meta-desc {
+    width: 100% !important;
+}
+
+.dig-admin-icon-background {
+    background-color: black;
+    padding: 5px;
+}
+
+a.button.button-primary.paypal {
+    color: #fff !important;
+    padding: 2px 10px 1px 10px;
+}
+
+label {
+    white-space: nowrap;
+}
+
+.dig-coin-text {
+    width: 0.75em !important;
+    display: inline !important;
+    margin-bottom: 0 !important;
+    vertical-align: baseline;
+}
+
+.dig_padding {
+    padding-top: 5em;
+}
+
+#comp_reschedule_tbl {
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    margin: auto;
+}
+
+.dig_comp_details_tbl {
+    margin: auto;
+}
+
+.dig_comp_schedule_ctn {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-style: solid;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Element/Graphic/Brackets_16@1x</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.556863 0 0 0 0 0.556863 0 0 0 0 0.556863 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component/Chat/Authoring-(User)" transform="translate(-91.000000, -11.000000)">
+            <g id="Group" transform="translate(18.000000, 11.000000)">
+                <g transform="translate(73.000000, 0.990000)" id="Brackets_16" filter="url(#filter-1)">
+                    <g>
+                        <path d="M0,6.17977528 L6.17977528,6.17977528 L6.17977528,0 L0,0 L0,6.17977528 Z M1.68539326,1.68539326 L4.49438202,1.68539326 L4.49438202,4.49438202 L1.68539326,4.49438202 L1.68539326,1.68539326 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                        <path d="M0,17.8876404 L6.17977528,17.8876404 L6.17977528,11.7078652 L0,11.7078652 L0,17.8876404 Z M1.68539326,13.3932584 L4.49438202,13.3932584 L4.49438202,16.2022472 L1.68539326,16.2022472 L1.68539326,13.3932584 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                        <polygon id="Path" fill="#000000" fill-rule="nonzero" points="9.7752809 2.24719101 6.95505618 2.24719101 6.95505618 3.93258427 8.08988764 3.93258427 8.08988764 13.9550562 6.95505618 13.9550562 6.95505618 15.6404494 9.7752809 15.6404494 9.7752809 9.7752809 10.7303371 9.7752809 10.7303371 8.08988764 9.7752809 8.08988764"></polygon>
+                        <path d="M11.6853933,5.84269663 L11.6853933,12.0224719 L17.8651685,12.0224719 L17.8651685,5.84269663 L11.6853933,5.84269663 Z M16.1797753,10.3370787 L13.3707865,10.3370787 L13.3707865,7.52808989 L16.1797753,7.52808989 L16.1797753,10.3370787 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+

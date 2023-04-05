@@ -1,0 +1,386 @@
+/* Gamer directory re-style */
+.um-member-card{
+    background:var(--dig_neutral2);
+    margin-top:-30px;
+    border-radius: 7px;
+    min-height: 150px;
+}
+
+.um-member-card .um-member-name{
+    padding-top:30px;
+    margin-bottom: 0px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: nowrap;
+}
+
+.um-members-follow-stats {
+    font-size: 13px;
+    margin: 0 0 5px 0;
+    color: var(--dig_neutral4);
+}
+
+.um-member-card-body .um-member-photo{
+    padding: 0px !important;
+}
+
+.um-member-card-body .dig_members_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    gap: 20px;
+}
+
+.um-member-card-body .dig_members_button .buttons-block,
+.um-member-card-body .dig_members_button .following-block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dig_members_button .following-block .um-members-follow-stats::after{
+    border-right: 1px solid var(--dig_neutral3);
+    display: inline-block;
+    content: "";
+    height: 40px;
+}
+
+.dig_members_button .following-block .um-members-follow-stats.no-border::after{
+    border-right: none;
+}
+
+.um-member-card .um-members-follow-stats span,
+.um-member-card .um-members-friend-stats span{
+    display:block;
+    font-size: 1.5em;
+    color:var(--dig_highlight_1);
+}
+
+.um-member-card .um-members-follow-stats div,
+.um-member-card .um-members-friend-stats div{
+    margin: 0px !important;
+    padding: 3px;
+    font-size: 11px !important;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.um-member-card .um-members-follow-btn{
+    margin-right: 10px;
+}
+.um-member-card .um-members-messaging-btn{
+    margin: 0px;
+}
+
+.um-profile .um-profile-meta .um-friends-coverbtn a.um-button::before,
+.um-profile-navbar .um-followers-btn a.um-button::before,
+.um-member-card a.um-unfollow-btn:hover:before,
+.um-member-card .um-button.um-alt::before{
+    color: var(--dig_highlight_2) !important;
+}
+
+.um-friends-user-btn .um-members-messaging-btn{
+    display: inline-block;
+}
+
+.um-friends-user-btn .um-members-messaging-btn a.um-message-btn{
+    padding: 10px 15px!important;
+    transition: none!important;
+    display: inline-block!important;
+    margin: 0 auto!important;
+    min-width: 110px;
+    width: auto;
+    text-align: center;
+}
+
+.um-friends-user-bio{
+    margin-top: 22px !important;
+}
+
+.um-friends-user .um-members-messaging-btn a.um-message-btn,
+.um-friends-user-btn .um-friend-accept-btn,
+.um-member-card .um-message-abtn.um-button,
+.um-member-card .um-message-btn.um-button,
+.um-member-card .um-friend-btn.um-button.um-alt,
+.um-member-card .um-unfollow-btn.um-button.um-alt,
+.um-member-card .um-button.um-alt,
+.um-member-card input[type=submit].um-button.um-alt{
+    background: var(--dig_primary_color) !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color:var(--dig_text_body) !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+}
+
+.um-profile-navbar .um-messaging-btn a.um-button,
+.um-profile-navbar .um-followers-btn a.um-button,
+.um-member-card .um-unfriend-btn.um-button,
+.um-member-card .um-unfollow-btn.um-button{
+    background: var(--dig_secondary4) !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    border-radius: 0 !important;
+}
+
+/* My friends page */
+.um-friends-user-btn{
+    top: 20px !important;
+}
+
+.um-friends-user .um-friends-user-btn .um-button.um-alt{
+    border: 0px !important;
+    border-radius: 5px !important;
+    padding-bottom: 10px !important;
+}
+
+.um-message-ajax{
+    text-transform: none !important;
+    color: #666 !important;
+}
+
+.um-message-ajax .um-message-item{
+    width: auto !important;
+}
+
+.um-message-item .um-message-item-content{
+    width: auto !important;
+    margin-left: 0px !important;
+}
+
+.um-message-item-remove{
+    left: 0px !important;
+}
+
+.um-profile-navbar .um-messaging-btn a.um-button,
+.um-message-send,
+.um-message-send.disabled:hover,
+.um-message-item.left_m .um-message-item-content{
+    background-color: var(--dig_primary_color) !important;
+    border-radius: 0 !important;
+    max-width: 210px !important;
+    margin: auto;
+}
+
+.um-followers-rc a span{
+    color: var(--dig_highlight_1) !important;
+}
+
+.um-friends-user-btn .um-friend-accept-btn,
+.um-member-directory-search-line .um-button,
+.um-profile-navbar .um-followers-btn a.um-button,
+.um-profile .um-profile-meta .um-friends-coverbtn a.um-button{
+    border: 0px !important;
+    border-radius: 5px !important;
+    background-color: var(--dig_highlight_1) !important;
+    color: var(--dig_highlight_2) !important;
+}
+
+.um-member-directory-search-line .um-button,
+.um-profile-navbar .um-messaging-btn a.um-button{
+    padding: 10px 15px !important;
+}
+
+/* Search button */
+.um-member-directory-search-line .um-button{
+    height: 40px !important;
+    text-transform: uppercase !important;
+}
+
+/* Sort list */
+.um-new-dropdown{
+    background: var(--dig_object_body) !important;
+}
+
+.um-message-footer {
+    background: none !important;
+    border-top: 1px solid var(--dig_highlight_2) !important;
+}
+
+.um-message-conv-item .um-message-conv-item.active {
+    color: var(--dig_secondary4) !important;
+}
+
+.um-message-conv-new{
+    color: var(--dig_secondary4) !important;
+}
+
+.um-message-conv-view {
+    border-left: 0px solid var(--dig_highlight_2) !important;
+}
+
+.um-message-conv-view .um-message-footer .um-message-textarea textarea,
+article div.um div.um-form .um-message-textarea textarea {
+    border: 0px !important;
+}
+
+.um-message-conv-view.um-message-footer .um-message-textarea textarea:focus,
+article div.um div.um-form .um-message-textarea textarea:focus {
+    border: 0px !important;
+}
+
+.um-message-modal .um-message-footer .um-message-textarea textarea:focus,
+.um-message-modal .um-message-footer .um-message-textarea textarea{
+    border: 1px solid #eee !important;
+    outline: none;
+}
+
+.um-profile-nav-item .um-tab-notifier{
+    background-color: var(--dig_highlight_4) !important;
+}
+
+.um-popup{
+    top: 20vh !important;
+}
+
+.um-directory .um-member-directory-header .um-member-directory-header-row .um-member-directory-search-line{
+    width: auto !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.um-directory .um-member-directory-header .um-member-directory-header-row .um-member-directory-search-line label{
+        flex: 1;
+    margin: 0 10px 0 0;
+    min-width: 90px;
+    max-width: 85%;
+}
+
+.um .um-form input[type=text], .um .um-form input[type=search], .um .um-form input[type=tel], .um .um-form input[type=password], .um .um-form textarea{
+    height: 40px;
+    border: 0;
+    padding: 0 11px;
+}
+
+.um-directory .um-member-directory-header .um-member-directory-header-row .um-member-directory-nav-line{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: relative;
+}
+
+.um-directory .um-member-directory-header .um-member-directory-header-row .um-member-directory-nav-line .um-member-directory-sorting{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    flex: 5;
+}
+
+.um-new-dropdown {
+    top: 26px;
+    font-size: 16px;
+    margin: 0;
+    position: absolute;
+    height: auto;
+    background: #fff;
+    z-index: 10;
+    display: none;
+    border: 1px solid #ddd;
+    box-shadow: 0 7px 14px 0 rgb(50 50 93 / 10%), 0 3px 6px 0 rgb(0 0 0 / 7%);
+    -webkit-box-shadow: 0 7px 14px 0 rgb(50 50 93 / 10%), 0 3px 6px 0 rgb(0 0 0 / 7%);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+.um-new-dropdown ul{
+    margin: 0;
+    padding: 10px;
+}
+
+.um-directory .um-member-directory-header .um-member-directory-header-row .um-member-directory-search-line .um-do-search{
+    border-radius: 0 !important;
+    background-color: var(--dig_primary_color) !important;
+}
+
+.um-directory .um-member-directory-header .um-member-directory-header-row:not(.um-member-directory-filters-bar){
+    margin-top: 15px !important;
+}
+
+.um-directory .um-member-directory-header{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+.um-directory .um-members-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 0;
+    position: relative;
+    height: auto;
+}
+
+/* Responsive devices */
+@media only screen and (max-width : 768px) {
+    .um-directory .um-member-directory-header{
+        flex-direction: column !important;
+    }
+
+    .um-member-directory-sorting{
+        justify-content: flex-start !important;
+    }
+
+    .um-directory .um-member-directory-header .um-member-directory-header-row:not(.um-member-directory-filters-bar){
+        justify-content: inherit !important;
+    }
+
+    .buttons-block a.um-follow-btn,
+    .buttons-block a.um-follow-edit,
+    .buttons-block a.um-login-to-follow-btn,
+    .buttons-block a.um-unfollow-btn,
+    .buttons-block a.um-unfollow-btn2{
+        min-width: auto !important;
+    }
+
+    .buttons-block .um-unfollow-btn.um-button{
+        padding: 11px 10px !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .um-friends-user-btn{
+        top: 0px !important;
+    }
+    .um-popup{
+        top: 10% !important;
+    }
+
+    .um-followers-btn{
+        margin-top: 0 !important;
+    }
+}
+
+.um-friends-btn-round {
+    border-radius: 50px !important;
+}
+
+.um-friends-username {
+    padding-top: 20px;
+    color: red;
+}
+
+.um-tab-notifier{
+    top: 2px !important;
+}

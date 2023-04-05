@@ -1,0 +1,378 @@
+:root {
+    --gg-bg: #F4F7FB;
+    --gg-primary: #2E80F1;
+    --gg-text-color-1: #7D7D80;
+    --gg-text-color-2: #323233;
+    --gg-text-color-3: #8E8E8E; /* Using for menu bar items */
+    --gg-blue-color: #2E80F2;
+    --gg-orange-color: #F09700;
+    --gg-green-color: #2B8332;
+    --gg-button-border: #979797;
+    --gg-light-blue-color: #D1E1F7;
+    --gg-lighter-blue-color: #639FF4;
+    --gg-gold: #D7AC43;
+}
+
+/* Custom CSS class (Bootstrap syntax) */
+.gg-text-primary {
+    color: var(--gg-primary) !important;
+}
+
+.gg-text-color-1 {
+    color: var(--gg-text-color-1) !important;
+}
+
+.gg-text-color-2 {
+    color: var(--gg-text-color-2) !important;
+}
+
+.gg-text-color-3 {
+    color: var(--gg-text-color-3) !important;
+}
+
+.gg-text-color-blue {
+    color: var(--gg-blue-color) !important;
+}
+
+.gg-text-color-green {
+    color: var(--gg-green-color) !important;
+}
+
+.gg-text-color-orange {
+    color: var(--gg-orange-color) !important;
+}
+
+.gg-text-gold {
+    color: var(--gg-gold) !important;
+}
+
+.gg-text-lighter-blue {
+    color: var(--gg-lighter-blue-color) !important;
+}
+
+/* == Background */
+.gg-background {
+    background-color: var(--gg-bg) !important;
+}
+
+.gg-secondary-btn {
+    background-color: var(--gg-light-blue-color) !important;
+}
+
+.gg-primary-btn {
+    background-color: var(--gg-primary) !important;
+}
+
+.gg-bg-blue {
+    background-color: var(--gg-blue-color) !important;
+}
+
+.gg-bg-green {
+    background-color: var(--gg-green-color) !important;
+}
+
+.gg-bg-orange {
+    background-color: var(--gg-orange-color) !important;
+}
+
+/* == End Background */
+
+/* Border related */
+.border-rounded-5 {
+    border-radius: 5px !important;
+}
+
+.border-rounded-10 {
+    border-radius: 10px !important;
+}
+
+.border-color-gg {
+    border-color: var(--gg-light-blue-color) !important;
+}
+
+.border-color-gg-red{
+    border-color: red !important;
+}
+
+.border-color-gg-light-blue {
+    border-color: var(--gg-light-blue-color) !important;
+}
+
+.border-color-gg-darker {
+    border-color: var(--gg-text-color-2) !important;
+}
+
+.border-color-gg-btn {
+    border-color: var(--gg-button-border) !important;
+}
+
+.border-color-gg-blue {
+    border-color: var(--gg-blue-color) !important;
+}
+
+.border-color-gg-green {
+    border-color: var(--gg-green-color) !important;
+}
+
+.border-color-gg-orange {
+    border-color: var(--gg-orange-color) !important;
+}
+
+.border-color-gg-gold {
+    border-color: var(--gg-gold) !important;
+}
+
+/* End Border related */
+
+/* Sweetalert custom style */
+.gg__swal_cancel_btn {
+    background-color: var(--gg-primary) !important;
+    color: #fff !important;
+}
+
+.gg__swal_confirm_btn {
+    background-color: var(--gg-green-color) !important;
+    color: #fff !important;
+}
+
+.gg__swal_hold_btn:hover {
+    background-color: red !important;
+    color: #fff !important;
+}
+
+/* Sweetalert custom style */
+
+/* Custom CSS class */
+.ml-3, .mx-3 {
+    margin-left: 1rem !important;
+}
+
+.gg {
+    background-color: var(--gg-bg) !important;
+}
+
+.gg__family_member_menu_bar {
+    padding: 10px 0px;
+    background-color: #fff;
+    border: 1px solid var(--gg-light-blue-color);
+    border-radius: 10px;
+}
+
+.gg__family_member_menu_bar li a {
+    padding: 5px 8px;
+    color: var(--gg-light-blue-color);
+}
+
+.gg__family_member_menu_bar li a:hover,
+.gg__family_member_menu_bar--active {
+    color: var(--gg-primary) !important;
+}
+
+.gg__family_member_menu_bar.gg__family_member_menu_bar--mobile {
+    border-radius: 5px;
+}
+
+.gg__submenu .dropdown .dropdown-menu.show {
+    width: 100%;
+    background-color: var(--gg-light-blue-color);
+    margin-top: 5px;
+    border-color: var(--gg-light-blue-color) !important;
+}
+
+.gg__subscription_body {
+    min-height: 250px;
+}
+
+.gg__coin_packs_body {
+    min-height: 100px;
+}
+
+.gg__coin_packs_body_last {
+    min-height: 290px;
+    border-radius: 10px;
+    background-position: right 45px top 50%;
+    background-repeat: no-repeat;
+}
+
+.gg__subscription_body--blue {
+    background-color: var(--gg-blue-color);
+}
+
+.gg__subscription_body--green {
+    background-color: var(--gg-green-color);
+}
+
+.gg__subscription_body--orange {
+    background-color: var(--gg-orange-color);
+}
+
+.gg__subscription_btn,
+.gg__wallet_sub_btn {
+    width: 200px;
+    background: rgba(255, 255, 255, .2);
+}
+
+.gg__add_coin_btn {
+    width: 100px;
+    background: rgba(255, 255, 255, .2);
+    border-color: var(--gg-gold) !important;
+    z-index: 2;
+}
+
+.gg__history_date {
+    background-color: var(--gg-bg);
+    padding: 0px 10px;
+}
+
+.gg__settings_label {
+    width: 300px;
+}
+
+.gg__input-height-50 {
+    height: 50px !important;
+}
+
+.gg__add-gamer-form .rdtPicker {
+    color: #000;
+}
+
+.gg__add-gamer-checkbox .form-check-label {
+    margin-left: 15px;
+    font-size: 1.2em;
+}
+
+.gg__add-gamer-checkbox input.form-check-input {
+    width: 1.5em !important;
+    height: 1.5em !important;
+}
+
+.gg__dig_coin {
+    height: 20px;
+}
+
+.gg__subscription h2,
+.gg__coin_packs h2 {
+    margin-bottom: 10px;
+}
+
+.gg__subscription h1,
+.gg__coin_packs h1 {
+    display: block !important;
+}
+
+#gg_wallet_options_ctn {
+    margin-bottom: 50px;
+    /*height: 500px;*/
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+}
+
+#dig_selected_purchase_details {
+    margin-top: 10px;
+}
+
+.gg__overview-game-list .blocked_games:after {
+    content: "Blocked";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--gg-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+.gg__overview-game-list .blocked_games > .game-overlay:after,
+.gg__overview-game-list .blocked_games > .game_featured_image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--gg-light-blue-color);
+    opacity: 0.8;
+}
+
+.gg__settings_checkbox {
+    height: 20px;
+    width: 20px;
+}
+
+.gg__settings_input {
+    height: 50px;
+    border: 1px solid #000 !important;
+}
+
+.gg__site .gg__landing-page-wrapper.wrapper {
+    padding: 0 !important;
+}
+
+.gg__site .wrapper.landing-page {
+    padding: 0 !important;
+}
+
+.gg__submenu .dropdown {
+    width: 100%;
+}
+
+.gg__subscription_need_coin {
+    background-position: right;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.gg__coin_packs_ads{
+    width: 40%;
+    margin-left: 1.5em;
+}
+
+.gg__profile,
+.gg__history{
+    width: 85%;
+}
+
+.gg__settings{
+    width: 60%;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .gg__site.wrapper{
+        padding: 0 !important;
+    }
+    .gg__overview-game-list .blocked_games:after {
+        font-size: 1.5em !important;
+    }
+
+    .gg__subscription_need_coin {
+        background-position: 15em;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .gg__coin_packs_ads{
+        width: 100%!important;
+        margin-left: 0 !important;
+        margin-top: 12em;
+    }
+    .gg__coin_packs_body_last{
+        background-position: right 50% top 10%;
+        background-repeat: no-repeat;
+        background-size: 80%;
+    }
+    .gg__settings,
+    .gg__profile,
+    .gg__history{
+        width: 100%!important;
+    }
+    .dig-toast{
+        top: auto !important;
+        bottom: 10px !important;
+        left: 10px !important;
+    }
+}

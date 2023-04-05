@@ -1,0 +1,757 @@
+/* Special card*/
+.dig-special-card .card-image{
+    background: transparent !important;
+}
+
+.dig-special-card .card-header{
+    background: transparent !important;
+}
+
+h5.card-title,
+h4.card-title{
+    cursor: pointer;
+}
+.dig_comp_title{
+    min-height: 3em;
+}
+/* \Special card */
+/* New design Match Card  */
+
+.upcoming-events .card{
+    margin-bottom: 3rem !important;
+}
+
+/* Card header */
+#dig-modal-match-wrapper .card-footer,
+#dig-modal-match-wrapper .card-header,
+.upcoming-events .card-footer,
+.upcoming-events .card-header{
+    color: var(--dig_neutral1);
+    font-weight: 700;
+    border: 0 !important;
+}
+
+.upcoming-events .card-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.upcoming-events .card-header:first-child{
+    border-radius: .5rem .5rem 0 0 !important;
+    font-size: .8em;
+}
+
+.match-title{
+    display: flex;
+    align-items: center;
+}
+
+.match-title > i{
+    margin-right: 10px;
+}
+.match-team svg g path,
+.match-title > i > svg{
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+}
+
+
+.card-header h4 {
+    font-size: 1.1em;
+}
+
+.card-header path {
+    fill: var(--dig_secondary2);
+}
+
+/* Card body */
+#dig-modal-match-wrapper .card-body,
+.upcoming-events .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--dig_neutral1);
+    position: relative;
+    min-height: 17em;
+    padding-top: 0;
+}
+
+#dig-modal-match-wrapper .card-body .card-image,
+.upcoming-events .card-body .card-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-img-top{
+    width: 200px;
+    height: 100px;
+    min-width: 200px;
+    max-height: 100px;
+    background: #fff;
+}
+
+.upcoming-events {
+    min-height: auto;
+}
+
+.upcoming-events .card-body a{
+    color: var(--dig_neutral1);
+}
+
+.upcoming-events .card-body p{
+    margin-bottom: 0 !important;
+}
+
+.upcoming-events .card-body svg{
+    margin: 0 auto;
+    height: 130px;
+}
+
+.upcoming-events .card-body .card-image h2{
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    color: var(--dig_secondary2);
+}
+
+.card-body svg g{
+    clip-path: none;
+}
+
+.my-team-img svg g,
+.card-img-top svg g,
+.upcoming-events .card-body svg .cls-2{
+    clip-path: none;
+}
+
+#dig-modal-match-wrapper .card-title,
+.upcoming-events .card-title{
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    text-align: center;
+}
+
+#dig-modal-match-wrapper .card-text,
+.upcoming-events .card-text{
+    font-weight: 700;
+    text-align: center;
+}
+
+.upcoming-events .card-text h4,
+.upcoming-events .card-text h5{
+    color: var(--dig_neutral1);
+}
+
+.card-text.tournament-card-time{
+    bottom: 30px;
+}
+
+.card-text.match-status{
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    min-height: 30px;
+}
+
+.card-text.match-status.match-ready{
+    background-color: var(--dig_secondary1);
+}
+
+.card-text.match-status.match-started{
+    background-color: var(--dig_secondary1);
+}
+
+.card-text.match-status.match-waiting{
+    background-color: var(--dig_secondary2);
+}
+
+.card-text.match-status.match-canceled,
+.card-text.match-status.match-roster-pending{
+    background-color: var(--dig_secondary2);
+    color: #fff;
+}
+
+.card-text.match-status.match-paid,
+.card-text.match-status.match-completed{
+    background-color: var(--dig_secondary4);
+    color: #fff;
+}
+
+.card-text.match-status.match-invitation-waiting{
+    background-color: var(--dig_secondary3);
+}
+
+/* Card footer */
+#dig-modal-match-wrapper .card-footer,
+.upcoming-events .card-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.dig-comp-stackable-container {
+    width: 100%;
+}
+
+.dig-comp-stackable-container a {
+    margin-top: 0 !important;
+    padding: 10px !important;
+    font-size: 1.1em;
+    border-radius: 0 !important;
+}
+
+/* Card buttons*/
+
+.my-teams-card .card-footer div:first-child a,
+.upcoming-events .card-footer div:first-child a{
+    border-top: 3px;
+    border-right: 3px;
+    border-bottom: 0;
+    border-left: 0;
+    border-style: solid;
+    border-color: var(--dig_neutral8);
+}
+
+.my-teams-card .card-footer div:last-child a,
+.upcoming-events .card-footer div:last-child a{
+    border-top: 3px;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-style: solid;
+    border-color: var(--dig_neutral6);
+}
+
+.my-teams-card .card-footer div a,
+.upcoming-events .card-footer div a{
+    border-top: 3px;
+    border-right: 3px;
+    border-bottom: 0;
+    border-left: 0;
+    border-style: solid;
+    border-color: var(--dig_neutral6);
+}
+
+.card-twitch-body {
+    background-color: var(--dig_twitch_main);
+    padding: 5px;
+}
+
+.card-discord-body {
+    background-color: var(--dig_discord_main);
+    padding: 5px;
+}
+
+.card-facebook-body {
+    background-color: var(--dig_facebook_main);
+    padding: 5px;
+}
+
+.card-twitch-content,
+.card-discord-content,
+.card-facebook-content {
+    margin: .5rem 0 .5rem 0 !important;
+}
+
+
+
+/* Card buttons */
+
+.dig-comp-stackable-container.available {
+    background: var(--dig_secondary4);
+}
+
+.dig-comp-stackable-container.view {
+    background: var(--dig_neutral2);
+}
+
+.dig-comp-stackable-container.view.secondary {
+    background: var(--dig_card_header);
+}
+
+.dig-comp-stackable-container.withdraw {
+    background: #2E80F2;
+}
+
+.dig-comp-stackable-container.comp-canceled{
+    background: var(--dig_secondary5);
+}
+
+.dig-comp-stackable-container.comp-completed{
+    background: var(--dig_secondary4);
+}
+
+.dig-comp-stackable-container.comp-started{
+    background: var(--dig_secondary4);
+}
+
+.dig-comp-stackable-container.comp-ready{
+    background: var(--dig_match_ready);
+}
+
+.dig-comp-stackable-container.comp-withdraw{
+    background: var(--dig_neutral3);
+}
+
+.dig-profile .dig-comp-stackable-container.withdraw {
+    background: var(--dig_highlight_6);
+}
+
+/* New style for Modal Popup */
+#dig-enter-tournament .col-md-3,
+#dig-join-match .col-md-3{
+    max-width: 100% !important;
+}
+
+#dig-enter-tournament .card,
+#dig-join-match .card{
+    font-size: 3rem;
+}
+
+#dig-enter-tournament .card .card-header,
+#dig-join-match .card .card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 !important;
+    height: 40px;
+    font-size: 2rem;
+}
+
+#dig-enter-tournament .card-image,
+#dig-join-match .card-image{
+    min-width: 300px;
+    min-height: 150px;
+}
+
+#dig-enter-tournament .card-body,
+#dig-join-match .card-body{
+    min-height: 150px;
+    padding-bottom: 0 !important;
+    background-color: var(--dig_highlight_2);
+}
+
+#dig-enter-tournament .card .card-header h4,
+#dig-join-match .card .card-header h4{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#dig-enter-tournament small,
+#dig-join-match small{
+    font-size: .4em;
+}
+
+#dig-enter-tournament p,
+#dig-join-match p{
+    line-height: 10px !important;
+    margin-bottom: 10px !important;
+    display: inline-block;
+}
+
+#dig-enter-tournament p.dig-comp-list-callout{
+    font-size: 1em !important;
+    display: block;
+}
+
+#dig-enter-tournament p a.dig-game-rules,
+#dig-join-match p a.dig-game-rules{
+    margin: 0 !important;
+    line-height: normal !important;
+}
+
+#dig-enter-tournament .card-text.match-status,
+#dig-join-match .card-text.match-status{
+    position: relative;
+    font-size: 1.5rem;
+}
+
+#dig-enter-tournament .card-footer,
+#dig-join-match .card-footer{
+    border-radius: 0 !important;
+}
+
+#dig-enter-tournament .dig-comp-stackable-container.view.secondary,
+#dig-join-match .dig-comp-stackable-container.view.secondary{
+    border-right: 1px solid var(--dig_primary_color);
+    border-top: 1px solid var(--dig_primary_color);
+    background: none !important;
+}
+
+#dig-enter-tournament .dig-comp-stackable-container.view.secondary:last-child,
+#dig-join-match .dig-comp-stackable-container.view.secondary:last-child{
+    border-right: 0 !important;
+}
+
+#dig-modal-tournament-wrapper a.dig-game-rules,
+#dig-modal-match-wrapper a.dig-game-rules {
+    font-size: 0.45em;
+}
+
+.card-text.tournament-time{
+    font-size: 2rem;
+}
+
+.dig-join-match-body{
+    background-color: var(--dig_neutral7);
+    color: var(--dig_neutral5);
+}
+
+.dig-join-match-body .dig-user-action-group{
+    padding: 0 15px !important;
+}
+
+.dig-join-match-body h3{
+    padding-top: 0 !important;
+    margin: 20px 0;
+    color: var(--dig_neutral5) !important;
+    font-size: 0.7em !important;
+    text-transform: none !important;
+}
+
+.dig-team-selector.in-modal-popup{
+    width: 100% !important;
+    margin: 10px !important;
+    border-color: var(--dig_neutral3);
+}
+
+.dig-team-selector.in-modal-popup.ui-selected{
+    border-color: var(--dig_secondary4);
+    background: none !important;
+}
+
+.dig-profile-comp-list .card {
+    background: var(--dig_highlight_2);
+}
+
+.tournament .col-12 .text-white,
+.card .dig_comp_title,
+.card .card-text,
+.dig-special-card h2,
+.dig-special-card h4,
+.tournaments .col-12 .text-white {
+    text-shadow: 1px 0 0 var(--dig_neutral2),
+                 0 -1px 0 var(--dig_neutral2),
+                 0 1px 0 var(--dig_neutral2),
+                 -1px 0 0 var(--dig_neutral2);
+}
+
+.card-text.match-status, .text-muted, a.dig-tourney-withdraw, .free-comp .dig-card-comp-id {
+    text-shadow: none !important;
+}
+
+.dig-double-elim-details {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: var(--dig_neutral3);
+    text-transform: uppercase;
+    line-height: 1.75em;
+    margin-top: 5px;
+}
+
+.dig-double-elim-details i.fas.fa-chevron-right {
+    color: var(--dig_secondary2);
+    padding-right: 5px;
+    padding-left: 1px;
+    font-size: 0.8em;
+}
+
+.card-text.text-dark.mt-3.match-status.match-not-registered {
+    color: var(--dig_neutral2) !important;
+    background: var(--dig_neutral3) !important;
+    opacity: 0.35;
+}
+
+.partner-card {
+    height: 504px;
+}
+
+.partner-card a {
+    display: block;
+    height: 100%;
+}
+
+i.fab.dig-switch::before {
+    content: " " !important;
+    background-color: var(--dig_neutral5) !important;
+    -webkit-mask-image: url(../img/svg-icons/nintendo-switch-filled.svg);
+    -webkit-mask-size: 17px 17px;
+    mask-image: url(../img/svg-icons/nintendo-switch-filled.svg);
+    mask-size: 17px 17px;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    left: 1px;
+}
+
+.dig-card-comp-id {
+    z-index: 0;
+}
+
+.dig-free-comp-overlay {
+    position: absolute;
+    top: 0;
+}
+
+.dig-free-comp-overlay img {
+    width: 46px;
+    height: auto;
+}
+
+.dig-bg-transparent {
+    background-color: transparent !important;
+}
+
+#dig-modal-match-wrapper .card-body,
+.upcoming-events .card-body{
+    font-size: .64em;
+    min-height: 36em;
+    min-width: 34em;
+}
+
+/* Large Devices, Wide Desktops */
+@media only screen and (min-width : 992px) and (max-width : 1200px) {
+
+    .dig-presentation-card {
+        background-size: cover !important;
+    }
+
+    .dig-comp-stackable-container a {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        font-size: 1.2rem;
+    }
+
+    .card-body .card-image {
+        width: 100%;
+        min-width: auto;
+        height: 80px;
+    }
+
+    #dig-modal-match-wrapper .card-body,
+    .upcoming-events .card-body{
+        font-size: .6em;
+        min-height: 37em;
+        //margin: 0 5px;
+        min-width: 34em;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    .mobile-comp-card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .dig-presentation-card{
+        background-size: cover !important;
+    }
+
+    .dig-comp-stackable-container a{
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        font-size: 1.2rem;
+    }
+
+    .card-body .card-image{
+        width: 100%;
+        min-width: auto;
+        height: 80px;
+    }
+
+
+    #dig-modal-match-wrapper .card-body,
+    .upcoming-events .card-body{
+        font-size: .9em;
+        min-height: 38em;
+        margin: 0 5px;
+        min-width: 25em;
+    }
+
+    .card-text small{
+        /* height: 20px; */
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .card-text p.dig-comp-list-callout{
+        margin-top: 0;
+    }
+
+    #main-user-actions{
+        margin-top: 20px;
+    }
+
+    section{
+        padding-top: 0;
+    }
+
+    .dig-user-action-group{
+        margin-top: 0;
+    }
+
+    .dig-enter-notes .dig-checkbox,
+    .dig-join-match-body .dig-join-notes .dig-checkbox{
+        width: 30vw !important;
+    }
+
+    #dig-enter-tournament .card-image,
+    #dig-join-match .card-image{
+        max-width: 300px;
+    }
+
+    .dig-free-comp-overlay img {
+        width: 44px;
+        height: auto;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 501px) and (max-width : 768px) {
+
+    .mobile-comp-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dig-overflow-x{
+        overflow-x: auto !important;
+    }
+
+    .card-deck{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+    .card-body .card-image{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .dig-countdown-counter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        min-width: auto;
+        margin-bottom: 10px;
+    }
+
+    .dig-join-match-body .dig-enter-notes .dig-checkbox,
+    .dig-join-match-body .dig-join-notes .dig-checkbox{
+        width: 35vw !important;
+    }
+
+    #dig-modal-match-wrapper .card-body,
+    .upcoming-events .card-body{
+        font-size: .75em;
+        min-height: 38em;
+        min-width: 29em !important;
+        margin: 0 5px;
+    }
+
+    .dig-dashboard-nav h3 {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .dig-dashboard-nav a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .mobile-comp-card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    div#dig-comp-desc-content {
+        margin-bottom: 10px;
+    }
+
+    .upcoming-events .card-header:first-child{
+        font-size: .7em;
+    }
+
+    .dig-free-comp-overlay img {
+        width: 40px;
+        height: auto;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 500px) {
+
+    .mobile-comp-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dig-free-comp-overlay img {
+        width: 45px;
+        height: auto;
+    }
+
+    .dig-join-match-body .dig-enter-notes .dig-checkbox,
+    .dig-join-match-body .dig-join-notes .dig-checkbox{
+        width: 70vw !important;
+    }
+
+    .match-title{
+   font-size: .85em;
+    }
+
+    #dig-enter-tournament .card-footer.modal-tournament{
+        flex-wrap: wrap !important;
+    }
+
+    #dig-modal-match-wrapper .card-body,
+    .upcoming-events .card-body{
+        font-size: .5em;
+        min-height: 42em;
+        margin: 0 5px;
+    }
+
+    .dig_comp_title{
+        min-height: 3em;
+        font-size: 1.5em;
+    }
+
+    .upcoming-events .card-header:first-child{
+        font-size: .6em;
+    }
+
+    .upcoming-events .card{
+        width: 90%;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    .dig-join-match-body .dig-enter-notes .dig-checkbox,
+    .dig-join-match-body .dig-join-notes .dig-checkbox{
+        width: 75vw !important;
+    }
+
+    .upcoming-events .card-header:first-child{
+        font-size: .4em;
+    }
+
+    .dig-free-comp-overlay img {
+        width: 34px;
+        height: auto;
+    }
+}

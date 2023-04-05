@@ -1,0 +1,31 @@
+.team_profile svg,
+.team_profile svg path {
+  fill: var(--dig-trophies-2);
+  width: 10em;
+  height: 7em;
+}
+
+.my-team-img svg,
+.my-team-img svg path {
+  fill: var(--dig-trophies-2);
+}
+
+.team_header_col {
+  min-height: 150px;
+}
+
+.my-team-img {
+  height: 8em;
+}
+
+.tournament-team-icon {
+  fill: var(--dig-light-blue) !important;
+}
+
+.team_profile_edit_icon {
+  position: absolute;
+  top: 8px;
+  right: 4px;
+}
+
+/*# sourceMappingURL=user_team_profile.css.map */
