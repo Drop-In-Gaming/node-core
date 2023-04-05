@@ -19,6 +19,6 @@ describe('updateRestfulObjectArray', () => {
         updateRestfulObjectArray(data, uniqueObjectId, stateKey, eUpdateInsertMethod.REPLACE);
 
         // expect setStateMock to have been called with the expected state
-        expect(DigApi.bootstrap.state.users?.find(user => user.ID === 1)).not.toEqual( undefined);
+        expect(DigApi.digApi.state.users?.find(user => user.ID === 1)).not.toEqual( undefined);
     });
 });

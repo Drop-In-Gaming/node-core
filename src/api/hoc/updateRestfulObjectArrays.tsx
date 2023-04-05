@@ -1,5 +1,5 @@
 import DigApi, {
-    iBootstrapState,
+    iDigApiState,
     iRestfulObjectArrayTypes,
     tRestfulObjectValues
 } from "DigApi";
@@ -22,13 +22,13 @@ export enum eUpdateInsertMethod {
  *  parameter of setState.
  */
 export default function updateRestfulObjectArray<ObjectType extends tRestfulObjectValues>
-(dataOrCallback: ((prev: Readonly<iBootstrapState>) => ObjectType[]) | ObjectType[],
+(dataOrCallback: ((prev: Readonly<iDigApiState>) => ObjectType[]) | ObjectType[],
  uniqueObjectId: keyof ObjectType,
  stateKey: keyof iRestfulObjectArrayTypes,
  insertUpdateOrder: eUpdateInsertMethod = eUpdateInsertMethod.LAST,
  callback?: () => void): void {
 
-    const bootstrap: DigApi = DigApi.bootstrap;
+    const bootstrap: DigApi = DigApi.digApi;
 
     return bootstrap.setState((previousBootstrapState): {} => {
 

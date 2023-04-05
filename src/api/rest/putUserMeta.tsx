@@ -21,7 +21,7 @@ export default restApi<iPutUserMeta, iUsermeta, {}, iPutC6RestResponse<iPutUserM
         },
         responseCallback: (response, request, id) => {
 
-            const bootstrap: DigApi = DigApi.bootstrap
+            const bootstrap: DigApi = DigApi.digApi
 
             const currentEditUser = bootstrap.state.users?.find(user => user.ID === request.user_id)
 

@@ -45,7 +45,7 @@ export default restApi<iGetResults, iResult & iDig_Result_Type>({
 
         let restData: iResult[] = response?.data?.rest || [];
 
-        DigApi.bootstrap.setState({
+        DigApi.digApi.setState({
             results: restData
         });
 

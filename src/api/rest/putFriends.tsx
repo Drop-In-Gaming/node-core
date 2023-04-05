@@ -53,7 +53,7 @@ export default restApi<{ user_id1: number, user_id2: number}, iUm_Friends>({
     queryCallback: (request) => {
         request.success = 'Successfully accepted friend request!'
         request.error = 'Unable to accept friend request. Please try again later.'
-        request.user_id1 = DigApi.bootstrap.state.id
+        request.user_id1 = DigApi.digApi.state.id
         return request
     },
     responseCallback: updateUserFriendInformation

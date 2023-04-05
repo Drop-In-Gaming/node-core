@@ -5,7 +5,7 @@ import DropVariables from "variables/DropVariables";
 
 export default function login(id): void {
 
-    const bootstrap: DigApi = DigApi.bootstrap
+    const bootstrap: DigApi = DigApi.digApi
 
     if (0 === id) {
 

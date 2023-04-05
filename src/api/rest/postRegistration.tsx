@@ -68,7 +68,7 @@ export default restApi<iPostRegistration, iDig_Comp_Registration & iDig_Competit
 
             if (prevComp.comp_type_id === eCOMPETITION.MATCHES && prevComp.organizer_id === 1) {
 
-                data[0].organizer_id = DigApi.bootstrap.state.id
+                data[0].organizer_id = DigApi.digApi.state.id
 
             }
 

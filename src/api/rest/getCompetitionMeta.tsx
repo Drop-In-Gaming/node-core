@@ -5,11 +5,11 @@ import DropVariables from "variables/DropVariables";
 import {iCompetitions} from "variables/sharedInterfaces";
 import getSubMode from "./getSubMode";
 
-export interface iGetUserMeta {
+export interface iGetCompetitionMeta {
     competition: iCompetitions
 }
 
-export default restApi<iGetUserMeta, iDig_Competitions_Meta, {}, iGetC6RestResponse<iDig_Competitions_Meta>>({
+export default restApi<iGetCompetitionMeta, iDig_Competitions_Meta, {}, iGetC6RestResponse<iDig_Competitions_Meta>>({
         axios: DropVariables.axios,
         tableName: C6.dig_competitions_meta.TABLE_NAME,
         requestMethod: GET,

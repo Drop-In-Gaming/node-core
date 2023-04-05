@@ -7,7 +7,7 @@ describe('Get Game mode list', () => {
 
     test('Assert Game Mode List Not Empty', async () => {
 
-        let bootstrap: DigApi = DigApi.bootstrap;
+        let bootstrap: DigApi = DigApi.digApi;
 
         //let modes = [];
         await act(async () => {

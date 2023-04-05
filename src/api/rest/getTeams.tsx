@@ -110,7 +110,7 @@ export default restApi<iGetTeams, iDig_User_Team>({
             }
         };
 
-        const bootstrap = DigApi.bootstrap;
+        const bootstrap = DigApi.digApi;
 
         bootstrap.state.teams === undefined && bootstrap.setState({
             teams: null

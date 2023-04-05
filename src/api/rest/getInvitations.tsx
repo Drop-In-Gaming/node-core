@@ -24,8 +24,8 @@ export default restApi({
         ],
         [C6.WHERE]: {
             0: {
-                [C6.dig_comp_invitation.USER_ID]: DigApi.bootstrap.state.id,
-                [C6.dig_comp_invitation.SENDER_ID]: DigApi.bootstrap.state.id,
+                [C6.dig_comp_invitation.USER_ID]: DigApi.digApi.state.id,
+                [C6.dig_comp_invitation.SENDER_ID]: DigApi.digApi.state.id,
             }
         },
         [C6.PAGINATION]: {
@@ -41,7 +41,7 @@ export default restApi({
 
         let uniqueUserIds: number[] = [];
 
-        DigApi.bootstrap.setState({
+        DigApi.digApi.setState({
             invitations: restData
         });
 

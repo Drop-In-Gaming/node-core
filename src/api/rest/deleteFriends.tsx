@@ -12,7 +12,7 @@ export default restApi<{ user_id2: number, user_id1: number }, iUm_Friends, {}, 
     skipPrimaryCheck: true,
     queryCallback: (request) => {
         request.success = 'You have successfully removed this user as a friend'
-        request.user_id1 = DigApi.bootstrap.state.id
+        request.user_id1 = DigApi.digApi.state.id
         request.error = 'Unable to remove the user as a friend. Please try again later.'
         return request
     },

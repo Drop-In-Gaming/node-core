@@ -8,7 +8,7 @@ import authenticateTestUser from "jestHoc";
 describe('Can Create and Delete User', () => {
 
     test('Can Create, Authenticate, and Delete', async () => {
-        const bootstrap: DigApi = DigApi.bootstrap;
+        const bootstrap: DigApi = DigApi.digApi;
 
         expect(bootstrap.state.id).toEqual(0)
 

@@ -2,5 +2,5 @@ import DigApi from "DigApi";
 
 
 export default function isLoggedIn() {
-    return DigApi.bootstrap.state.id !== 0
+    return DigApi.digApi.state.id !== 0
 }

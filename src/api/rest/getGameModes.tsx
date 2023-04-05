@@ -4,12 +4,12 @@ import {C6, iDig_Competitions_Meta} from "variables/C6";
 import DropVariables from "variables/DropVariables";
 import {iGame} from "variables/sharedInterfaces";
 
-export interface iGetUserMeta {
+export interface iGetModeMeta {
     game: iGame
     comp_type_id: number
 }
 
-export default restApi<iGetUserMeta, iDig_Competitions_Meta>({
+export default restApi<iGetModeMeta, iDig_Competitions_Meta>({
         axios: DropVariables.axios,
         tableName: C6.dig_mode.TABLE_NAME,
         requestMethod: GET,

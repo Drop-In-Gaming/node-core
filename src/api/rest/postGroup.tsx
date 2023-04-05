@@ -13,7 +13,7 @@ export default restApi<{}, iDig_Groups, {}, iPostC6RestResponse>({
     queryCallback: (request) => {
         request.success ??= 'We\'ve successfully created your new group.'
         request.error ??= 'There was an issue creating this group. Please try again.'
-        request.created_by = DigApi.bootstrap.state.id;
+        request.created_by = DigApi.digApi.state.id;
         return request;
     },
     responseCallback: (_response, request, id) => {

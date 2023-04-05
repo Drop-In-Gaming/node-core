@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 export default function HandleResponseCodes(data: any): void {
 
-    const bootstrap: DigApi = DigApi.bootstrap;
+    const bootstrap: DigApi = DigApi.digApi;
 
     interface iAlert {
         intercept?: boolean,

@@ -11,7 +11,7 @@ export default restApi({
         queryCallback: {},
         responseCallback: response => {
             const restData = response?.data?.rest || [];
-            DigApi.bootstrap.setState({
+            DigApi.digApi.setState({
                 subscriptions: restData,
             });
         }

@@ -71,7 +71,7 @@ export default function ForceLegacyPasswordReset() {
                         return
                     }
 
-                    const invalidPasswordResetKey = DigApi.bootstrap.state.invalidPasswordResetKey
+                    const invalidPasswordResetKey = DigApi.digApi.state.invalidPasswordResetKey
 
                     if (undefined === invalidPasswordResetKey) {
                         toast.error('Invalid password reset key! Please contact support if problems persist.', DropVariables.toastOptions);
@@ -83,7 +83,7 @@ export default function ForceLegacyPasswordReset() {
                     user && putUser({
                         ID: user.ID,
                         user_pass: userPasswordA,
-                        user_activation_key: DigApi.bootstrap.state.invalidPasswordResetKey
+                        user_activation_key: DigApi.digApi.state.invalidPasswordResetKey
                     })
 
                 }}>

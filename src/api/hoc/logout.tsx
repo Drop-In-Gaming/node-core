@@ -5,7 +5,7 @@ import DropVariables from "variables/DropVariables";
 
 export default async function logout(userDeleted = false): Promise<null|AxiosResponse<any>> {
 
-    const bootstrap = DigApi.bootstrap;
+    const bootstrap = DigApi.digApi;
 
     if (0 === bootstrap.state.id) {
 

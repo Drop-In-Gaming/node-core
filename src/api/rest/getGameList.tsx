@@ -78,7 +78,7 @@ export default restApi({
             }) || [];
 
 
-            DigApi.bootstrap.setState({
+            DigApi.digApi.setState({
                 games: games
             })
 

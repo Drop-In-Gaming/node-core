@@ -21,7 +21,7 @@ export default restApi({
                 C6.um_notifications.CONTENT
             ],
             [C6.WHERE]: {
-                [C6.um_notifications.USER]: DigApi.bootstrap.state.id
+                [C6.um_notifications.USER]: DigApi.digApi.state.id
             },
             [C6.PAGINATION]: {
                 [C6.PAGE]: 1,  // start at one
@@ -33,7 +33,7 @@ export default restApi({
             const restData = response?.data?.rest || {};
 
             updateRestfulObjectArray<iUser>([{
-                ID: DigApi.bootstrap.state.id,
+                ID: DigApi.digApi.state.id,
                 notifications: restData
             }], "ID", "users")
 

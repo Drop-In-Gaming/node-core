@@ -119,7 +119,7 @@ export default function axiosInterceptors(axios: AxiosInstance): void {
 
             if (undefined !== response?.data?.TRACE) {
 
-                DigApi.bootstrap.setState((previous) => (
+                DigApi.digApi.setState((previous) => (
                     {
                         backendThrowable: [
                             ...previous.backendThrowable,
@@ -181,7 +181,7 @@ export default function axiosInterceptors(axios: AxiosInstance): void {
 
                 }
 
-                DigApi.bootstrap.setState((previous) => (
+                DigApi.digApi.setState((previous) => (
                     {
                         backendThrowable: [
                             ...previous.backendThrowable,

@@ -1,13 +1,8 @@
 import restApi, {iPostC6RestResponse, POST} from "api/API";
 import updateRestfulObjectArray from "api/hoc/updateRestfulObjectArrays";
-import {C6, iDig_User_Groups, iUsermeta} from "variables/C6";
+import {C6, iDig_User_Groups} from "variables/C6";
 import DropVariables from "variables/DropVariables";
 import {iGroups, iUser} from "variables/sharedInterfaces";
-
-export interface iPutUserMeta extends iUsermeta {
-    group_id: number;
-    user_id: number;
-}
 
 export default restApi<{}, iDig_User_Groups, {}, iPostC6RestResponse>({
     axios: DropVariables.axios,

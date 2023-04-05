@@ -10,7 +10,7 @@ describe('Delete User', () => {
 
     test('Can Not Delete User That Is Not Logged In', async () => {
 
-        expect(DigApi.bootstrap.state.id).toEqual(0)
+        expect(DigApi.digApi.state.id).toEqual(0)
 
         let {user_login, user_pass, id, deleteUser} = await createTestUser();
 
@@ -20,13 +20,13 @@ describe('Delete User', () => {
 
         expect(user_pass).not.toBeUndefined();
 
-        expect(DigApi.bootstrap.state.users).not.toBeUndefined();
+        expect(DigApi.digApi.state.users).not.toBeUndefined();
 
         console.log('Attempt delete that should fail')
         // this should throw an error
         await act(async () => {
 
-            const bootstrap: DigApi = DigApi.bootstrap;
+            const bootstrap: DigApi = DigApi.digApi;
 
             console.log(await logout())
 
@@ -53,7 +53,7 @@ describe('Delete User', () => {
         // this should not throw an error as it's actually a custom test closure
         await deleteUser();
 
-        const bootstrap: DigApi = DigApi.bootstrap;
+        const bootstrap: DigApi = DigApi.digApi;
 
         console.log('backendThrowable', bootstrap.state.backendThrowable)
 

@@ -28,7 +28,7 @@ export default function TranslateText({children = "StackOverflow is very good."}
     children: string
 }) : ReactElement<any, any> {
 
-    const {translateToLanguage} = DigApi.bootstrap.state
+    const {translateToLanguage} = DigApi.digApi.state
     const [translation, setTranslation] = useState<string>(children)
 
 

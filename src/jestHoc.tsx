@@ -8,14 +8,14 @@ import DigApi from "DigApi";
 
 export default async function authenticateTestUser() {
 
-    expect(DigApi.bootstrap.state.id).toEqual(0)
+    expect(DigApi.digApi.state.id).toEqual(0)
 
     const {user_login, user_pass, id, deleteUser, login} = await createTestUser();
 
 
 
 
-    expect(DigApi.bootstrap.state.id).toEqual(id)
+    expect(DigApi.digApi.state.id).toEqual(id)
 
     return {
         user_login, user_pass,
@@ -26,7 +26,7 @@ export default async function authenticateTestUser() {
 
 export async function createTestUser() {
 
-    let bootstrap: DigApi = DigApi.bootstrap;
+    let bootstrap: DigApi = DigApi.digApi;
 
     const userName = randomUUID();
 
@@ -114,7 +114,7 @@ export async function createTestUser() {
 
         await act(async () => {
 
-            expect(DigApi.bootstrap.state.id).toEqual(0);
+            expect(DigApi.digApi.state.id).toEqual(0);
 
             await postAuthenticate({
                 user: {
@@ -129,7 +129,7 @@ export async function createTestUser() {
 
                 expect(bootstrap.state.backendThrowable).toEqual([]);
 
-                expect(DigApi.bootstrap.state.id).toEqual(user?.ID);
+                expect(DigApi.digApi.state.id).toEqual(user?.ID);
 
             }, {timeout: 3000});
 
@@ -143,13 +143,13 @@ export async function createTestUser() {
         login: login,
         deleteUser: async () => {
 
-            if (DigApi.bootstrap.state.id !== ID) {
+            if (DigApi.digApi.state.id !== ID) {
 
                     await login();
 
             }
 
-            expect(DigApi.bootstrap.state.id).toEqual(ID);
+            expect(DigApi.digApi.state.id).toEqual(ID);
 
             await act(async () => {
 

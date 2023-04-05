@@ -1,6 +1,7 @@
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
 import { defineConfig } from 'vite';
+import sassDts from 'vite-plugin-sass-dts'
 import dts from 'vite-plugin-dts';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
@@ -16,9 +17,15 @@ export default defineConfig({
             }
         }),
         tsconfigPaths(),
+        sassDts({
+            global: {
+                generate: true,
+                outFile: path.resolve(__dirname, "./src/style.d.ts"),
+            },
+        }),
         dts({
             insertTypesEntry: true
-        })
+        }),
     ],
     resolve: {
         alias: [
@@ -45,7 +52,7 @@ export default defineConfig({
             entry: path.resolve(__dirname, 'src/index.ts'),
             name: '@drop-in-gaming/core',
             formats: ['es', 'umd', 'cjs'],
-            fileName: (format) => `index.${format}.js`
+            fileName: (format) => `core.${format}.js`
         },
         rollupOptions: {
             external: ['react', 'react-dom', 'styled-components'],

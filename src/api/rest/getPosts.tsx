@@ -42,7 +42,7 @@ export default restApi<{
     requestMethod: GET,
     queryCallback: (request) => {
 
-        const {posts} = DigApi.bootstrap.state;
+        const {posts} = DigApi.digApi.state;
 
         if (null === posts) {
 
@@ -52,7 +52,7 @@ export default restApi<{
 
         if (posts === undefined) {
 
-            DigApi.bootstrap.setState({
+            DigApi.digApi.setState({
                 posts: null
             })
 
@@ -104,14 +104,14 @@ export default restApi<{
             case ePost.MY_CONTENT:
                 query[C6.WHERE] = {
                     0: [C6.posts.POST_TYPE, C6.NOT_EQUAL, 'attachment'],
-                    [C6.posts.POST_AUTHOR]: DigApi.bootstrap.state.id
+                    [C6.posts.POST_AUTHOR]: DigApi.digApi.state.id
                 }
                 query[C6.PAGINATION][C6.LIMIT] = 1000;
                 break;
             case ePost.MY_IMAGES:
                 query[C6.WHERE] = {
                     [C6.posts.POST_TYPE]: 'attachment',
-                    [C6.posts.POST_AUTHOR]: DigApi.bootstrap.state.id,
+                    [C6.posts.POST_AUTHOR]: DigApi.digApi.state.id,
 
                 }
                 query[C6.PAGINATION][C6.LIMIT] = 10;

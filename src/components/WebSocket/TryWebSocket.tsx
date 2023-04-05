@@ -11,7 +11,7 @@ import DropVariables from "variables/DropVariables";
  **/
 export default function TryWebSocket() {
 
-    const bootstrap = DigApi.bootstrap;
+    const bootstrap = DigApi.digApi;
 
     if (!("WebSocket" in window)) {
 

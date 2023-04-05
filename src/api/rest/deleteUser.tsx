@@ -20,7 +20,7 @@ export default restApi<{
     },
     responseCallback: (_response, request, id) => {
 
-        const bootstrap: DigApi = DigApi.bootstrap;
+        const bootstrap: DigApi = DigApi.digApi;
 
         if (id) {
 

@@ -12,7 +12,7 @@ export default restApi<{comp_id: number}, iDig_Comp_Score, {}, iGetC6RestRespons
         queryCallback: (request) => {
 
             // specify ORDER BY comp type
-            let competition = DigApi.bootstrap.state.competitions?.find(comp => comp.comp_id === request.comp_id),
+            let competition = DigApi.digApi.state.competitions?.find(comp => comp.comp_id === request.comp_id),
                 orderBy = competition?.comp_type_id === eCOMPETITION.MATCHES ?
                     {[C6.ORDER]: {
                         [C6.dig_comp_score.TEAM_ID]: C6.ASC,

@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React, {MouseEvent} from "react";
 import {Link} from "react-router-dom";
-import {getStyles} from "@drop-in-gaming/core/src/variables/DropVariables";
+import {getStyles} from "variables/DropVariables";
 
 import styleOverrides from "./style.module.scss"
 

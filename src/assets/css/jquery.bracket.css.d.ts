@@ -1,0 +1,35 @@
+declare const styles: {
+  readonly "jQBracket": string;
+  readonly "jQBracketBottom": string;
+  readonly "rounds_header": string;
+  readonly "tools": string;
+  readonly "finals": string;
+  readonly "bracket": string;
+  readonly "loserBracket": string;
+  readonly "round": string;
+  readonly "connector": string;
+  readonly "match": string;
+  readonly "editable": string;
+  readonly "team": string;
+  readonly "label": string;
+  readonly "score": string;
+  readonly "error": string;
+  readonly "np": string;
+  readonly "na": string;
+  readonly "win": string;
+  readonly "lose": string;
+  readonly "tie": string;
+  readonly "highlightWinner": string;
+  readonly "highlightLoser": string;
+  readonly "highlight": string;
+  readonly "bye": string;
+  readonly "teamContainer": string;
+  readonly "champion": string;
+  readonly "bubble": string;
+  readonly "third": string;
+  readonly "fourth": string;
+  readonly "score_text": string;
+  readonly "rl": string;
+};
+export = styles;
+

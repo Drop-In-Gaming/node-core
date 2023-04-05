@@ -4,7 +4,7 @@ import OutsideClickHandler from 'react-outside-click-handler';
 
 export default function BackendThrowable() {
 
-    const bootstrap = DigApi.bootstrap;
+    const bootstrap = DigApi.digApi;
 
     const currentThrowable = bootstrap.state.backendThrowable[0];
 

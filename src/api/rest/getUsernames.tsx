@@ -16,7 +16,7 @@ export default restApi<iGetUsers>({
         requestMethod: GET,
         queryCallback: (request: iGetUsers = {usernameSearch: ""}) => {
 
-            const bootstrap: DigApi = DigApi.bootstrap;
+            const bootstrap: DigApi = DigApi.digApi;
 
             //toast.success("DEVS: User(s) (" + lookUpQueue.join(',') + ") request for remote.", DropVariables.toastOptions);
             //params[C6.WHERE][C6.users.ID] = [C6.NOT_IN, lookUpQueue];

@@ -4,11 +4,11 @@ import {C6, iUm_Metadata} from "variables/C6";
 import DropVariables from "variables/DropVariables";
 import {iUser} from "variables/sharedInterfaces";
 
-export interface iGetUserMeta {
+export interface iGetUmMeta {
     user: iUser
 }
 
-export default restApi<iGetUserMeta, iUm_Metadata, {}, iGetC6RestResponse<iUm_Metadata>>({
+export default restApi<iGetUmMeta, iUm_Metadata, {}, iGetC6RestResponse<iUm_Metadata>>({
         axios: DropVariables.axios,
         tableName: C6.um_metadata.TABLE_NAME,
         requestMethod: GET,

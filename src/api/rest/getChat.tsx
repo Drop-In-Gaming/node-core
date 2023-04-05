@@ -60,7 +60,7 @@ export default restApi<{}, iDig_Chat_Global_Messages, {}, iGetC6RestResponse<iDi
 
         const restData = response?.data?.rest || [];
 
-        DigApi.bootstrap.setState((previousState) => ({
+        DigApi.digApi.setState((previousState) => ({
             globalMessages: [...previousState.globalMessages || [], ...restData],
         }));
 

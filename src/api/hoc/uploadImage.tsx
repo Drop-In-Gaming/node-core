@@ -81,7 +81,7 @@ uploadCallback: ((ID: number, dataUriBase64: string) => void) | undefined = unde
                 void toDataURL(URL.createObjectURL(file), file.type, (dataUriEncoded => {
                     let postData = {
                         guid: '',
-                        post_author: DigApi.bootstrap.state.id,
+                        post_author: DigApi.digApi.state.id,
                         post_content: dataUriEncoded,
                         post_content_filtered: '',
                         post_excerpt: post_excerpt,

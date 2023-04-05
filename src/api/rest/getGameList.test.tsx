@@ -8,7 +8,7 @@ describe('Get Games List', () => {
 
     test('Asset Game List Not Empty', async () => {
 
-        let bootstrap: DigApi = DigApi.bootstrap;
+        let bootstrap: DigApi = DigApi.digApi;
 
         // @link https://reactjs.org/link/wrap-tests-with-act
         await act(async () => {

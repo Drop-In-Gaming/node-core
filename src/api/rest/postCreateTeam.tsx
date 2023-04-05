@@ -28,7 +28,7 @@ export default restApi<{
         updateRestfulObjectArray<iTeam>([{
                 ...request,
                 rosterAccepted: [
-                    DigApi.bootstrap.state.id
+                    DigApi.digApi.state.id
                 ],
                 rosterDetails: [
                 ],

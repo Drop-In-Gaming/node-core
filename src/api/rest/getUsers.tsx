@@ -25,7 +25,7 @@ export default restApi<iGetUser>({
     clearCache: () => fastCache = [],
     queryCallback: (request: iGetUser = {}) => {
 
-        const bootstrap: DigApi = DigApi.bootstrap;
+        const bootstrap: DigApi = DigApi.digApi;
 
         let lookUpQueue: number[] = [];
 
@@ -293,7 +293,7 @@ export default restApi<iGetUser>({
     },
     responseCallback: response => {
 
-        const bootstrap: DigApi = DigApi.bootstrap;
+        const bootstrap: DigApi = DigApi.digApi;
 
         const parseUser = (user): iUser => {
 

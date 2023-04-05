@@ -63,12 +63,12 @@ export default restApi<iGetNotifications, iDig_Comp_Registration>({
 
             if (undefined === request.competitionIds) {
 
-                if (0 === DigApi.bootstrap.state.id) {
+                if (0 === DigApi.digApi.state.id) {
                     throw Error("Trying to get competition registrations without a user id or specified competition ids")
                 }
 
                 query[C6.WHERE] = {
-                    [dig_comp_registration.USER_ID]: DigApi.bootstrap.state.id
+                    [dig_comp_registration.USER_ID]: DigApi.digApi.state.id
                 }
 
             }
@@ -79,7 +79,7 @@ export default restApi<iGetNotifications, iDig_Comp_Registration>({
 
             const restData = response?.data?.rest || [];
 
-            DigApi.bootstrap.setState((prevState) => {
+            DigApi.digApi.setState((prevState) => {
                 return {
                     registrations: [
                         ...prevState?.registrations?.filter(item => false === (restData?.find(value => value.comp_registration_id === item.comp_registration_id) || false)) || [],

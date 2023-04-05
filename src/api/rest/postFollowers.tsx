@@ -11,7 +11,7 @@ export default restApi<{ user_id2: number}, iUm_Followers>({
     requestMethod: POST,
     queryCallback: (request) => {
         request.success = 'You have successfully followed this user'
-        request.user_id1 = DigApi.bootstrap.state.id
+        request.user_id1 = DigApi.digApi.state.id
         request.error = 'Unable to add you as a follower to this user.'
         return request
     },

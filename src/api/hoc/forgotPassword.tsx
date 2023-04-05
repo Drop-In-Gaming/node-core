@@ -21,7 +21,7 @@ export default function forgotPassword({emailAddressOrUsername, userID, userPass
     }
     isRunning = true;
 
-    const bootstrap = DigApi.bootstrap;
+    const bootstrap = DigApi.digApi;
 
     // setState still has timing issues, the manual flag set isRunning is the best way
     // this is not a restful request as its routing is defined explicitly in

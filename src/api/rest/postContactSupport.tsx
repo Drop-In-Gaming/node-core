@@ -17,7 +17,7 @@ export default restApi<{
         tableName: C6.dig_contact_support.TABLE_NAME,
         requestMethod: POST,
         queryCallback: (request) => {
-            request.support_from_user_id = DigApi.bootstrap.state.id
+            request.support_from_user_id = DigApi.digApi.state.id
             request.success = 'Successfully sent your support request!'
             request.error = 'An unexpected issue occurred. Please react our to Drop-In Gaming directly at support@dropingaming.com'
             return request

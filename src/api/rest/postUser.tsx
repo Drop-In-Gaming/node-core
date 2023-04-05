@@ -34,9 +34,9 @@ export default restApi<iPostUser, iUsers & iDig_Temp_Invite, {}, iPostC6RestResp
 
         }
 
-        if (0 === DigApi.bootstrap.state.id) {
+        if (0 === DigApi.digApi.state.id) {
 
-            authenticated(DigApi.bootstrap)
+            authenticated(DigApi.digApi)
 
         } else {
 

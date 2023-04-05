@@ -14,7 +14,7 @@ export default restApi<{ user_id2: number }, iUm_Followers, {}, iDeleteC6RestRes
     queryCallback: (request) => {
         request.success = 'You have successfully removed your follower'
         request.error = 'Unable to remove you as a follower of this user.'
-        request.user_id1 = DigApi.bootstrap.state.id
+        request.user_id1 = DigApi.digApi.state.id
         return request
     },
     responseCallback: (_response, request, _id) => {
@@ -29,7 +29,7 @@ export default restApi<{ user_id2: number }, iUm_Followers, {}, iDeleteC6RestRes
 
             if (targetUser) {
 
-                targetUser?.followers?.splice(targetUser.followers.indexOf(DigApi.bootstrap.state.id), 1)
+                targetUser?.followers?.splice(targetUser.followers.indexOf(DigApi.digApi.state.id), 1)
 
                 updateObjects.push(targetUser)
 
