@@ -196,8 +196,8 @@ export default class DigApi extends React.Component<iDigApiProperties, iDigApiSt
         nextState: Readonly<iDigApiState>,
         _nextContext: any): boolean {
 
-        changed(this.constructor.name, 'props', this.props, nextProps);
-        changed(this.constructor.name, 'state', this.state, nextState);
+        changed(this.constructor.name + ' (DigApi)', 'props', this.props, nextProps);
+        changed(this.constructor.name + ' (DigApi)', 'state', this.state, nextState);
 
         // this is a conditional to ensure we don't render when the websocket sends an update.
         // we only want to render when a functional callable decides the data is worth rendering in our runtime.
@@ -367,4 +367,5 @@ export default class DigApi extends React.Component<iDigApiProperties, iDigApiSt
     }
 
 }
+
 

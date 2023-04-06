@@ -5,6 +5,9 @@ import sassDts from 'vite-plugin-sass-dts'
 import dts from 'vite-plugin-dts';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
+
+const pkg = require("./package.json");
+
 // @ts-ignore
 import path from 'path';
 
@@ -14,7 +17,7 @@ export default defineConfig({
         react(),
         svgr({
             svgrOptions: {
-                // svgr options
+                exportType: 'named', jsxRuntime: 'automatic'
             }
         }),
         tsconfigPaths(),
@@ -48,22 +51,29 @@ export default defineConfig({
         }
     },
     build: {
+        assetsDir: 'src/assets',
         sourcemap: true,
+        cssCodeSplit: true,
         lib: {
             entry: path.resolve(__dirname, 'src/index.ts'),
             name: '@drop-in-gaming/core',
-            formats: ['es', 'umd', 'cjs'],
-            fileName: (format) => `core.${format}.js`
+            formats: ['es', 'cjs'],
+            fileName: (format) => format === 'es' ? `core.${format}.jsx` : `core.${format}.js`,
         },
         rollupOptions: {
-            external: ['react', 'react-dom', 'styled-components'],
+            external: [...Object.keys(pkg.peerDependencies)],
             output: {
+                inlineDynamicImports: false,
                 globals: {
                     react: 'React',
                     'react-dom': 'ReactDOM',
-                    'styled-components': 'styled'
-                }
-            }
-        }
+                    'styled-components': 'styled',
+                    axios: 'axios',
+                    'axios-cache-adapter': 'axios-cache-adapter',
+                },
+                minifyInternalExports: false,
+                preserveModules: true,
+            },
+        },
     }
 });

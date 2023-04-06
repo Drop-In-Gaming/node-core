@@ -1,0 +1,48 @@
+#!/usr/bin/env node
+
+console.log('Preparing to test before you commit! This could take a while :)')
+
+const spawn = require('child_process').spawn;
+
+let testProcess = spawn('npm', ['run', 'build']);
+
+testProcess.stdout.pipe(process.stdout);
+
+testProcess.stderr.pipe(process.stdout);
+
+testProcess.on('exit', function (code) {
+
+    console.log('`npm run build` exited with code ' + code.toString());
+
+    if (0 !== code) {
+
+        process.exit(code)
+
+    }
+
+});
+
+// auto version and push to git
+
+
+
+
+// publish to npm
+testProcess = spawn('npm', ['run', 'publish']);
+
+testProcess.stdout.pipe(process.stdout);
+
+testProcess.stderr.pipe(process.stdout);
+
+testProcess.on('exit', function (code) {
+
+    console.log('`npm run build` exited with code ' + code.toString());
+
+    if (0 !== code) {
+
+        process.exit(code)
+
+    }
+
+});
+

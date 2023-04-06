@@ -7,3 +7,5 @@ export const GlobalHistory = () => {
 
     return null;
 };
+
+GlobalHistory.displayName = "GlobalHistory";
