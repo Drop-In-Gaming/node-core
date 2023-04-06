@@ -1,7 +1,7 @@
 // @link https://www.benmvp.com/blog/mocking-window-location-methods-jest-jsdom/
 import AxiosContext from "variables/AxiosContext";
 
-export default function () {
+export default function setUrl() {
 
     const isGitHubActions = process.env.REACT_APP_TEST_REMOTE === 'true'
 

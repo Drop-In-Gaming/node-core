@@ -1,13 +1,15 @@
 
+import React from 'react';
 import styles from "style.module.scss"
 
-export default function AccessDenied (_params: {}){
+export default function AccessDenied ({children} : {children?: React.ReactNode}) {
 
         return (
             <div>
                 <div className={styles.notfound}>
                     <div className={styles.notfound_404}>
                         <h3>Oops! Access not granted</h3>
+                        {children}
                         <h1 style={{
                             position: "absolute",
                             left: "50%",

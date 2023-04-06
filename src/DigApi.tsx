@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import AccessDenied from 'components/Errors/AccessDenied';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
@@ -59,6 +60,7 @@ import { ReactComponent as GgSVG } from 'assets/img/svg/DIG-logo-lockup-horizont
 
 export interface iDigApiProperties {
     children?: React.ReactNode | React.ReactNode[] | undefined;
+    apiKey?: string;
 }
 
 export type iRegistrations = iDig_Comp_Registration & iDig_Vendor;
@@ -111,7 +113,8 @@ export interface iDigApiState extends iRestfulObjectArrayTypes {
     bricked504: boolean,
     backendThrowable: any[],
     translateToLanguage: iLanguage | undefined,
-    invalidPasswordResetKey: string | undefined
+    invalidPasswordResetKey: string | undefined,
+    apiKey: string | undefined,
 }
 
 export default class DigApi extends React.Component<iDigApiProperties, iDigApiState> {
@@ -143,6 +146,7 @@ export default class DigApi extends React.Component<iDigApiProperties, iDigApiSt
          **/
         this.state = {
             id: 0,
+            apiKey: props.apiKey,
             alert: false,
             alertsWaiting: [],
             chatInput: '',
@@ -238,9 +242,15 @@ export default class DigApi extends React.Component<iDigApiProperties, iDigApiSt
 
     render() {
 
-        const { id } = this.state;
+        const { id, apiKey } = this.state;
 
         console.log('BOOTSTRAP TSX RENDER');
+
+        if (undefined === apiKey) {
+
+            return <AccessDenied />;
+
+        }
 
         const colorHex = '#' + Math.random().toString(16).slice(-6);
 

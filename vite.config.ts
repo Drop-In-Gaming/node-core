@@ -5,7 +5,8 @@ import sassDts from 'vite-plugin-sass-dts'
 import dts from 'vite-plugin-dts';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
-const path = require('path');
+// @ts-ignore
+import path from 'path';
 
 
 export default defineConfig({
