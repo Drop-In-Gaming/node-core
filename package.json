@@ -4,7 +4,7 @@
         "type": "git",
         "url": "https://github.com/drop-in-gaming/node-core.git"
     },
-    "version": "0.1.5",
+    "version": "0.1.6",
     "type": "module",
     "description": "A component library for getting people started with easy to re-use components for everyday projects.",
     "main": "./dist/index.umd.js",
