@@ -20,11 +20,13 @@
         }
     },
     "scripts": {
+        "postinstall": "npm run githooks",
         "build": "rm -rf dist/ && npm run build:css && npm run build:index  && npm run build:esm && vite build",
         "build:index": "./node_modules/.bin/barrelsby -d ./src --delete --exclude '(jestHoc|\\.test|\\.d).tsx?$' --exportDefault --verbose",
         "build:esm": "tsc --declaration --emitDeclarationOnly --declarationDir dist/",
         "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
-        "build:css": "sass  ./src:./src && tcm src"
+        "build:css": "sass  ./src:./src && tcm src",
+        "githooks": "git config core.hooksPath .githooks && chmod +x .githooks/*"
     },
 
     "workspaces": [
