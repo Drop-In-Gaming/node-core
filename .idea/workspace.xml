@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4ea19b39-b089-4b5a-9a47-a4273cbf46db" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/packages/core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.githooks/post-push" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/.githooks/post-push" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/.idea/aws.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/node-core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/.idea/node-core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/public/logo192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/src/ApiDocumentation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/src/ApiDocumentation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/src/App.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/src/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/src/react-app-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/src/reportWebVitals.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/src/reportWebVitals.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/src/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/src/setupTests.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/documentation/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DigApi.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/DigApi.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/API.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/API.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/CompetitionSort.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/CompetitionSort.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/CompetitionSort.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/CompetitionSort.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/GlobalHistory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/GlobalHistory.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/TeamNameValidation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/TeamNameValidation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/TestRestfulResponse.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/TestRestfulResponse.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/TournamentScoreSort.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/TournamentScoreSort.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/TranslateText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/TranslateText.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/authenticated.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/authenticated.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/axiosInterceptors.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/axiosInterceptors.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/changed.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/changed.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/compTypeToSingular.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/compTypeToSingular.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/copyToClipboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/copyToClipboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/deleteRestfulObjectArrays.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/deleteRestfulObjectArrays.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/forgotPassword.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/forgotPassword.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/getCurrentLoggedInUser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/getCurrentLoggedInUser.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/getMetaValue.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/getMetaValue.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/isEdgeBrowser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/isEdgeBrowser.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/isJsonString.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/isJsonString.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/isLoggedIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/isLoggedIn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/isTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/isTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/logout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/logout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/objectIsLoading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/objectIsLoading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/parseEnumKeyValues.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/parseEnumKeyValues.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/postUpdateMetaValue.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/postUpdateMetaValue.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/scrollIntoView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/scrollIntoView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/setUrl.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/setUrl.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/sortDate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/sortDate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/updateRestfulObjectArrays.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/updateRestfulObjectArrays.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/updateRestfulObjectArrays.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/updateRestfulObjectArrays.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/uploadImage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/uploadImage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/validSQL.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/validSQL.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hoc/windowDimensions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/windowDimensions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/deleteAllowedGames.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/deleteAllowedGames.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/deleteFeature.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/deleteFeature.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/deleteFeatureGroupReference.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/deleteFeatureGroupReference.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/deleteFollowers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/deleteFollowers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/deleteFriends.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/deleteFriends.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/deleteGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/deleteGroup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/deleteGroupGrantabillity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/deleteGroupGrantabillity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/deleteInvitation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/deleteInvitation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/deleteRegistration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/deleteRegistration.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/deleteTeamRoster.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/deleteTeamRoster.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/deleteUser.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/deleteUser.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/deleteUser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/deleteUser.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/deleteUserGroups.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/deleteUserGroups.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getChat.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getChat.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getCompEvidence.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getCompEvidence.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getCompScores.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getCompScores.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getCompetitionMeta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getCompetitionMeta.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getCompetitions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getCompetitions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getFeatures.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getFeatures.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getGameList.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getGameList.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getGameList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getGameList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getGameModes.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getGameModes.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getGameModes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getGameModes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getGroups.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getGroups.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getInvitations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getInvitations.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getNotifications.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getNotifications.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getPayoutTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getPayoutTable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getPosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getPosts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getQueueRegistrations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getQueueRegistrations.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getRegistrations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getRegistrations.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getResultUpload.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getResultUpload.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getResults.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getResults.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getSubMode.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getSubMode.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getSubscriptions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getSubscriptions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getTeamRosters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getTeamRosters.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getTeams.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getTeams.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getTournamentPayoutTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getTournamentPayoutTable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getUmMeta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getUmMeta.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getUserMeta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getUserMeta.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getUsernames.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getUsernames.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getUsers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getUsers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/getVendors.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/getVendors.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postAllowedGames.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postAllowedGames.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postAuthenticate.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postAuthenticate.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postAuthenticate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postAuthenticate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postChatGlobalMessages.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postChatGlobalMessages.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postCompEvidence.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postCompEvidence.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postCompScore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postCompScore.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postCompetition.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postCompetition.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postCompetition.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postCompetition.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postContactSupport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postContactSupport.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postCreateTeam.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postCreateTeam.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postFeature.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postFeature.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postFeatureGroupReference.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postFeatureGroupReference.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postFollowers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postFollowers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postFriends.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postFriends.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postGroup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postGroupGrantabillity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postGroupGrantabillity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postInvitation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postInvitation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postMatchConfirmation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postMatchConfirmation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postPosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postPosts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postRegistration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postRegistration.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postTeamRoster.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postTeamRoster.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postTeammateStake.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postTeammateStake.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postUnregisteredUserInvitation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postUnregisteredUserInvitation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postUser.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postUser.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postUser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postUser.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postUserGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postUserGroup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postUserMeta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postUserMeta.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/postWalletTransaction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/postWalletTransaction.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/putCompetition.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/putCompetition.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/putFriends.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/putFriends.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/putGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/putGroup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/putTeamRoster.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/putTeamRoster.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/putTeams.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/putTeams.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/putUser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/putUser.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/putUserMeta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/api/rest/putUserMeta.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/audio/EminenceFront_TheWho.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/audio/EminenceFront_TheWho.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/admin.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/admin.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/admin.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/admin.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/admin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/admin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/bracket.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/bracket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/bracket.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/bracket.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/bracket.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/bracket.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/bracket.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/bracket.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/card.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/card.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/card.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/card.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/card.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/chat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/chat.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/chat.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/chat.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/chat.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/chat.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/chat.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dig_profile_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dig_profile_page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dig_profile_page.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dig_profile_page.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dig_profile_page.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dig_profile_page.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dig_profile_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dig_profile_page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dig_um_style_friends_messages.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dig_um_style_friends_messages.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dig_um_style_friends_messages.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dig_um_style_friends_messages.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dig_um_style_friends_messages.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dig_um_style_friends_messages.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dig_um_style_friends_messages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dig_um_style_friends_messages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dig_um_style_notifications.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dig_um_style_notifications.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dig_um_style_notifications.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dig_um_style_notifications.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dig_um_style_notifications.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dig_um_style_notifications.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dig_um_style_notifications.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dig_um_style_notifications.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dig_woo.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dig_woo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dig_woo.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dig_woo.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dig_woo.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dig_woo.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dig_woo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dig_woo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dropingaming.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dropingaming.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dropingaming.min.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dropingaming.min.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dropingaming.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dropingaming.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dropingaming.min.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/dropingaming.min.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/gg.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/gg.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/gg.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/gg.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/gg.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/gg.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/gg.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/gg.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/jquery.bracket.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/jquery.bracket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/jquery.bracket.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/jquery.bracket.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/jquery.bracket.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/jquery.bracket.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/jquery.bracket.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/jquery.bracket.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/landing-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/landing-page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/landing-page.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/landing-page.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/landing-page.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/landing-page.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/landing-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/landing-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/match.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/match.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/match.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/match.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/match.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/match.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/match.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/match.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/material-dashboard-react.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/material-dashboard-react.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/material-dashboard-react.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/material-dashboard-react.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/material-dashboard-react.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/material-dashboard-react.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/material-dashboard-react.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/material-dashboard-react.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/normalize.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/normalize.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/normalize.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/normalize.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/normalize.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/normalize.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/normalize.min.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/normalize.min.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/normalize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/normalize.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/pace.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/pace.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/pace.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/pace.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/pace.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/pace.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/pace.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/pace.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/responsive.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/responsive.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/responsive.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/responsive.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/responsive.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/style.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/style.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/tournament.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/tournament.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/tournament.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/tournament.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/tournament.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/tournament.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/tournament.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/tournament.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/user_team_profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/user_team_profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/user_team_profile.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/user_team_profile.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/user_team_profile.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/user_team_profile.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/user_team_profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/user_team_profile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/wallet.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/wallet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/wallet.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/wallet.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/wallet.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/wallet.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/wallet.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/wallet.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/wallet_admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/wallet_admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/wallet_admin.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/wallet_admin.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/wallet_admin.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/wallet_admin.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/wallet_admin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/css/wallet_admin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/angular.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/angular.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/chrome.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/chrome.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/dashboard.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/dashboard.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/edge.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/edge.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/firefox.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/firefox.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/html.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/html.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/map.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/map.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/md-react.gif" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/md-react.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/notifications.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/notifications.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/opera.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/opera.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/opt_md_angular_thumbnail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/opt_md_angular_thumbnail.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/opt_md_thumbnail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/opt_md_thumbnail.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/opt_md_vue_thumbnail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/opt_md_vue_thumbnail.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/opt_mdr_thumbnail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/opt_mdr_thumbnail.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/react.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/react.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/safari.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/safari.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/tables.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/tables.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/userprofile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/userprofile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/github/vuejs.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/github/vuejs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Carbon-green.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/Carbon-green.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Carbon-teal-180.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/Carbon-teal-180.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/DIG-logo-beta-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/DIG-logo-beta-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/SD.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/SD.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/admin/tab-icons/bracket_64.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/admin/tab-icons/bracket_64.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/admin/tab-icons/games_64.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/admin/tab-icons/games_64.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/admin/tab-icons/gear.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/admin/tab-icons/gear.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/admin/tab-icons/matches_64.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/admin/tab-icons/matches_64.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/admin/tab-icons/tournaments_64.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/admin/tab-icons/tournaments_64.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/admin/tab-icons/wallet.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/admin/tab-icons/wallet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/bg2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/bg2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/bg4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/bg4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/bg7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/bg7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/comp-headers/mobile-header-empty.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/comp-headers/mobile-header-empty.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/core-bg-alt.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/core-bg-alt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/core-bg-blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/core-bg-blue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/core-bg-grayscale.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/core-bg-grayscale.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/core-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/core-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/cover.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/cover.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/default-chat-gravatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/default-chat-gravatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/default-gravatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/default-gravatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/default_profile_photo.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/default_profile_photo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/dig-executive-team-2021.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/dig-executive-team-2021.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/dig-executive-team.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/dig-executive-team.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/equifax-logo-corporate.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/equifax-logo-corporate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/examples/clem-onojegaw.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/examples/clem-onojegaw.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/examples/clem-onojeghuo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/examples/clem-onojeghuo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/examples/cynthia-del-rio.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/examples/cynthia-del-rio.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/examples/mariya-georgieva.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/examples/mariya-georgieva.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/examples/olu-eletu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/examples/olu-eletu.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/examples/studio-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/examples/studio-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/examples/studio-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/examples/studio-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/examples/studio-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/examples/studio-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/examples/studio-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/examples/studio-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/examples/studio-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/examples/studio-5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/faces/avatar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/faces/avatar.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/faces/camp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/faces/camp.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/faces/card-profile1-square.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/faces/card-profile1-square.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/faces/card-profile2-square.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/faces/card-profile2-square.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/faces/card-profile4-square.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/faces/card-profile4-square.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/faces/card-profile5-square.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/faces/card-profile5-square.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/faces/card-profile6-square.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/faces/card-profile6-square.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/faces/christian.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/faces/christian.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/faces/kendall.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/faces/kendall.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/faces/marc.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/faces/marc.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/free-comp-overlay.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/free-comp-overlay.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/APEX.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/APEX.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/COD-old.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/COD-old.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/COD.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/COD.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/FRTNT.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/FRTNT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/GUNFIGHT.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/GUNFIGHT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/New-Game-Apex-Selected.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/New-Game-Apex-Selected.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/New-Game-Apex.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/New-Game-Apex.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/New-Game-COD-Gunfight-Selected.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/New-Game-COD-Gunfight-Selected.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/New-Game-COD-Gunfight.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/New-Game-COD-Gunfight.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/New-Game-COD-Warzone-Selected.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/New-Game-COD-Warzone-Selected.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/New-Game-COD-Warzone.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/New-Game-COD-Warzone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/New-Game-Fortnite-Selected.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/New-Game-Fortnite-Selected.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/New-Game-Fortnite.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/New-Game-Fortnite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/PUBG.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/PUBG.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/apex-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/apex-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/cod-coldWar-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/cod-coldWar-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/cod-gunfight-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/cod-gunfight-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/cod-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/cod-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/cod-warzone-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/cod-warzone-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/fallGuys-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/fallGuys-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/fifa21-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/fifa21-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/fortnite-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/fortnite-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/madden-21-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/madden-21-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/madden-22-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/madden-22-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/mlbTheShow21-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/mlbTheShow21-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/nba2K21-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/nba2K21-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/nhl21-notification.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/nhl21-notification.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/pga2K21-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/pga2K21-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/pga2k.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/pga2k.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/rocket-league-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/rocket-league-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/splitgate-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/splitgate-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/team_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/team_profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/valorant-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/valorant-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/z-old-COD-inv.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/z-old-COD-inv.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/game-logos/z-old-PUBG-inv.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/game-logos/z-old-PUBG-inv.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/gg-imgs/boss_subscription.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/gg-imgs/boss_subscription.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/gg-imgs/coin_packs_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/gg-imgs/coin_packs_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/gg-imgs/gamer_subcription.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/gg-imgs/gamer_subcription.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/gg-imgs/need_coins.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/gg-imgs/need_coins.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/gg-imgs/newbie_subscription.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/gg-imgs/newbie_subscription.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/gg-imgs/subscription_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/gg-imgs/subscription_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/gif/maintenance-hero.gif" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/gif/maintenance-hero.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/gravatar-blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/gravatar-blue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/gravatar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/gravatar.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/gravatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/gravatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico/favicon-alex.ico" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/ico/favicon-alex.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico/favicon-dev.ico" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/ico/favicon-dev.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico/favicon-frank.ico" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/ico/favicon-frank.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico/favicon-local.ico" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/ico/favicon-local.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico/favicon-preprod.ico" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/ico/favicon-preprod.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico/favicon-prod.ico" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/ico/favicon-prod.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico/favicon-richard.ico" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/ico/favicon-richard.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico/favicon-sean.ico" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/ico/favicon-sean.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico/favicon-stage.ico" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/ico/favicon-stage.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico/favicon-tai.ico" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/ico/favicon-tai.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico/favicon-www.ico" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/ico/favicon-www.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/ico/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/landing-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/landing-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/landing-page-teaser-cod-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/landing-page-teaser-cod-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/landing-page-teaser-cod.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/landing-page-teaser-cod.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/landing-page-teaser-cod.pnp.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/landing-page-teaser-cod.pnp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/landing-page-teaser-marching.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/landing-page-teaser-marching.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/landing.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/landing.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/logo-beta-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/logo-beta-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/maintenance-hero.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/maintenance-hero.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/mask.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/mask.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/new-background-flourish.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/new-background-flourish.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/new-background-tile-blue-pattern.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/new-background-tile-blue-pattern.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/new-bg-brackets.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/new-bg-brackets.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/new-bg-matches.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/new-bg-matches.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/new-bg-tournaments.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/new-bg-tournaments.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/new-dig-logo-blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/new-dig-logo-blue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/new-landing-page-brackets.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/new-landing-page-brackets.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/new-landing-page-matches.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/new-landing-page-matches.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/new-landing-page-tour.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/new-landing-page-tour.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/new-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/new-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/new-mobile-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/new-mobile-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/new_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/new_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/new_logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/new_logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/notifications/Apex-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/notifications/Apex-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/notifications/PGA-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/notifications/PGA-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/notifications/cod-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/notifications/cod-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/notifications/fortnite-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/notifications/fortnite-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/notifications/gunfight-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/notifications/gunfight-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/notifications/team_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/notifications/team_profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/notifications/team_profile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/notifications/team_profile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/notifications/wallet-notifications.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/notifications/wallet-notifications.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/notifications/warzone-notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/notifications/warzone-notification.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/og-default-image.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/og-default-image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/play-like-the-pros.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/play-like-the-pros.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/accepted-credit-cards.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/accepted-credit-cards.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/accepted-paypal.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/accepted-paypal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/brackets_16.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/brackets_16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/brackets_16@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/brackets_16@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/chat_bubble.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/chat_bubble.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/close@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/close@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/collapse_up.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/collapse_up.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/collapse_up@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/collapse_up@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/default-notification-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/default-notification-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/emoji.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/emoji.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/emoji@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/emoji@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/group.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/group.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/group@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/group@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/list.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/list.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/list@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/list@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/maintenance-hero.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/maintenance-hero.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/matches_16.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/matches_16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/matches_16@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/matches_16@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/more.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/more.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/more@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/more@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/new_message.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/new_message.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/new_message@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/new_message@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/reset_search.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/reset_search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/reset_search@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/reset_search@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/secondary_thin_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/secondary_thin_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/secondary_thin_2@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/secondary_thin_2@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/socket-inv.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/socket-inv.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/socket.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/socket.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/tournaments_16.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/tournaments_16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/png/tournaments_16@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/png/tournaments_16@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/profile-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/profile-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/profile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/reactlogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/reactlogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/sidebar-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/sidebar-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/sidebar-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/sidebar-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/sidebar-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/sidebar-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/sidebar-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/sidebar-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/sign.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/sign.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/site-icon-alt.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/site-icon-alt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/site-icon-new.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/site-icon-new.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/site-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/site-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/1st-place.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/1st-place.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/2k.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/2k.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/2nd-place.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/2nd-place.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/3rd-place.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/3rd-place.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/4th-place.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/4th-place.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/Bracket_16.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/Bracket_16.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/Cart_16.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/Cart_16.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/Cart_16_white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/Cart_16_white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/Community_16.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/Community_16.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/Games_16.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/Games_16.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/Invitations_16.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/Invitations_16.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/Match_16.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/Match_16.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/Notifications_16.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/Notifications_16.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/Profile_16.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/Profile_16.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/Tournament_16.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/Tournament_16.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/activision.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/activision.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/at-symbol.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/at-symbol.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/bracket.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/bracket.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/cart_white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/cart_white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/chat_new_message.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/chat_new_message.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/dig_coin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/dig_coin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/discord.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/discord.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/electronic-arts.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/electronic-arts.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/epic-games.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/epic-games.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/fall-guys.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/fall-guys.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/invitations.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/invitations.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/match.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/match.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/nintendo-switch-filled.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/nintendo-switch-filled.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/nintendo-switch.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/nintendo-switch.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/notifications.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/notifications.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/profile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/profile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/share-alt-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/share-alt-solid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/sms-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/sms-solid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/team_profile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/team_profile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/team_size_1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/team_size_1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/team_size_2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/team_size_2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/team_size_3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/team_size_3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/team_size_4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/team_size_4.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg-icons/tournament.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg-icons/tournament.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/Brackets_16@1x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/Brackets_16@1x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/ChatBubble1x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/ChatBubble1x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/Close1x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/Close1x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/Collapse Up@1x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/Collapse Up@1x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/DIG-logo-lockup-beta-horizontal-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/DIG-logo-lockup-beta-horizontal-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/DIG-logo-lockup-horizontal-white-GG.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/DIG-logo-lockup-horizontal-white-GG.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/Group@1x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/Group@1x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/List@1x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/List@1x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/Matches_16@1x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/Matches_16@1x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/More@1x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/More@1x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/New Message@1x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/New Message@1x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/Reset Search@1x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/Reset Search@1x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/Secondary (thin) 2@1x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/Secondary (thin) 2@1x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/Tournaments_16@1x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/Tournaments_16@1x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/emoji.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/emoji.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/moon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/moon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/sun.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/sun.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/svg/up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/svg/up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/tim_80x80.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/tim_80x80.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/touch.png" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/img/touch.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/pdf/Drop-In_Gaming_2022_End_of_year_Partner_report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/assets/pdf/Drop-In_Gaming_2022_End_of_year_Partner_report.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Alert/Alert.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Alert/Alert.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BodyEnd/BodyEnd.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/BodyEnd/BodyEnd.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Button/style.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/style.module.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Button/style.module.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/style.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Button/style.module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Button/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Errors/AccessDenied.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Errors/AccessDenied.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Errors/BackendThrowable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Errors/BackendThrowable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Errors/ErrorHttpCode.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Errors/ErrorHttpCode.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Errors/Localhost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Errors/Localhost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Errors/PageNotFound.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Errors/PageNotFound.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Errors/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Errors/style.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Errors/style.module.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Errors/style.module.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Errors/style.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Errors/style.module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Errors/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Errors/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Errors/style.module.scss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Errors/style.module.scss.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ExpandableBox/ExpandableBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/ExpandableBox/ExpandableBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ForceLegayPasswordReset/ForceLegacyPasswordReset.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/ForceLegayPasswordReset/ForceLegacyPasswordReset.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HandleResponseCodes/HandleResponseCodes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/HandleResponseCodes/HandleResponseCodes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Input/Input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Loading/Loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Loading/Loading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nest/Nest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Nest/Nest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Popup/Popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Popup/Popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tooltip/Tooltip.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Tooltip/Tooltip.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tooltip/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Tooltip/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tooltip/style.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Tooltip/style.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tooltip/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Tooltip/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tooltip/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Tooltip/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Troubleshoot/Bricked504.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/Troubleshoot/Bricked504.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VerifyAccountTrollBridge/VerifyAccountTrollBridge.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/VerifyAccountTrollBridge/VerifyAccountTrollBridge.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WebSocket/TryWebSocket.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/WebSocket/TryWebSocket.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WebSocket/WebSocketGlobalListeners.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/WebSocket/WebSocketGlobalListeners.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WithRouter/WithRouter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/components/WithRouter/WithRouter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/custom.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jestHoc.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/jestHoc.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/style.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.module.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/style.module.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/style.module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/AxiosContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/variables/AxiosContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/C6.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/variables/C6.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/DropVariables.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/variables/DropVariables.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/Emojis.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/variables/Emojis.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/bootstrap.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/variables/bootstrap.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/bootstrap.module.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/variables/bootstrap.module.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/bootstrap.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/variables/bootstrap.module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/bootstrap.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/variables/bootstrap.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/bootstrap.module.scss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/variables/bootstrap.module.scss.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/isAppLocal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/variables/isAppLocal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/sharedInterfaces.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/variables/sharedInterfaces.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/supportedLanguages.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/variables/supportedLanguages.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/vite.config.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/packages/core/documentation/package.json" />
+    <dismissed value="$PROJECT_DIR$/packages/core/package.json" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="2NuZtSPzKD0wBJCq1LVrwF0X8jH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.11.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.11.0&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/richardmiles/IdeaProjects/node-core&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/richardmiles/IdeaProjects/node-core/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/richardmiles/IdeaProjects/node-core/packages/node-core/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/api" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/node-core" />
+      <recent name="$PROJECT_DIR$/packages" />
+      <recent name="$PROJECT_DIR$/documentation/src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ea19b39-b089-4b5a-9a47-a4273cbf46db" name="Changes" comment="" />
+      <created>1680516141719</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680516141719</updated>
+      <workItem from="1680516143201" duration="33955000" />
+      <workItem from="1680662154577" duration="12992000" />
+      <workItem from="1680677028969" duration="12825000" />
+      <workItem from="1680739444185" duration="2144000" />
+      <workItem from="1680754070390" duration="14949000" />
+      <workItem from="1680844505591" duration="916000" />
+      <workItem from="1684165768676" duration="1534000" />
+      <workItem from="1684167800874" duration="425000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/packages/core/src/Bootstrap.tsx</url>
+          <line>111</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/vite/dist/node/index.d.ts</url>
+          <line>517</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
