@@ -31,13 +31,6 @@ export default function axiosInterceptors(axios: AxiosInstance): void {
         ])
     }
 
-
-    if (isTest) {
-
-        axios.defaults.adapter = require('axios/lib/adapters/http')
-
-    }
-
     axios.interceptors.request.use(
         req => {
 

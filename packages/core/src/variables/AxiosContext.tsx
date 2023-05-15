@@ -1,12 +1,7 @@
- // @link https://www.npmjs.com/package/axios-cache-adapter
+import isTest from "api/hoc/isTest";
 import axios from "axios";
-import {setupCache} from "axios-cache-adapter";
 import Qs from "qs";
 
-
-const cache = setupCache({
-    maxAge: 0
-});
 
 // noinspection SpellCheckingInspection
 const axiosInstance = axios.create({
@@ -64,7 +59,7 @@ const axiosInstance = axios.create({
 
     // `adapter` allows custom handling of requests which makes testing easier.
     // Return a promise and supply a valid response (see lib/adapters/README.md).
-    adapter: cache.adapter,
+    adapter: isTest ? 'http' : 'xhr',
 
     // `auth` indicates that HTTP Basic auth should be used, and supplies credentials.
     // This will set an `Authorization` header, overwriting any existing
@@ -131,6 +126,5 @@ const axiosInstance = axios.create({
 });
 
 export default {
-    cache,
     axiosInstance
 }
