@@ -17,6 +17,9 @@ const {
 } = require("css-loader/dist/utils")
 
 
+//log.info('webpack configuration post config-overrides.js', JSON.stringify(config))
+
+
 // https://github.com/osdevisnot/react-app-rewire-create-react-library/blob/master/index.js
 module.exports = override(
     addBundleVisualizer({}, true),
@@ -82,7 +85,7 @@ module.exports = override(
         }
         return config;
     },
-    addWebpackPlugin(new MiniCssExtractPlugin()),
+    //addWebpackPlugin(new MiniCssExtractPlugin()),
     function (config, _env) {
 
         log.info('webpack env', process.env.NODE_ENV)
@@ -97,12 +100,14 @@ module.exports = override(
                 exportGlobals: true,
                 getLocalIdent: (context, localIdentName, localName, options) => {
 
-                    if (false === context.resourcePath.endsWith('/react/src/variables/bootstrap.module.scss')) {
+                    if (false === context.resourcePath.endsWith('bootstrap.module.scss')) {
 
                         localName = defaultGetLocalIdent(context, localIdentName, localName, options)
                             .replace("[local]", localName)
 
                     }
+
+                    log.info(localName)
 
                     return localName;
 
@@ -121,11 +126,14 @@ module.exports = override(
         const options = getBabelLoader(config).options;
 
         const originalPreset = options.presets.find((preset) => preset[0].includes('babel-preset-react-app'));
+
         if (originalPreset) {
+
             Object.assign(originalPreset[1], {
                 development: true,
                 importSource: '@welldone-software/why-did-you-render',
             });
+
         }
 
         return config;

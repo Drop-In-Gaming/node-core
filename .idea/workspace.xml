@@ -4,8 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ea19b39-b089-4b5a-9a47-a4273cbf46db" name="Changes" comment="">
+    <list default="true" id="4ea19b39-b089-4b5a-9a47-a4273cbf46db" name="Changes" comment="merge">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/styleModules.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/App.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/App.module.css.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/App.module.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/App.module.scss.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/bootstrap.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/bootstrap.module.css.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/bootstrap.module.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/bootstrap.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/bootstrap.module.scss.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/index.css.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/style.module.css.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ts-css-modules-vite-plugin/dist/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ts-css-modules-vite-plugin/dist/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/core/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/core/src/jestHoc.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/jestHoc.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/core/src/variables/DropVariables.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/variables/DropVariables.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/core/src/variables/bootstrap.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/variables/bootstrap.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/gh-pages/config-overrides.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/gh-pages/config-overrides.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/gh-pages/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/sites/gh-pages/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/gh-pages/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/sites/gh-pages/src/App.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/gh-pages/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/sites/gh-pages/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/gh-pages/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/sites/gh-pages/tslint.json" afterDir="false" />
     </list>
     <list id="e4817e16-18d5-4393-b8e6-37352cd9db28" name="Changes by nicoledodge" comment="" />
     <list id="b8dcdf96-dbcb-4fa0-9912-efd7bcf1faf7" name="Changes by richardmiles" comment="" />
@@ -16,6 +45,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,6 +75,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "true",
     "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
     "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
@@ -50,10 +83,10 @@
     "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
     "WebServerToolWindowPanel.toolwindow.show.size": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "javascript.nodejs.core.library.configured.version": "19.7.0",
-    "javascript.nodejs.core.library.typings.version": "20.1.4",
-    "last_opened_file_path": "/Users/nicoledodge/wip/node-core/sites/gh-pages/src",
+    "git-widget-placeholder": "Merging main",
+    "javascript.nodejs.core.library.configured.version": "18.11.0",
+    "javascript.nodejs.core.library.typings.version": "18.11.0",
+    "last_opened_file_path": "/Users/richardmiles/IdeaProjects/node-core/sites/gh-pages/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -116,12 +149,16 @@
       <workItem from="1684165768676" duration="1534000" />
       <workItem from="1684167800874" duration="757000" />
       <workItem from="1684168714869" duration="9140000" />
-      <workItem from="1684182454564" duration="15323000" />
+      <workItem from="1684182454564" duration="14836000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -138,12 +175,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/sites/gh-pages/src/App.tsx</url>
-          <line>27</line>
+          <line>43</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/sites/gh-pages/src/App.tsx</url>
-          <line>20</line>
+          <line>37</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

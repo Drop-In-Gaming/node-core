@@ -4,8 +4,8 @@
  * import what we need to override
  * TODO - test $grid-breakpoints
  **/
-@import "../../../../node_modules/bootstrap/scss/_functions.scss";
-@import "../../../../node_modules/bootstrap/scss/_variables.scss";
+@import "../../../node_modules/bootstrap/scss/_functions.scss";
+@import "../../../node_modules/bootstrap/scss/_variables.scss";
 
 /**
   * Set the overriding variables
@@ -34,4 +34,4 @@ $container-max-widths: (
 );
 
 /* override the !default vars with the values we set above */
-@import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";

@@ -56,6 +56,7 @@ export * from "./api/hoc/scrollIntoView";
 export { default as setUrl } from "./api/hoc/setUrl";
 export * from "./api/hoc/setUrl";
 export * from "./api/hoc/sortDate";
+export * from "./api/hoc/styleModules";
 export { default as updateRestfulObjectArrays } from "./api/hoc/updateRestfulObjectArrays";
 export * from "./api/hoc/updateRestfulObjectArrays";
 export { default as uploadImage } from "./api/hoc/uploadImage";

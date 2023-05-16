@@ -7,7 +7,7 @@
  * running `npm start` will allow you dev on localhost with a root dir of `/`
  *
  */
-import classNames from "classnames";
+import {getRootStyleValue, mergeStyles} from "api/hoc/styleModules";
 import moment from "moment-timezone";
 import {ToastOptions} from "react-toastify";
 import {isPromise} from "api/API";
@@ -36,33 +36,6 @@ export const momentGeneralStringFormatForMysql =  "YYYY-MM-DD HH:mm:ss";
 
 export const DropInGamingTimeZone = "US/Pacific";
 
-
-export const getRootStyleValue = (property = '--dig_primary_color') : string => {
-
-    return getComputedStyle(document.documentElement)
-        .getPropertyValue(property).trim();
-
-}
-
-
-
-interface iStyle {
-    [x: string]: any
-}
-
-function mergeStyles<iStyleA extends iStyle, iStyleB extends iStyle>(styleA : iStyleA, styleB: iStyleB) : iStyleA & iStyleB {
-
-    let styles : iStyle = {};
-
-    const mergedClassNames = Object.keys(styleA).concat(Object.keys(styleB))
-
-    mergedClassNames.map(className => {
-        styles[className] = classNames(styleA[className], styleB[className])
-    })
-
-    return styles as (iStyleA & iStyleB)
-
-}
 
 const dropStyles = mergeStyles(BootstrapStyle, DropInGamingStyles);
 
