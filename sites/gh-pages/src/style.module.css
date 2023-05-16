@@ -1,0 +1,12 @@
+.join {
+  background: var(--dig_neutral5);
+  color: var(--dig_primary_color);
+}
+@media (max-width: 768px) {
+  .join {
+    background: none;
+    color: white;
+  }
+}
+
+/*# sourceMappingURL=style.module.css.map */
