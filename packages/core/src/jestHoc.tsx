@@ -12,9 +12,6 @@ export default async function authenticateTestUser() {
 
     const {user_login, user_pass, id, deleteUser, login} = await createTestUser();
 
-
-
-
     expect(DigApi.digApi.state.id).toEqual(id)
 
     return {

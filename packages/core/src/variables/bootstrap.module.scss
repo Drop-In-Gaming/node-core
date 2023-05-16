@@ -34,4 +34,4 @@ $container-max-widths: (
 );
 
 /* override the !default vars with the values we set above */
-@import "../../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../../node_modules/bootstrap/scss/bootstrap.scss";

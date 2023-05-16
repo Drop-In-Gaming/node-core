@@ -19,6 +19,12 @@
             "require": "./dist/core.umd.js"
         }
     },
+    "sass": {
+        "includePaths": [
+            "./node_modules",
+            "../../node_modules"
+        ]
+    },
     "scripts": {
         "build": "rm -rf dist/ && npm run build:css && npm run build:index  && npm run build:esm && vite build",
         "build:index": "npx barrelsby -d ./src --delete --exclude '(jestHoc|\\.test|\\.d).tsx?$' --exportDefault --verbose",
@@ -75,6 +81,8 @@
         "react-outside-click-handler": "^1.3.0",
         "react-router-dom": "^6.10.0",
         "react-toastify": "^9.1.2",
+        "sass": "^1.62.1",
+        "sass-loader": "^13.2.2",
         "storybook-builder-vite": "^0.0.2",
         "ts-css-modules-vite-plugin": "^1.0.20",
         "typed-css-modules": "^0.7.2",
@@ -83,13 +91,15 @@
         "vite-plugin-dts": "2.2.0",
         "vite-plugin-sass-dts": "^1.3.2",
         "vite-plugin-svgr": "^2.4.0",
-        "vite-tsconfig-paths": "^4.0.8"
+        "vite-tsconfig-paths": "^4.0.8",
+        "webpack": "^5.82.1"
     },
     "peerDependencies": {
         "axios": "^1.3.4",
         "axios-cache-adapter": "^2.7.3",
         "bootstrap": "^5.2.3",
         "canvas-nest.js": "^2.0.4",
+        "moment-timezone": "^0.5.43",
         "qs": "^6.11.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
