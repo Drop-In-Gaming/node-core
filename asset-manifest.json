@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.6b3c3df2.css",
-    "main.js": "/static/js/main.b77f389e.js",
-    "static/js/415.2514e24c.chunk.js": "/static/js/415.2514e24c.chunk.js",
-    "index.html": "/index.html",
-    "main.6b3c3df2.css.map": "/static/css/main.6b3c3df2.css.map",
-    "main.b77f389e.js.map": "/static/js/main.b77f389e.js.map",
-    "415.2514e24c.chunk.js.map": "/static/js/415.2514e24c.chunk.js.map"
+    "main.css": "https://drop-in-gaming.github.io/node-core/static/css/main.6b3c3df2.css",
+    "main.js": "https://drop-in-gaming.github.io/node-core/static/js/main.eae1ee38.js",
+    "static/js/415.2514e24c.chunk.js": "https://drop-in-gaming.github.io/node-core/static/js/415.2514e24c.chunk.js",
+    "index.html": "https://drop-in-gaming.github.io/node-core/index.html",
+    "main.6b3c3df2.css.map": "https://drop-in-gaming.github.io/node-core/static/css/main.6b3c3df2.css.map",
+    "main.eae1ee38.js.map": "https://drop-in-gaming.github.io/node-core/static/js/main.eae1ee38.js.map",
+    "415.2514e24c.chunk.js.map": "https://drop-in-gaming.github.io/node-core/static/js/415.2514e24c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6b3c3df2.css",
-    "static/js/main.b77f389e.js"
+    "static/js/main.eae1ee38.js"
   ]
 }
