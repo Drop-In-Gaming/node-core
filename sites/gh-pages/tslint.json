@@ -9,7 +9,8 @@
     "src/*.tsx",
     "src/**/*.ts",
     "src/**/*.tsx",
-    "../node_modules/**/*"
+    "../node_modules/**/*",
+    "../../node_modules/**/*"
   ],
   "extends": [
     "tslint:recommended",
