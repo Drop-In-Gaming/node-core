@@ -12,7 +12,6 @@
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
     "classnames": "^2.3.2",
-    "gh-pages": "^0.1.0",
     "css-modules-typescript-loader": "^4.0.1",
     "mini-css-extract-plugin": "^2.6.1",
     "raw.macro": "^0.7.0",
@@ -38,7 +37,6 @@
     "rewired:start": "react-app-rewired start  --experimental-modules",
     "build:css": "sass ./src:./src && tcm src",
     "build": "npm run build:css && PUBLIC_URL=https://drop-in-gaming.github.io/node-core/ react-app-rewired build",
-    "deploy": "npm run build && gh-pages -d build",
     "test": "react-app-rewired test",
     "watch:sass": "sass ./src:./src --watch",
     "eject": "react-app-rewired eject"
@@ -64,6 +62,7 @@
   "devDependencies": {
     "concurrently": "^8.0.1",
     "customize-cra": "^1.0.0",
+    "gh-pages": "^0.1.0",
     "webpack-bundle-analyzer": "^4.8.0",
     "webpack-log": "^3.0.2"
   }
