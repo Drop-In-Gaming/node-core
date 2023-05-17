@@ -12,6 +12,7 @@
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
     "classnames": "^2.3.2",
+    "css-modules-typescript-loader": "^4.0.1",
     "mini-css-extract-plugin": "^2.6.1",
     "raw.macro": "^0.7.0",
     "react": "^18.2.0",
