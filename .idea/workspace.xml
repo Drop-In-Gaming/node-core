@@ -4,37 +4,80 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ea19b39-b089-4b5a-9a47-a4273cbf46db" name="Changes" comment="merge">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/core/src/api/hoc/styleModules.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/App.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/App.module.css.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/App.module.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/App.module.scss.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/bootstrap.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/bootstrap.module.css.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/bootstrap.module.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/bootstrap.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/bootstrap.module.scss.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/index.css.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sites/gh-pages/src/style.module.css.d.ts" afterDir="false" />
+    <list default="true" id="4ea19b39-b089-4b5a-9a47-a4273cbf46db" name="Changes" comment="Merge branch 'main' of github.com:Drop-In-Gaming/node-core&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/.nvmrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/.bin/json5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/json5/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/json5/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/json5/dist/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/json5/lib/cli.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/json5/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/json5/lib/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/json5/lib/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/json5/lib/require.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/json5/lib/stringify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/json5/lib/unicode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/json5/lib/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/json5/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/loader-utils/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/loader-utils/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/loader-utils/lib/getCurrentRequest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/loader-utils/lib/getHashDigest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/loader-utils/lib/getOptions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/loader-utils/lib/getRemainingRequest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/loader-utils/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/loader-utils/lib/interpolateName.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/loader-utils/lib/isUrlRequest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/loader-utils/lib/parseQuery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/loader-utils/lib/parseString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/loader-utils/lib/stringifyRequest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/loader-utils/lib/urlToRequest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/node_modules/loader-utils/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/compiler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/emit-declaration/__snapshots__/emit-declaration.test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/emit-declaration/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/emit-declaration/emit-declaration.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/emit-declaration/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/emit-declaration/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/emit-empty-declaration/__snapshots__/emit-empty-declaration.test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/emit-empty-declaration/emit-empty-declaration.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/emit-empty-declaration/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/emit-empty-declaration/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/getErrorMessage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/verify-invalid-declaration/__snapshots__/verify-invalid-declaration.test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/verify-invalid-declaration/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/verify-invalid-declaration/index.css.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/verify-invalid-declaration/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/verify-invalid-declaration/verify-invalid-declaration.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/verify-missing-declaration/__snapshots__/verify-missing-declaration.test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/verify-missing-declaration/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/verify-missing-declaration/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/verify-missing-declaration/verify-missing-declaration.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/verify-valid-declaration/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/verify-valid-declaration/index.css.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/verify-valid-declaration/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/css-modules-typescript-loader/test/verify-valid-declaration/verify-valid-declaration.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/levdist/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/levdist/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/levdist/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/levdist/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/levdist/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/levdist/test/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/line-diff/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/line-diff/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/line-diff/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/line-diff/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/ts-css-modules-vite-plugin/dist/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ts-css-modules-vite-plugin/dist/vite.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/src/jestHoc.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/jestHoc.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/src/variables/DropVariables.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/variables/DropVariables.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/src/variables/bootstrap.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/src/variables/bootstrap.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sites/gh-pages/config-overrides.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/gh-pages/config-overrides.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sites/gh-pages/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/sites/gh-pages/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sites/gh-pages/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/sites/gh-pages/src/App.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sites/gh-pages/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/sites/gh-pages/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sites/gh-pages/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/sites/gh-pages/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/gh-pages/src/bootstrap.module.css" beforeDir="false" />
     </list>
     <list id="e4817e16-18d5-4393-b8e6-37352cd9db28" name="Changes by nicoledodge" comment="" />
     <list id="b8dcdf96-dbcb-4fa0-9912-efd7bcf1faf7" name="Changes by richardmiles" comment="" />
@@ -83,7 +126,7 @@
     "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
     "WebServerToolWindowPanel.toolwindow.show.size": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "javascript.nodejs.core.library.configured.version": "18.11.0",
     "javascript.nodejs.core.library.typings.version": "18.11.0",
     "last_opened_file_path": "/Users/richardmiles/IdeaProjects/node-core/sites/gh-pages/src",
@@ -151,6 +194,14 @@
       <workItem from="1684168714869" duration="9140000" />
       <workItem from="1684182454564" duration="14836000" />
     </task>
+    <task id="LOCAL-00001" summary="Merge branch 'main' of github.com:Drop-In-Gaming/node-core&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1684280047876</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684280047876</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +209,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge" />
+    <MESSAGE value="Merge branch 'main' of github.com:Drop-In-Gaming/node-core&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'main' of github.com:Drop-In-Gaming/node-core&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
