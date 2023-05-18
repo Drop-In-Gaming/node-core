@@ -14,11 +14,11 @@
     "classnames": "^2.3.2",
     "css-modules-typescript-loader": "^4.0.1",
     "mini-css-extract-plugin": "^2.6.1",
-    "raw.macro": "^0.7.0",
     "react": "^18.2.0",
     "react-app-rewire-create-react-library": "^0.1.1",
     "react-app-rewire-typings-for-css-module": "^4.0.3",
     "react-app-rewired": "^2.2.1",
+    "react-code-blocks": "^0.0.9-0",
     "react-datetime": "^3.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -62,6 +62,8 @@
   "devDependencies": {
     "concurrently": "^8.0.1",
     "customize-cra": "^1.0.0",
+    "raw-loader": "^4.0.2",
+    "raw.macro": "^0.7.0",
     "gh-pages": "^0.1.0",
     "webpack-bundle-analyzer": "^4.8.0",
     "webpack-log": "^3.0.2"

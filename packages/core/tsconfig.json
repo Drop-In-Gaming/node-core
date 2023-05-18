@@ -10,7 +10,7 @@
         "esModuleInterop": true,
         "jsx": "react-jsx",
         "lib": ["es5", "es2015", "es2016", "dom", "esnext"],
-        "types": ["node"],
+        "types": ["custom.d.ts","node"],
         "module": "es2015",
         "moduleResolution": "node",
         "noImplicitAny": false,
@@ -22,5 +22,10 @@
         "target": "es6",
         "plugins": [{"name": "ts-css-modules-vite-plugin", "root": "./"}]
     },
-    "include": ["src/custom.d.ts","src/**/*", "src/index.ts"]
+    "include": [
+        "./**/*",
+        "src/custom.d.ts",
+        "src/**/*",
+        "src/index.ts"
+    ]
 }
