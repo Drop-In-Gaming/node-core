@@ -1,12 +1,15 @@
 import {getStyles} from "../App";
 import classNames from "classnames";
 import {useState} from "react";
-import {DropVariables, Input, iUsers, postUser} from "@drop-in-gaming/core";
+import {DropVariables, Input, iUsers, postUser} from "@drop-in-gaming/core/";
 import Datetime from "react-datetime";
 import moment from "moment/moment";
+import {iComponentProps} from "../Examples";
 
 
-export default function RegisterApi() {
+export default function RegisterApi({organization_id}: iComponentProps) {
+
+    console.log(organization_id)
 
     let [userSignUpAndInInformation, setUserSignUpAndInInformation] = useState<iUsers>({})
 
@@ -111,6 +114,7 @@ export default function RegisterApi() {
                     console.log('join')
 
                     postUser({
+
                         user_pass: userSignUpAndInInformation.user_pass,
                         user_login: userSignUpAndInInformation.user_login,
                         user_email: userSignUpAndInInformation.user_email,

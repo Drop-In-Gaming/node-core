@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import {Button, Input, mergeStyles} from '@drop-in-gaming/core';
+import {Button, Input, mergeStyles} from '@drop-in-gaming/core/';
 import {useState} from "react";
 import Styles from 'src/App.module.scss';
 import Bootstrap from 'src/bootstrap.module.scss';
@@ -38,6 +38,7 @@ export const codeBlock = (markdown: String, highlight: String = "", language: St
 export default function App() {
 
     const [exampleIndex, _setExampleIndex] = useState<number>(0);
+    const [organizationId, setOrganizationId] = useState<number>(0);
 
     const [toggle, setToggle] = useState<boolean>(false);
 
@@ -81,10 +82,11 @@ export default function App() {
                                     required
                                     className={classNames(dig.formControl, dig.border0, dig.rounded1)}
                                     id="dig-register-username" name="user_login" type="text"
-                                    placeholder="Enter Username" defaultValue=""
+                                    placeholder="Enter Username"
+                                    value={organizationId}
                                     onChange={(event) => {
 
-                                        console.log(event.target.value)
+                                        setOrganizationId(event.target.value)
 
                                     }}/>
 
@@ -96,7 +98,7 @@ export default function App() {
                                 </Button>
 
 
-                                {!toggle && <Component />}
+                                {!toggle && <Component organization_id={organizationId} />}
                             </div>
 
                              <div className={classNames(dig.w100, dig.mAuto)}>
