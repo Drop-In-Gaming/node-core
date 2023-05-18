@@ -1,9 +1,18 @@
-import AppTsx from '!!raw-loader!./App';
+import RegisterCode from '!!raw-loader!./examples/RegisterApi';
+import RegisterApi from './examples/RegisterApi';
 
 
-const Examples = {
-    APP: AppTsx
+interface iExample {
+    exampleCode: string,
+    component: any
 }
+
+const Examples : iExample[] = [
+    {
+        exampleCode: RegisterCode,
+        component: RegisterApi
+    }
+]
 
 
 export default Examples;

@@ -1,15 +1,13 @@
 import classNames from "classnames";
-import Datetime from 'react-datetime';
-import {DropVariables, Input, iUsers, postUser, mergeStyles} from '@drop-in-gaming/core';
+import {Button, Input, mergeStyles} from '@drop-in-gaming/core';
 import {useState} from "react";
-import moment from "moment/moment";
 import Styles from 'src/App.module.scss';
 import Bootstrap from 'src/bootstrap.module.scss';
 // import {CodeBlock} from "react-code-blocks";
 import {CodeBlock, dracula, googlecode} from 'react-code-blocks';
-import CodeExamples from 'src/Examples'
+import Examples from "src/Examples";
 
-
+import "react-datetime/css/react-datetime.css";
 
 type tBasicStyles = (typeof Styles)
 
@@ -27,161 +25,85 @@ export function getStyles<iCSS extends {}>(overrides: iCSS = {} as iCSS): tBasic
 
 }
 
+export const codeBlock = (markdown: String, highlight: String = "", language: String = "typescript", dark: boolean = true) => {
+    return <CodeBlock
+        text={markdown}
+        language={language}
+        showLineNumbers={true}
+        theme={dark ? dracula : googlecode}
+        highlight={highlight}
+    />
+};
 
 export default function App() {
 
-    let [userSignUpAndInInformation, setUserSignUpAndInInformation] = useState<iUsers>({})
+    const [exampleIndex, _setExampleIndex] = useState<number>(0);
 
-    let [emailWarningOpened, setEmailWarningOpened] = useState<boolean>(false)
+    const [toggle, setToggle] = useState<boolean>(false);
 
-    const changeEmailWarningOpened = () => setEmailWarningOpened(!emailWarningOpened)
+    const dig = getStyles();
 
-    const [today, setToday] = useState(() => moment().format('YYYY-MM-DD'));
+    const example = Examples.find((_example, index) => index === exampleIndex)
 
-    const unregisteredInvite = new URLSearchParams(window.location.search).get('referenceId');
+    if (example === undefined) {
+        return <h3>Could not find component - todo make this better</h3>
+    }
 
-    const dig = getStyles()
+    const Component = example.component;
 
-    const codeBlock = (markdown: String, highlight: String = "", language: String = "typescript", dark: boolean = true) => {
-        return <CodeBlock
-            text={markdown}
-            language={language}
-            showLineNumbers={true}
-            theme={dark ? dracula : googlecode}
-            highlight={highlight}
-        />
-    };
+    const ExampleCode = example.exampleCode;
 
     return (
         <div className={classNames(dig.App)}>
             <header className={classNames(dig.appHeader)}>
                 <div className={classNames(
-                    dig.container, dig.my5, dig.py5, dig.px5, dig.textWhite, dig.textCenter
+                    dig.container, dig.my5, dig.py5, dig.px5, dig.textWhite
                 )} id="login-form" role="tabpanel"
                      aria-labelledby="login-tab">
                     <div className={classNames(
                         dig.bgTransparent, dig.rounded0, dig.border0,
                     )}
                          role="form">
+
                         <div className={classNames(
                             dig.card, dig.rounded0, dig.border0, dig.bgTransparent
                         )}>
+
                             <div className={classNames(
-                                dig.cardBody
+                                dig.cardBody, dig.w50, dig.mxAuto
                             )}>
-                                <div className={classNames(dig.tabPane)} id="register-form" role="tabpanel"
-                                     aria-labelledby="register-tab">
-                                    <div className={classNames(dig.bgTransparent, dig.rounded0, dig.border0)}
-                                         role="form">
+                                <h3 className={classNames(dig.mx3)}>Drop-In Gaming Documentation</h3>
+
+                                <h3></h3>
+
+                                <Input
+                                    label={'Organization Key'}
+                                    required
+                                    className={classNames(dig.formControl, dig.border0, dig.rounded1)}
+                                    id="dig-register-username" name="user_login" type="text"
+                                    placeholder="Enter Username" defaultValue=""
+                                    onChange={(event) => {
+
+                                        console.log(event.target.value)
+
+                                    }}/>
+
+                                <Button
+                                    onClick={() => setToggle(!toggle)}
+                                    className={classNames(dig.btn, dig.btnPrimary, dig.my3)}
+                                >
+                                    {toggle ? "View Component" : "View Code"}
+                                </Button>
 
 
-                                        <div
-                                            className={classNames(dig.card, dig.rounded0, dig.border0, dig.bgTransparent)}>
-                                            <div className={classNames(dig.cardBody)}>
-
-                                                <Input
-                                                    label={'Username'}
-                                                    required
-                                                    className={classNames(dig.formControl, dig.border0, dig.rounded0)}
-                                                    id="dig-register-username" name="user_login" type="text"
-                                                    placeholder="Enter Username" defaultValue=""
-                                                    onChange={(e) => {
-                                                        setUserSignUpAndInInformation({
-                                                            ...userSignUpAndInInformation,
-                                                            user_login: e.target.value
-                                                        })
-                                                    }}/>
-
-
-                                                <Input
-                                                    label={
-                                                        <>E-mail Address
-                                                            <i className={classNames("fas fa-question-circle")}
-                                                               id="dig_question_mark_popup"
-                                                               onMouseEnter={changeEmailWarningOpened}
-                                                               onMouseLeave={changeEmailWarningOpened}/>
-                                                            {emailWarningOpened && <>
-                                                                <div
-                                                                    className={classNames("dig_question_mark_popup_text")}>
-                                                                    We will not share your email address with anyone.
-                                                                </div>
-                                                            </>}
-                                                        </>}
-                                                    className={classNames(dig.formControl, dig.border0, dig.rounded0)}
-                                                    id="dig-register-user-email" name="user_email" type="email"
-                                                    placeholder="Enter your E-mail" defaultValue=""
-                                                    onChange={(e) => {
-                                                        setUserSignUpAndInInformation({
-                                                            ...userSignUpAndInInformation,
-                                                            user_email: e.target.value
-                                                        })
-                                                    }}/>
-
-
-                                                <Input
-                                                    label={'Password'}
-                                                    className={classNames(dig.formControl, dig.border0, dig.rounded0)}
-                                                    id="new_password" name="user_password" type="password"
-                                                    defaultValue=""
-                                                    placeholder="Enter Password"
-                                                    onChange={(e) => {
-                                                        setUserSignUpAndInInformation({
-                                                            ...userSignUpAndInInformation,
-                                                            user_pass: e.target.value
-                                                        })
-                                                    }}/>
-
-
-                                                Birthday
-                                                <div onClick={() => setToday(today)}
-                                                     className={classNames(dig.formControl, dig.border0, dig.rounded0)}
-                                                     style={{color: 'black'}}>
-                                                    <Datetime
-                                                        dateFormat={DropVariables.momentGeneralDateFormat}
-                                                        initialValue={today}
-                                                        timeConstraints={{
-                                                            hours: {min: 0, max: 72, step: 1}
-                                                        }}
-                                                    />
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div
-                                            className={classNames(dig.rounded0, dig.dFlex, dig.justifyContentCenter, dig.border, dig.mt3)}>
-                                            <button
-                                                className={classNames(dig.btn, dig.btnPrimary, dig.btnLg, dig.rounded0, dig.fwBold,
-                                                    dig.btnSecondary,
-                                                    dig.w100, dig.textUppercase)}
-                                                type="submit"
-                                                onClick={() => {
-
-                                                    console.log('join')
-
-                                                    postUser({
-                                                        user_pass: userSignUpAndInInformation.user_pass,
-                                                        user_login: userSignUpAndInInformation.user_login,
-                                                        user_email: userSignUpAndInInformation.user_email,
-                                                        temp_invite_id: unregisteredInvite ? parseInt(unregisteredInvite) : undefined,
-                                                        success: () => {
-                                                            return 'Account created!'
-                                                        }
-                                                    })
-
-
-                                                }}>
-                                                Join
-                                            </button>
-
-                                        </div>
-
-                                        <div>{codeBlock(CodeExamples.APP)}</div>
-
-                                    </div>
-                                </div>
+                                {!toggle && <Component />}
                             </div>
+
+                             <div className={classNames(dig.w100, dig.mAuto)}>
+                                {toggle && codeBlock(ExampleCode)}
+                             </div>
+
+
                         </div>
                     </div>
                 </div>
