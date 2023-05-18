@@ -5,6 +5,10 @@ import {useState} from "react";
 import moment from "moment/moment";
 import Styles from 'src/App.module.scss';
 import Bootstrap from 'src/bootstrap.module.scss';
+// import {CodeBlock} from "react-code-blocks";
+import {CodeBlock, dracula, googlecode} from 'react-code-blocks';
+import CodeExamples from 'src/Examples'
+
 
 
 type tBasicStyles = (typeof Styles)
@@ -23,6 +27,7 @@ export function getStyles<iCSS extends {}>(overrides: iCSS = {} as iCSS): tBasic
 
 }
 
+
 export default function App() {
 
     let [userSignUpAndInInformation, setUserSignUpAndInInformation] = useState<iUsers>({})
@@ -37,11 +42,21 @@ export default function App() {
 
     const dig = getStyles()
 
+    const codeBlock = (markdown: String, highlight: String = "", language: String = "typescript", dark: boolean = true) => {
+        return <CodeBlock
+            text={markdown}
+            language={language}
+            showLineNumbers={true}
+            theme={dark ? dracula : googlecode}
+            highlight={highlight}
+        />
+    };
+
     return (
-        <div className="App">
-            <header className="App-header">
+        <div className={classNames(dig.App)}>
+            <header className={classNames(dig.appHeader)}>
                 <div className={classNames(
-                    dig.tabPane, dig.show, dig.active
+                    dig.container, dig.my5, dig.py5, dig.px5, dig.textWhite, dig.textCenter
                 )} id="login-form" role="tabpanel"
                      aria-labelledby="login-tab">
                     <div className={classNames(
@@ -159,15 +174,16 @@ export default function App() {
                                                 }}>
                                                 Join
                                             </button>
+
                                         </div>
+
+                                        <div>{codeBlock(CodeExamples.APP)}</div>
 
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </header>
         </div>

@@ -13,3 +13,9 @@ declare module '*.png';
 declare module '*.jpg';
 declare module '*.jpeg';
 declare module "*.pdf";
+
+declare module '!!raw-loader!*' {
+    const content: string;
+    export default content;
+}
+

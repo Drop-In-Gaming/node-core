@@ -212,6 +212,7 @@ export { default as BodyEnd } from "./components/BodyEnd/BodyEnd";
 export * from "./components/BodyEnd/BodyEnd";
 export { default as Button } from "./components/Button/Button";
 export * from "./components/Button/Button";
+export * from "./components/CodeBlocks/CodeBlocks";
 export { default as AccessDenied } from "./components/Errors/AccessDenied";
 export * from "./components/Errors/AccessDenied";
 export { default as BackendThrowable } from "./components/Errors/BackendThrowable";
