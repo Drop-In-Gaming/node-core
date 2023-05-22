@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import {Button, Input, mergeStyles} from '@drop-in-gaming/core/';
+import {Button, Input, mergeStyles} from '@drop-in-gaming/core';
 import {useState} from "react";
 import Styles from 'src/App.module.scss';
 import Bootstrap from 'src/bootstrap.module.scss';

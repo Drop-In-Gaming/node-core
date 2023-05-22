@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+It is hosted using [GitHub Pages](https://drop-in-gaming.github.io/node-core/).
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -1,7 +1,7 @@
 import {getStyles} from "../App";
 import classNames from "classnames";
 import {useState} from "react";
-import {DropVariables, Input, iUsers, postUser} from "@drop-in-gaming/core/";
+import {DropVariables, Input, iUsers, postUser} from "@drop-in-gaming/core";
 import Datetime from "react-datetime";
 import moment from "moment/moment";
 import {iComponentProps} from "../Examples";
