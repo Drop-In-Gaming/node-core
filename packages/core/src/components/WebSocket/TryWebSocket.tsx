@@ -11,6 +11,9 @@ import DropVariables from "variables/DropVariables";
  **/
 export default function TryWebSocket() {
 
+
+    console.log("TryWebSocket");
+
     const bootstrap = DigApi.digApi;
 
     if (!("WebSocket" in window)) {
@@ -26,7 +29,7 @@ export default function TryWebSocket() {
 
     }
 
-    let that = bootstrap; // setTimeout needs `that` as it runs in its own scope
+    let that = bootstrap; // setTimeout needs `that` ( = this ) as it runs in its own scope
 
     let connectInterval;
 

@@ -1,15 +1,17 @@
-import login from "api/hoc/login";
+import getUsers from "api/rest/getUsers";
 
 // if you want to add capture user related variables on a global level this is the place to do it.
 // look up the this.state.authenticate route and add your data to the response
 // it's better to make ids strings, this is cast automatically
-import DigApi from "DigApi";
+import Bootstrap from "DigApi";
 
 let isRunning = false
 
-export default function authenticated(bootstrap: DigApi): void {
+export default function authenticated(): void {
 
-    if (isRunning){
+    const bootstrap: Bootstrap = Bootstrap.digApi;
+
+    if (isRunning) {
         return
     }
 
@@ -21,28 +23,35 @@ export default function authenticated(bootstrap: DigApi): void {
     }, () => {
 
         // this is not a restful request as its routing is defined explicitly in
-        bootstrap.state.axios.get('/authenticated/').then(res => {
+        bootstrap.state.axios.get('/bootstrapCustom/authenticated/').then(res => {
 
             const authenticated = (res?.data?.success) || false;
 
-            const id: number = res.data?.id > 0 ? res.data?.id : 0;
+            const receivedId = res.data?.id ?? res.data?.ID ?? 0
 
-            if (authenticated) {
-
-                login(id)
-
-            }
+            const id: number = receivedId > 0 ? receivedId : 0;
 
             bootstrap.setState({
+                id: id,
                 authenticating: false
-            }, () => isRunning = false)
+            }, () => {
+
+                if (authenticated) {
+
+                    getUsers({
+                        userIds: [
+                            id
+                        ],
+                        cacheResults: false
+                    })
+
+                }
+
+                isRunning = false
+
+            })
 
         }).catch(error => {
-
-            bootstrap.setState({
-                id: 0,
-                authenticating: false
-            }, () => isRunning = false);
 
             if (error.response) {
 
@@ -53,7 +62,18 @@ export default function authenticated(bootstrap: DigApi): void {
 
                 console.log(error.response.headers);
 
+            } else {
+
+                console.log(error)
+
+                console.trace()
+
             }
+
+            bootstrap.setState({
+                id: 0,
+                authenticating: false
+            }, () => isRunning = false);
 
         });
 

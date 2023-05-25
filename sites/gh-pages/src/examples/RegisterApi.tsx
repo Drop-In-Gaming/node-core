@@ -3,7 +3,7 @@ import classNames from "classnames";
 import {useState} from "react";
 import {DropVariables, Input, iUsers, postUser} from "@drop-in-gaming/core";
 import Datetime from "react-datetime";
-import moment from "moment/moment";
+import moment, {Moment} from "moment/moment";
 import {iComponentProps} from "../Examples";
 
 
@@ -11,15 +11,15 @@ export default function RegisterApi({organization_id}: iComponentProps) {
 
     console.log(organization_id)
 
+    const today = moment().format('YYYY-MM-DD');
+
+    const [dateOfBirth, setDateOfBirth] = useState<string>(today);
+
     let [userSignUpAndInInformation, setUserSignUpAndInInformation] = useState<iUsers>({})
 
     let [emailWarningOpened, setEmailWarningOpened] = useState<boolean>(false)
 
     const changeEmailWarningOpened = () => setEmailWarningOpened(!emailWarningOpened)
-
-    const [today, setToday] = useState(() => moment().format('YYYY-MM-DD'));
-
-    const unregisteredInvite = new URLSearchParams(window.location.search).get('referenceId');
 
 
     const dig = getStyles()
@@ -73,27 +73,14 @@ export default function RegisterApi({organization_id}: iComponentProps) {
                         }}/>
 
 
-                    <Input
-                        label={'Password'}
-                        className={classNames(dig.formControl, dig.border0, dig.rounded1)}
-                        id="new_password" name="user_password" type="password"
-                        defaultValue=""
-                        placeholder="Enter Password"
-                        onChange={(e) => {
-                            setUserSignUpAndInInformation({
-                                ...userSignUpAndInInformation,
-                                user_pass: e.target.value
-                            })
-                        }}/>
-
-
                     Birthday
-                    <div onClick={() => setToday(today)}
-                         className={classNames(dig.formControl, dig.border0, dig.rounded1)}
+                    <div className={classNames(dig.formControl, dig.border0, dig.rounded1)}
                          style={{color: 'black'}}>
                         <Datetime
                             dateFormat={DropVariables.momentGeneralDateFormat}
-                            initialValue={today}
+                            initialValue={moment(today).toDate()}
+                            initialViewDate={moment(today).toDate()}
+                            onChange={(value: Moment | string) => setDateOfBirth('string' === typeof value ? value : value.toString())}
                             timeConstraints={{
                                 hours: {min: 0, max: 72, step: 1}
                             }}
@@ -114,17 +101,14 @@ export default function RegisterApi({organization_id}: iComponentProps) {
                     console.log('join')
 
                     postUser({
-
-                        user_pass: userSignUpAndInInformation.user_pass,
                         user_login: userSignUpAndInInformation.user_login,
                         user_email: userSignUpAndInInformation.user_email,
-                        temp_invite_id: unregisteredInvite ? parseInt(unregisteredInvite) : undefined,
+                        user_birthday: dateOfBirth,
+                        organization_id: organization_id,
                         success: () => {
                             return 'Account created!'
                         }
                     })
-
-
                 }}>
                 Join
             </button>

@@ -7,8 +7,8 @@
     "version": "0.2.7",
     "type": "module",
     "description": "A component library for getting people started with easy to re-use components for everyday projects.",
-    "main": "./dist/index.cjs.js",
-    "module": "./dist/index.es.js",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.es.js",
     "typings": "dist/index.d.ts",
     "files": [
         "dist"
@@ -26,17 +26,15 @@
         ]
     },
     "scripts": {
-        "build": "rm -rf dist/ && npm run build:css && npm run build:index  && npm run build:esm && vite build",
+        "build": "npm run build:css && npm run build:index && npm run build:esm && vite build",
+        "watch": "npm run build:css && npm run build:index && npm run build:esm && vite build --watch",
+        "clear:cache": "rm -rf dist/",
         "build:index": "npx barrelsby -d ./src --delete --exclude '(jestHoc|\\.test|\\.d).tsx?$' --exportDefault --verbose",
-        "build:esm": "tsc --declaration --emitDeclarationOnly --declarationDir dist/",
+        "build:esm": "tsc --module es6 --declaration --emitDeclarationOnly --declarationDir dist/",
         "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
         "build:css": "sass  ./src:./src && tcm src",
         "githooks": "git config core.hooksPath .githooks && chmod +x .githooks/*"
     },
-    "workspaces": [
-        "./*",
-        "documentation/*"
-    ],
     "author": "Drop-In Gaming",
     "license": "LICENSE",
     "devDependencies": {
@@ -73,6 +71,7 @@
         "json": "11.0.0",
         "moment-timezone": "^0.5.43",
         "php-serialized-data": "^0.6.1",
+        "prettier": "^2.8.8",
         "qs": "^6.11.1",
         "react": "^18.2.0",
         "react-datetime": "^3.2.0",
@@ -84,6 +83,7 @@
         "sass": "^1.62.1",
         "sass-loader": "^13.2.2",
         "storybook-builder-vite": "^0.0.2",
+        "stream-http": "^3.2.0",
         "ts-css-modules-vite-plugin": "^1.0.20",
         "typed-css-modules": "^0.7.2",
         "typescript": "^5.0.3",
@@ -105,7 +105,6 @@
         "react-dom": "^18.2.0"
     },
     "dependencies": {
-        "prettier": "^2.8.8",
-        "stream-http": "^3.2.0"
+        "@popperjs/core": "^2.11.7"
     }
 }

@@ -1,5 +1,5 @@
 import { AxiosInstance, AxiosRequestHeaders, AxiosResponse } from 'axios';
-import isTest from "api/hoc/isTest";
+import isTest from "variables/isTest";
 import {addValidSQL} from "api/hoc/validSQL";
 import DigApi from "DigApi";
 import HandleResponseCodes from "components/HandleResponseCodes/HandleResponseCodes";
@@ -34,17 +34,10 @@ export default function axiosInterceptors(axios: AxiosInstance): void {
     axios.interceptors.request.use(
         req => {
 
-            setCookies([
-                'github_revision=' + process.env.REACT_APP_GITHUB_REVISION + '; path=/',
-            ])
+            req.headers ??= {} as AxiosRequestHeaders
 
-            if (isTest) {
-
-                req.headers ??= {} as AxiosRequestHeaders
-
-                req.headers['Cookie'] = document.cookie;
-
-            }
+            // this forces the cookie to be sent with every request, even cross-origin form this instance
+            req.headers['Cookie'] = document.cookie;
 
             if (true === DropVariables.verbose) {
 

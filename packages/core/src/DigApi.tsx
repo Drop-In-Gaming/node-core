@@ -9,7 +9,7 @@ import changed from 'api/hoc/changed';
 import getCurrentLoggedInUser from 'api/hoc/getCurrentLoggedInUser';
 import { GlobalHistory } from 'api/hoc/GlobalHistory';
 import isEdgeBrowser from 'api/hoc/isEdgeBrowser';
-import isTest from 'api/hoc/isTest';
+import isTest from 'variables/isTest';
 import { clearCompetitionCache } from 'api/rest/getCompetitions';
 import { iPayoutTable, iTournamentPayoutTable } from 'api/rest/getTournamentPayoutTable';
 import ForceLegacyPasswordReset from 'components/ForceLegayPasswordReset/ForceLegacyPasswordReset';
@@ -49,18 +49,20 @@ import {
 
 
 import Nest from 'components/Nest/Nest';
-import authenticated from 'api/hoc/authenticated';
-import TryWebSocket from 'components/WebSocket/TryWebSocket';
+//import authenticated from 'api/hoc/authenticated';
+//import TryWebSocket from 'components/WebSocket/TryWebSocket';
 import { getBrowserLanguage, iLanguage } from 'variables/supportedLanguages';
 import Loading from 'components/Loading/Loading';
-import Bricked504 from "components/Troubleshoot/Bricked504";
 import { ReactComponent as ComSVG } from 'assets/img/svg/DIG-logo-lockup-beta-horizontal-white.svg';
 import { ReactComponent as GgSVG } from 'assets/img/svg/DIG-logo-lockup-horizontal-white-GG.svg';
 
 
 export interface iDigApiProperties {
     children?: React.ReactNode | React.ReactNode[] | undefined;
-    apiKey?: string;
+    apiKey: string;
+    organizationId: string;
+    tld: "com" | "pro" | "gg"
+    subdomain: "www" | "preprod";
 }
 
 export type iRegistrations = iDig_Comp_Registration & iDig_Vendor;
@@ -115,6 +117,9 @@ export interface iDigApiState extends iRestfulObjectArrayTypes {
     translateToLanguage: iLanguage | undefined,
     invalidPasswordResetKey: string | undefined,
     apiKey: string | undefined,
+    organizationId: string | undefined,
+    tld: "com" | "pro" | "gg",
+    subdomain: "www" | "preprod",
 }
 
 export default class DigApi extends React.Component<iDigApiProperties, iDigApiState> {
@@ -146,7 +151,10 @@ export default class DigApi extends React.Component<iDigApiProperties, iDigApiSt
          **/
         this.state = {
             id: 0,
+            tld: props.tld,
+            subdomain: props.subdomain,
             apiKey: props.apiKey,
+            organizationId: props.organizationId,
             alert: false,
             alertsWaiting: [],
             chatInput: '',
@@ -211,21 +219,13 @@ export default class DigApi extends React.Component<iDigApiProperties, iDigApiSt
 
     componentDidMount() {
 
-        if (window.location.hostname === 'localhost') {
-
-            console.log('window.location.hostname === \'localhost\'');
-
-            return;
-
-        }
-
-        if (undefined === this.state.authenticating) {
+        /*if (undefined === this.state.authenticating) {
 
             authenticated(this);
 
-        }
+        }*/
 
-        TryWebSocket();
+        // todo - TryWebSocket();
 
     }
 
@@ -270,12 +270,6 @@ export default class DigApi extends React.Component<iDigApiProperties, iDigApiSt
 
         }
 
-        if (this.state.bricked504) {
-
-            return <Bricked504 />;
-
-        }
-
         const nest = <Nest position={'fixed'} backgroundColor={''} color={DropVariables.hexToRgb(color)} count={100} />;
 
         if (this.state.backendThrowable.length > 0) {
@@ -287,7 +281,7 @@ export default class DigApi extends React.Component<iDigApiProperties, iDigApiSt
 
         }
 
-        const websocket = this.state.websocket;
+        /*const websocket = this.state.websocket;
 
         if (DropVariables.isLocal) {
 
@@ -301,7 +295,7 @@ export default class DigApi extends React.Component<iDigApiProperties, iDigApiSt
             }
 
 
-        }
+        }*/
 
         const currentUser = getCurrentLoggedInUser();
 

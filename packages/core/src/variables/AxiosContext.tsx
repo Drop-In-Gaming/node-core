@@ -1,4 +1,4 @@
-import isTest from "api/hoc/isTest";
+import isTest from "variables/isTest";
 import axios from "axios";
 import Qs from "qs";
 
@@ -20,6 +20,8 @@ const axiosInstance = axios.create({
      */
     headers: {
         'X-Requested-With': 'XMLHttpRequest',
+        'X-Drop-In-Developer': '346991',
+        'X-Github-Revision': '5671a0b5d2f37a35098327abbf3ed9518c103b88',
         'Content-Type': 'application/json'
     },
 

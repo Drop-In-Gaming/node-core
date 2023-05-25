@@ -11,7 +11,7 @@ import {getRootStyleValue, mergeStyles} from "api/hoc/styleModules";
 import moment from "moment-timezone";
 import {ToastOptions} from "react-toastify";
 import {isPromise} from "api/API";
-import isTest from "api/hoc/isTest";
+import isTest from "variables/isTest";
 import AxiosContext from "variables/AxiosContext";
 import axiosInterceptors from "api/hoc/axiosInterceptors";
 

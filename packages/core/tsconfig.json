@@ -20,7 +20,10 @@
         "declaration": true,
         "strict": true,
         "target": "es6",
-        "plugins": [{"name": "ts-css-modules-vite-plugin", "root": "./"}]
+        "plugins": [{
+            "name": "ts-css-modules-vite-plugin",
+            "root": "./"
+        }]
     },
     "include": [
         "src/custom.d.ts",

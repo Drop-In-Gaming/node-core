@@ -1,9 +1,23 @@
 const clone = (obj: any) => {
+
     try {
+
         return structuredClone(obj)
+
     } catch (e) {
-        return JSON.stringify(obj) || obj
+
+        try {
+
+            return JSON.stringify(obj) || obj
+
+        } catch (e) {
+
+            return obj
+
+        }
+
     }
+
 }
 
 const changed = (name: string, context: "state" | "props", old, v) => {

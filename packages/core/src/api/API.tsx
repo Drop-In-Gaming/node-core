@@ -1,5 +1,8 @@
-import {AxiosInstance, AxiosResponse} from "axios";
+import {AxiosInstance, AxiosResponse, AxiosPromise} from "axios";
+import DigApi from "DigApi";
 import {toast} from "react-toastify";
+import isTest from "variables/isTest";
+import isVerbose from "variables/isVerbose";
 import {TestRestfulResponse} from "api/hoc/TestRestfulResponse";
 import {
     C6,
@@ -11,7 +14,6 @@ import {
 } from "variables/C6";
 import DropVariables from "variables/DropVariables";
 
-// todo - untested
 export function removeInvalidKeys<iRestObject>(request: any, c6Tables: (C6RestfulModel)[]): iRestObject {
 
     let intersection: iRestObject = {} as iRestObject
@@ -38,12 +40,13 @@ export function removeInvalidKeys<iRestObject>(request: any, c6Tables: (C6Restfu
 
     });
 
-    console.log('intersection', intersection)
+    isTest || console.log('intersection', intersection)
 
     return intersection
 
 }
 
+// if you can get away with modify over modifyDeep, use modify. The editor will be happier.
 export type Modify<T, R> = Omit<T, keyof R> & R;
 
 // @link https://stackoverflow.com/questions/41285211/overriding-interface-property-type-defined-in-typescript-d-ts-file/55032655#55032655
@@ -70,7 +73,7 @@ type DeepPartialAny<T> = {
 
 export type iAPI<RequestType extends RestTableInterfaces> = RequestType & {
     dataInsertMultipleRows?: RequestType[],
-    cacheResults?: boolean,
+    cacheResults?: boolean, // aka ignoreCache
     fetchDependencies?: boolean,
     debug?: boolean,
     success?: string | ((r: AxiosResponse) => (string | void)),
@@ -78,28 +81,54 @@ export type iAPI<RequestType extends RestTableInterfaces> = RequestType & {
     blocking?: boolean
 }
 
-interface iCacheAPI {
-    request: string,
+interface iCacheAPI<ResponseDataType = any> {
+    requestArgumentsSerialized: string,
+    request: AxiosPromise<ResponseDataType>,
     response?: AxiosResponse,
     final?: boolean,
 }
 
 
+// do not remove entries from this array. It is used to track the progress of API requests.
+// position in array is important. Do not sort. To not add to begging.
 let apiRequestCache: iCacheAPI[] = [];
 
 let userCustomClearCache: (() => void)[] = [];
 
-let apiRequestInProgress: boolean = false;
+export function checkAllRequestsComplete(): true | (string[]) {
+
+    const stillRunning = apiRequestCache.filter((cache) => undefined === cache.response)
+
+    if (stillRunning.length !== 0) {
+
+        if (document === null || document === undefined) {
+
+            throw new Error('document is undefined while waiting for API requests to complete (' + JSON.stringify(apiRequestCache) + ')')
+
+        }
+
+        // when requests return emtpy sets in full renders, it may not be possible to track their progress.
+        console.warn('stillRunning...', stillRunning)
+
+        return stillRunning.map((cache) => cache.requestArgumentsSerialized)
+
+    }
+
+    return true
+
+}
+
 
 interface iClearCache {
     ignoreWarning: boolean
 }
 
-function checkCache(cacheResult: iCacheAPI, requestMethod: string, tableName: RestShortTableNames | RestShortTableNames[], request: any) : false|undefined|null {
+
+function checkCache<ResponseDataType = any>(cacheResult: iCacheAPI<ResponseDataType>, requestMethod: string, tableName: RestShortTableNames | RestShortTableNames[], request: any): false | undefined | null | AxiosPromise<ResponseDataType> {
 
     if (undefined === cacheResult?.response) {
 
-        console.groupCollapsed('%c API: The request on (' + tableName + ') is in cache and the response is undefined. The request has not finished. Returning null!', 'color: #0c0')
+        console.groupCollapsed('%c API: The request on (' + tableName + ') is in cache and the response is undefined. The request has not finished. Returning the request Promise!', 'color: #0c0')
 
         console.log('%c ' + requestMethod + ' ' + tableName, 'color: #0c0')
 
@@ -107,27 +136,43 @@ function checkCache(cacheResult: iCacheAPI, requestMethod: string, tableName: Re
 
         console.groupEnd()
 
-        return null;
+        return cacheResult.request;
 
     }
 
     if (true === cacheResult?.final) {
 
-        console.group('%c API: rest api cache has reached the final result. Returning undefined!', 'color: #cc0')
+        if (false === isTest || true === isVerbose) {
 
-        console.log('%c ' + requestMethod + ' ' + tableName, 'color: #cc0')
+            console.groupCollapsed('%c API: rest api cache has reached the final result. Returning undefined!', 'color: #cc0')
 
-        console.log('%c Request Data (note you may see the success and/or error prompt):', 'color: #cc0', request)
+            console.log('%c ' + requestMethod + ' ' + tableName, 'color: #cc0')
 
-        console.log('%c Response Data:', 'color: #cc0', cacheResult?.response?.data?.rest || cacheResult?.response?.data || cacheResult?.response)
+            console.log('%c Request Data (note you may see the success and/or error prompt):', 'color: #cc0', request)
 
-        console.groupEnd()
+            console.log('%c Response Data:', 'color: #cc0', cacheResult?.response?.data?.rest || cacheResult?.response?.data || cacheResult?.response)
+
+            console.groupEnd()
+
+        }
 
         return undefined;
 
     }
 
     return false;
+}
+
+function sortAndSerializeQueryObject(tables: String, query: Object) {
+    const orderedQuery = Object.keys(query).sort().reduce(
+        (obj, key) => {
+            obj[key] = query[key];
+            return obj;
+        },
+        {}
+    );
+
+    return tables + ' ' + JSON.stringify(orderedQuery);
 }
 
 
@@ -166,11 +211,14 @@ export const GET = 'GET';
 export const DELETE = 'DELETE';
 
 
-export type AxiosPromise<Response> = Promise<AxiosResponse<Response>> | undefined | null;
-
 // returning undefined means no more results are available, thus we've queried everything possible
 // null means the request is currently being executed
-export type apiReturn<Response> = (() => apiReturn<Response>) | AxiosPromise<Response>;
+// https://www.typescriptlang.org/docs/handbook/2/conditional-types.html
+export type apiReturn<Response> =
+    null
+    | undefined
+    | AxiosPromise<Response>
+    | (Response extends iGetC6RestResponse<any> ? (() => apiReturn<Response>) : null)
 
 
 export type iRestMethods = 'GET' | 'POST' | 'PUT' | 'DELETE';
@@ -179,6 +227,8 @@ export type iRestMethods = 'GET' | 'POST' | 'PUT' | 'DELETE';
 //wip
 export type RequestGetPutDeleteBody = {
     SELECT?: any,
+    UPDATE?: any,
+    DELETE?: any,
     WHERE?: any,
     JOIN?: {
         LEFT?: any,
@@ -193,7 +243,7 @@ export type RequestGetPutDeleteBody = {
 
 export type RequestQueryBody<RequestType extends RestTableInterfaces> = iAPI<RequestType> | RequestGetPutDeleteBody;
 
-export function isPromise(x : any) {
+export function isPromise(x) {
     return Object(x).constructor === Promise
 }
 
@@ -208,16 +258,16 @@ interface iChangeC6Data {
     rowCount: number,
 }
 
-export interface iDeleteC6RestResponse<RestData = any> extends iChangeC6Data, iC6RestResponse<RestData>{
-    deleted: boolean | number | string,
+export interface iDeleteC6RestResponse<RestData = any, RequestData = any> extends iChangeC6Data, iC6RestResponse<RestData> {
+    deleted: boolean | number | string | RequestData,
 }
 
-export interface iPostC6RestResponse<RestData = any> extends iC6RestResponse<RestData>{
+export interface iPostC6RestResponse<RestData = any> extends iC6RestResponse<RestData> {
     created: boolean | number | string,
 }
 
-export interface iPutC6RestResponse<RestData = any> extends iChangeC6Data, iC6RestResponse<RestData>{
-    updated: boolean | number | string,
+export interface iPutC6RestResponse<RestData = any, RequestData = any> extends iChangeC6Data, iC6RestResponse<RestData> {
+    updated: boolean | number | string | RequestData,
 }
 
 export type iGetC6RestResponse<ResponseDataType, ResponseDataOverrides = {}> = iC6RestResponse<Modify<ResponseDataType, ResponseDataOverrides>[]>
@@ -228,8 +278,10 @@ interface iRest<CustomAndRequiredFields extends {}, RequestTableTypes extends Re
     requestMethod: iRestMethods,
     clearCache?: () => void,
     skipPrimaryCheck?: boolean,
-    queryCallback: RequestQueryBody<Modify<RequestTableTypes, RequestTableOverrides>> | ((request: iAPI<Modify<RequestTableTypes, RequestTableOverrides>> & CustomAndRequiredFields) => (null|undefined|RequestQueryBody<Modify<RequestTableTypes, RequestTableOverrides>>)),
-    responseCallback: (response: AxiosResponse<ResponseDataType>, request: iAPI<Modify<RequestTableTypes, RequestTableOverrides>> & CustomAndRequiredFields, id: string | number | boolean) => any // keep this set to any, it allows easy arrow functions and the results unused here
+    queryCallback: RequestQueryBody<Modify<RequestTableTypes, RequestTableOverrides>> | ((request: iAPI<Modify<RequestTableTypes, RequestTableOverrides>> & CustomAndRequiredFields) => (null | undefined | RequestQueryBody<Modify<RequestTableTypes, RequestTableOverrides>>)),
+    responseCallback: (response: AxiosResponse<ResponseDataType>,
+                       request: iAPI<Modify<RequestTableTypes, RequestTableOverrides>> & CustomAndRequiredFields,
+                       success: (ResponseDataType extends iPutC6RestResponse | iDeleteC6RestResponse ? RequestQueryBody<Modify<RequestTableTypes, RequestTableOverrides>> : string) | string | number | boolean) => any // keep this set to any, it allows easy arrow functions and the results unused here
 }
 
 export default function restApi<CustomAndRequiredFields extends {}, RequestTableTypes extends RestTableInterfaces = any, RequestTableOverrides = any, ResponseDataType = any>(
@@ -260,7 +312,7 @@ export default function restApi<CustomAndRequiredFields extends {}, RequestTable
             throw Error('Bad request method passed to getApi')
     }
 
-    if (null !== clearCache) {
+    if (null !== clearCache || undefined !== clearCache) {
 
         userCustomClearCache[tables + requestMethod] = clearCache;
 
@@ -290,9 +342,7 @@ export default function restApi<CustomAndRequiredFields extends {}, RequestTable
 
             }
 
-            apiRequestInProgress = false;
-
-            console.groupCollapsed('%c API: ('+requestMethod+') Request Query for ('+operatingTable+') undefined, returning null (will not fire ajax)!', 'color: #c00')
+            console.groupCollapsed('%c API: (' + requestMethod + ') Request Query for (' + operatingTable + ') undefined, returning null (will not fire ajax)!', 'color: #c00')
 
             console.log('%c Returning (undefined|null) for a query would indicate a custom cache hit (outside API.tsx), thus the request should not fire.', 'color: #c00')
 
@@ -327,7 +377,7 @@ export default function restApi<CustomAndRequiredFields extends {}, RequestTable
                 && undefined !== query?.[C6.PAGINATION]?.[C6.PAGE]
                 && 1 !== query[C6.PAGINATION][C6.PAGE]) {
 
-                console.group('Request on table (' + tableName + ') is firing for page (' + query[C6.PAGINATION][C6.PAGE] + '), please wait!')
+                console.groupCollapsed('Request on table (' + tableName + ') is firing for page (' + query[C6.PAGINATION][C6.PAGE] + '), please wait!')
 
                 console.log('Request Data (note you may see the success and/or error prompt):', request)
 
@@ -337,28 +387,15 @@ export default function restApi<CustomAndRequiredFields extends {}, RequestTable
 
             }
 
+            // The problem with creating cache keys with a stringified object is the order of keys matters and it's possible for the same query to be stringified differently.
+            // Here we ensure the key order will be identical between two of the same requests. https://stackoverflow.com/questions/5467129/sort-javascript-object-by-key
 
-            // should post | put | delete requests block by default...?
-            if (apiRequestInProgress) {
+            // literally impossible for query to be undefined or null here but the editor is too busy licking windows to understand that
+            let querySerialized: string = sortAndSerializeQueryObject(tables, query ?? {});
 
-                if (request.debug && DropVariables.isLocal) {
+            let cacheResult: iCacheAPI | undefined = apiRequestCache.find(cache => cache.requestArgumentsSerialized === querySerialized);
 
-                    toast.warning("DEV: Api request already in progress! (return undefined)", DropVariables.toastOptionsDevs)
-
-                }
-
-                return undefined;
-
-            } else if (true === (request?.blocking || false)) {
-
-                apiRequestInProgress = true;
-
-            }
-
-            let querySerialized: string = tables + ' ' + JSON.stringify(query);
-
-            let cacheResult: iCacheAPI | undefined = apiRequestCache.find(cache => cache.request === querySerialized);
-
+            let cachingConfirmed = false;
 
             // determine if we need to paginate.
             if (requestMethod === C6.GET) {
@@ -387,7 +424,7 @@ export default function restApi<CustomAndRequiredFields extends {}, RequestTable
 
                         do {
 
-                            const cacheCheck = checkCache(cacheResult, requestMethod, tableName, request);
+                            const cacheCheck = checkCache<ResponseDataType>(cacheResult, requestMethod, tableName, request);
 
                             if (false !== cacheCheck) {
 
@@ -399,29 +436,24 @@ export default function restApi<CustomAndRequiredFields extends {}, RequestTable
                             ++query[C6.PAGINATION][C6.PAGE];
 
                             // this json stringify is to capture the new page number
-                            querySerialized = tables + ' ' + JSON.stringify(query);
+                            querySerialized = sortAndSerializeQueryObject(tables, query ?? {});
 
-                            cacheResult = apiRequestCache.find(cache => cache.request === querySerialized)
+                            cacheResult = apiRequestCache.find(cache => cache.requestArgumentsSerialized === querySerialized)
 
                         } while (undefined !== cacheResult)
 
                         if (request.debug && DropVariables.isLocal) {
 
-                            toast.warning("DEVS: Request in cache. (" + apiRequestCache.findIndex(cache => cache.request === querySerialized) + "). Returning function to request page (" + query[C6.PAGINATION][C6.PAGE] + ")", DropVariables.toastOptionsDevs);
+                            toast.warning("DEVS: Request in cache. (" + apiRequestCache.findIndex(cache => cache.requestArgumentsSerialized === querySerialized) + "). Returning function to request page (" + query[C6.PAGINATION][C6.PAGE] + ")", DropVariables.toastOptionsDevs);
 
                         }
 
-                        // this is a global
-                        apiRequestInProgress = false;
-
-                        // @ts-ignore
+                        // @ts-ignore - this is an incorrect warning on TS, it's well typed
                         return apiRequest;
 
                     }
 
-                    apiRequestCache.push({
-                        request: querySerialized
-                    });
+                    cachingConfirmed = true;
 
                 } else {
 
@@ -442,7 +474,7 @@ export default function restApi<CustomAndRequiredFields extends {}, RequestTable
             } else if (request.cacheResults) { // if we are not getting, we are updating, deleting, or inserting
 
                 if (cacheResult) {
-                    const cacheCheck = checkCache(cacheResult, requestMethod, tableName, request);
+                    const cacheCheck = checkCache<ResponseDataType>(cacheResult, requestMethod, tableName, request);
 
                     if (false !== cacheCheck) {
 
@@ -451,10 +483,8 @@ export default function restApi<CustomAndRequiredFields extends {}, RequestTable
                     }
                 }
 
+                cachingConfirmed = true;
                 // push to cache so we do not repeat the request
-                apiRequestCache.push({
-                    request: querySerialized
-                });
 
             }
 
@@ -464,51 +494,66 @@ export default function restApi<CustomAndRequiredFields extends {}, RequestTable
 
             let returnGetNextPageFunction = false;
 
-            let restRequestUri: string = DropVariables.restURI + operatingTable + '/';
+            let restRequestUri: string = 'http://local.dropingaming.' + DigApi.digApi.state.tld + ':8080' + DropVariables.restURI + operatingTable + '/';
 
             const needsConditionOrPrimaryCheck = (PUT === requestMethod || DELETE === requestMethod)
-                && false === skipPrimaryCheck
-                && (1 === TABLES[operatingTable]?.PRIMARY?.length ||
-                    (undefined === query?.[C6.WHERE] ||
-                        false === Array.isArray(query[C6.WHERE]) ||
-                        query[C6.WHERE].length > 0));
+                && false === skipPrimaryCheck;
 
-
+            // todo - aggregate primary key check with condition check
             // check if PK exists in query, clone so pop does not affect the real data
             const primaryKey = structuredClone(TABLES[operatingTable]?.PRIMARY)?.pop()?.split('.')?.pop();
 
-            if (undefined === primaryKey) {
-
-                throw Error('Failed to parse primary key information')
-
-            }
-
             if (needsConditionOrPrimaryCheck) {
 
-                if (undefined === query || null === query
-                    || false === primaryKey in query) {
+                if (undefined === primaryKey) {
 
-                    if (true === request.debug && DropVariables.isLocal) {
+                    if (null === query
+                        || undefined === query
+                        || undefined === query?.[C6.WHERE]
+                        || (true === Array.isArray(query[C6.WHERE])
+                            || query[C6.WHERE].length === 0)
+                        || (Object.keys(query?.[C6.WHERE]).length === 0)
+                    ) {
 
-                        toast.error('DEVS: The primary key (' + primaryKey + ') was not provided!!')
+                        console.error(query)
+
+                        throw Error('Failed to parse primary key information(' + JSON.stringify(query) + JSON.stringify(primaryKey) + ')' + JSON.stringify(TABLES[operatingTable]?.PRIMARY) + ' for table (' + operatingTable + ').')
 
                     }
 
-                    throw Error('You must provide the primary key (' + primaryKey + ') for table (' + operatingTable + '). Request (' + JSON.stringify(request, undefined, 4) + ')');
+                } else {
 
-                }
+                    if (undefined === query
+                        || null === query
+                        || false === primaryKey in query) {
 
-                if (DropVariables.undefinedOrNull(query?.[primaryKey])) {
+                        if (true === request.debug && DropVariables.isLocal) {
 
-                    toast.error('The primary key (' + primaryKey + ') provided is undefined or null explicitly!!')
+                            toast.error('DEVS: The primary key (' + primaryKey + ') was not provided!!')
 
-                    throw Error('The primary key (' + primaryKey + ') provided in the request was exactly equal to undefined.');
+                        }
+
+                        throw Error('You must provide the primary key (' + primaryKey + ') for table (' + operatingTable + '). Request (' + JSON.stringify(request, undefined, 4) + ') Query (' + JSON.stringify(query) + ')');
+
+                    }
+
+                    if (DropVariables.undefinedOrNull(query?.[primaryKey])) {
+
+                        toast.error('The primary key (' + primaryKey + ') provided is undefined or null explicitly!!')
+
+                        throw Error('The primary key (' + primaryKey + ') provided in the request was exactly equal to undefined.');
+
+                    }
 
                 }
 
             }
 
-            if (undefined !== query && null !== query && primaryKey in query) {
+            // todo - remove
+            if (undefined !== query
+                && null !== query
+                && undefined !== primaryKey
+                && primaryKey in query) {
 
                 restRequestUri += query[primaryKey] + '/'
 
@@ -525,7 +570,7 @@ export default function restApi<CustomAndRequiredFields extends {}, RequestTable
 
             try {
 
-                console.groupCollapsed('%c API: ('+requestMethod+') Request Query for ('+operatingTable+') is about to fire, will return with promise!', 'color: #A020F0')
+                console.groupCollapsed('%c API: (' + requestMethod + ') Request Query for (' + operatingTable + ') is about to fire, will return with promise!', 'color: #A020F0')
 
                 console.log(request)
 
@@ -537,7 +582,7 @@ export default function restApi<CustomAndRequiredFields extends {}, RequestTable
 
                 console.groupEnd()
 
-                const axiosActiveRequest = axios[requestMethod.toLowerCase()]<ResponseDataType>(
+                const axiosActiveRequest: AxiosPromise<ResponseDataType> = axios[requestMethod.toLowerCase()]<ResponseDataType>(
                     restRequestUri,
                     (() => {
 
@@ -578,10 +623,34 @@ export default function restApi<CustomAndRequiredFields extends {}, RequestTable
                     })()
                 );
 
-                // https://rapidapi.com/guides/axios-async-await
-                axiosActiveRequest.then(response => {
+                if (cachingConfirmed) {
 
-                    apiResponse = TestRestfulResponse(response, request?.success, request?.error || "An restful API error occurred!")
+                    // push to cache so we do not repeat the request
+                    apiRequestCache.push({
+                        requestArgumentsSerialized: querySerialized,
+                        request: axiosActiveRequest
+                    });
+
+                }
+
+                // https://rapidapi.com/guides/axios-async-await
+                return axiosActiveRequest.then(response => {
+
+                    if (typeof response.data === 'string') {
+
+                        if (isTest) {
+
+                            console.trace()
+
+                            throw new Error('The response data was a string this typically indicated html was sent. Make sure all cookies (' + JSON.stringify(response.config.headers) + ') needed are present! (' + response.data + ')')
+
+                        }
+
+                        return Promise.reject(response);
+
+                    }
+
+                    apiResponse = TestRestfulResponse(response, request?.success, request?.error ?? "An unexpected API error occurred!")
 
                     if (false !== apiResponse) {
 
@@ -589,28 +658,35 @@ export default function restApi<CustomAndRequiredFields extends {}, RequestTable
 
                         if (C6.GET === requestMethod) {
 
+                            const responseData = response.data as iGetC6RestResponse<any>;
+
+                            // @ts-ignore
                             returnGetNextPageFunction = 1 !== query?.[C6.PAGINATION]?.[C6.LIMIT] &&
-                                query?.[C6.PAGINATION]?.[C6.LIMIT] === response.data?.rest?.length
+                                query?.[C6.PAGINATION]?.[C6.LIMIT] === responseData.rest.length
 
-                            console.group('%c API: Response returned length (' + response.data?.rest?.length + ') of possible (' + query?.[C6.PAGINATION]?.[C6.LIMIT] + ') limit!', 'color: #0c0')
+                            if (false === isTest || true === isVerbose) {
 
-                            console.log('%c ' + requestMethod + ' ' + tableName, 'color: #0c0')
+                                console.groupCollapsed('%c API: Response returned length (' + responseData.rest?.length + ') of possible (' + query?.[C6.PAGINATION]?.[C6.LIMIT] + ') limit!', 'color: #0c0')
 
-                            console.log('%c Request Data (note you may see the success and/or error prompt):', 'color: #0c0', request)
+                                console.log('%c ' + requestMethod + ' ' + tableName, 'color: #0c0')
 
-                            console.log('%c Response Data:', 'color: #0c0', response.data?.rest)
+                                console.log('%c Request Data (note you may see the success and/or error prompt):', 'color: #0c0', request)
 
-                            console.log('%c Will return get next page function:' + (1 !== query?.[C6.PAGINATION]?.[C6.LIMIT] ? '' : ' (Will not return with explicit limit 1 set)'), 'color: #0c0', true === returnGetNextPageFunction)
+                                console.log('%c Response Data:', 'color: #0c0', responseData.rest)
 
-                            console.trace();
+                                console.log('%c Will return get next page function:' + (1 !== query?.[C6.PAGINATION]?.[C6.LIMIT] ? '' : ' (Will not return with explicit limit 1 set)'), 'color: #0c0', true === returnGetNextPageFunction)
 
-                            console.groupEnd()
+                                console.trace();
+
+                                console.groupEnd()
+
+                            }
 
                             if (false === returnGetNextPageFunction
                                 && true === request.debug
                                 && DropVariables.isLocal) {
 
-                                toast.success("DEVS: Response returned length (" + response.data?.rest?.length + ") less than limit (" + query?.[C6.PAGINATION]?.[C6.LIMIT] + ").", DropVariables.toastOptionsDevs);
+                                toast.success("DEVS: Response returned length (" + responseData.rest?.length + ") less than limit (" + query?.[C6.PAGINATION]?.[C6.LIMIT] + ").", DropVariables.toastOptionsDevs);
 
                             }
 
@@ -618,43 +694,36 @@ export default function restApi<CustomAndRequiredFields extends {}, RequestTable
 
                     }
 
-                    // only cache get method requests
-                    if (requestMethod !== C6.GET) {
+                    if (cachingConfirmed) {
 
-                        if (request.debug && DropVariables.isLocal) {
+                        const cacheIndex = apiRequestCache.findIndex(cache => cache.requestArgumentsSerialized === querySerialized);
 
-                            toast.success("DEVS: (" + requestMethod + ") request complete.", DropVariables.toastOptionsDevs);
+                        apiRequestCache[cacheIndex].final = false === returnGetNextPageFunction
 
-                        }
-
-                    } else {
-
-                        apiRequestCache = [
-                            ...apiRequestCache.filter(cache => cache.request !== querySerialized),
-                            {
-                                request: querySerialized,
-                                response: response,
-                                final: false === returnGetNextPageFunction
-                            }
-                        ];
-
-                        if (request.debug && DropVariables.isLocal) {
-
-                            toast.success("DEVS: Request complete.", DropVariables.toastOptionsDevs);
-
-                        }
+                        // only cache get method requests
+                        apiRequestCache[cacheIndex].response = response
 
                     }
 
-                    apiRequestInProgress = false;
+                    if (request.debug && DropVariables.isLocal) {
+
+                        toast.success("DEVS: (" + requestMethod + ") request complete.", DropVariables.toastOptionsDevs);
+
+                    }
+
+                    return response;
 
                 });
 
-                return axiosActiveRequest
-
             } catch (error) {
 
-                console.groupCollapsed('%c API: An error occurred in the try catch block. returning null!', 'color: #A020F0')
+                if (isTest) {
+
+                    throw new Error(JSON.stringify(error))
+
+                }
+
+                console.groupCollapsed('%c API: An error occurred in the try catch block. returning null!', 'color: #ff0000')
 
                 console.log('%c ' + requestMethod + ' ' + tableName, 'color: #A020F0')
 

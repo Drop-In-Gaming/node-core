@@ -52,6 +52,7 @@ export default defineConfig({
     build: {
         assetsDir: 'src/assets',
         sourcemap: true,
+        minify: false,
         lib: {
             entry: path.resolve(__dirname, 'src/index.ts'),
             name: '@drop-in-gaming/core',
@@ -59,7 +60,9 @@ export default defineConfig({
             fileName: (format) => format === 'es' ? `core.${format}.jsx` : `core.${format}.js`,
         },
         rollupOptions: {
-            external: [...Object.keys(pkg.peerDependencies)],
+            external: [
+                ...Object.keys(pkg.peerDependencies)
+            ],
             output: {
                 globals: {
                     react: 'React',
