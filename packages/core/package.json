@@ -17,6 +17,10 @@
         ".": {
             "import": "./dist/core.es.jsx",
             "require": "./dist/core.umd.js"
+        },
+        "./style.css": {
+            "import": "./dist/style.css",
+            "require": "./dist/style.css"
         }
     },
     "sass": {

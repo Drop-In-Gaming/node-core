@@ -12,6 +12,7 @@ const pkg = require("./package.json");
 import path from 'path';
 
 export default defineConfig({
+    base: './',
     plugins: [
         react(),
         svgr({

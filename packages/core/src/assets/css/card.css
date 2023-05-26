@@ -475,9 +475,9 @@ h4.card-title {
 i.fab.dig-switch::before {
   content: " " !important;
   background-color: var(--dig_neutral5) !important;
-  -webkit-mask-image: url(../img/svg-icons/nintendo-switch-filled.svg);
+  -webkit-mask-image: url(assets/img/svg-icons/nintendo-switch-filled.svg);
   -webkit-mask-size: 17px 17px;
-  mask-image: url(../img/svg-icons/nintendo-switch-filled.svg);
+  mask-image: url(assets/img/svg-icons/nintendo-switch-filled.svg);
   mask-size: 17px 17px;
   width: 17px;
   height: 17px;

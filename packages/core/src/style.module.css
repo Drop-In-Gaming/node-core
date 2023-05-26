@@ -1290,7 +1290,7 @@ button.picker__button--close {
   --dig_discord_main: #5865F2;
   --dig_facebook_main: #1877F2;
   /* Legacy assets */
-  --dig_background_url: url(../img/core-bg.png);
+  --dig_background_url: url(assets/img/core-bg.png);
   --dig_text_body: #F3F5F8;
   --dig_text_inverse_body: #000000;
   --dig_object_body: #000000;
@@ -2185,7 +2185,7 @@ a.um-account-link.current i {
 .cart-contents::before {
   content: " ";
   color: var(--dig_highlight_2);
-  background-image: url(../img/svg-icons/cart_white.svg);
+  background-image: url(assets/img/svg-icons/cart_white.svg);
   background-size: 24px;
   background-repeat: no-repeat;
   height: 24px;
@@ -2411,7 +2411,7 @@ a.menu-item.join:hover {
 \*------------------------------------*/
 .logo-main-home-mobile {
   display: block;
-  background: url(../img/new-mobile-logo.svg) no-repeat center center;
+  background: url("assets/img/new-mobile-logo.svg") no-repeat center center;
   width: 40px;
   height: 40px;
   background-size: 35px;
@@ -3673,9 +3673,9 @@ li a[data-tab=downloads] {
 .um-faicon-user::before {
   content: " " !important;
   background-color: var(--dig_highlight_2) !important;
-  -webkit-mask-image: url(../img/svg-icons/profile.svg);
+  -webkit-mask-image: url(assets/img/svg-icons/profile.svg);
   -webkit-mask-size: 18px 18px;
-  mask-image: url(../img/svg-icons/profile.svg);
+  mask-image: url(assets/img/svg-icons/profile.svg);
   mask-size: 18px 18px;
   width: 18px;
   height: 18px;
@@ -3685,9 +3685,9 @@ li a[data-tab=downloads] {
 .um-faicon-gamepad::before {
   content: " " !important;
   background-color: var(--dig_highlight_2) !important;
-  -webkit-mask-image: url(../img/svg-icons/match.svg);
+  -webkit-mask-image: url(assets/img/svg-icons/match.svg);
   -webkit-mask-size: 18px 18px;
-  mask-image: url(../img/svg-icons/match.svg);
+  mask-image: url(assets/img/svg-icons/match.svg);
   mask-size: 18px 18px;
   width: 18px;
   height: 18px;
@@ -3697,9 +3697,9 @@ li a[data-tab=downloads] {
 .um-faicon-trophy::before {
   content: " " !important;
   background-color: var(--dig_highlight_2) !important;
-  -webkit-mask-image: url(../img/svg-icons/tournament.svg);
+  -webkit-mask-image: url(assets/img/svg-icons/tournament.svg);
   -webkit-mask-size: 18px 18px;
-  mask-image: url(../img/svg-icons/tournament.svg);
+  mask-image: url(assets/img/svg-icons/tournament.svg);
   mask-size: 18px 18px;
   width: 18px;
   height: 18px;
@@ -3709,9 +3709,9 @@ li a[data-tab=downloads] {
 .um-faicon-bracket::before {
   content: " " !important;
   background-color: var(--dig_highlight_2) !important;
-  -webkit-mask-image: url(../img/svg-icons/bracket.svg);
+  -webkit-mask-image: url(assets/img/svg-icons/bracket.svg);
   -webkit-mask-size: 18px 18px;
-  mask-image: url(../img/svg-icons/bracket.svg);
+  mask-image: url(assets/img/svg-icons/bracket.svg);
   mask-size: 18px 18px;
   width: 18px;
   height: 18px;
@@ -3721,9 +3721,9 @@ li a[data-tab=downloads] {
 .um-icon-paper-airplane::before {
   content: " " !important;
   background-color: var(--dig_highlight_2) !important;
-  -webkit-mask-image: url(../img/svg-icons/invitations.svg);
+  -webkit-mask-image: url(assets/img/svg-icons/invitations.svg);
   -webkit-mask-size: 18px 18px;
-  mask-image: url(../img/svg-icons/invitations.svg);
+  mask-image: url(assets/img/svg-icons/invitations.svg);
   mask-size: 18px 18px;
   width: 18px;
   height: 18px;
@@ -3733,9 +3733,9 @@ li a[data-tab=downloads] {
 .dig_team_shield::before {
   content: " " !important;
   background-color: var(--dig_highlight_2) !important;
-  -webkit-mask-image: url(../img/svg-icons/team_profile.svg);
+  -webkit-mask-image: url(assets/img/svg-icons/team_profile.svg);
   -webkit-mask-size: 18px 18px;
-  mask-image: url(../img/svg-icons/team_profile.svg);
+  mask-image: url(assets/img/svg-icons/team_profile.svg);
   mask-size: 18px 18px;
   width: 18px;
   height: 18px;
@@ -3745,9 +3745,9 @@ li a[data-tab=downloads] {
 .dig_dashboard_icon::before {
   content: " " !important;
   background-color: var(--dig_highlight_2) !important;
-  -webkit-mask-image: url(../img/svg-icons/Games_16.svg);
+  -webkit-mask-image: url(assets/img/svg-icons/Games_16.svg);
   -webkit-mask-size: 18px 18px;
-  mask-image: url(../img/svg-icons/Games_16.svg);
+  mask-image: url(assets/img/svg-icons/Games_16.svg);
   mask-size: 18px 18px;
   width: 18px;
   height: 18px;
@@ -3761,9 +3761,9 @@ li a[data-tab=downloads] {
 .um-field-gamertag-epicgames .um-field-label::before {
   content: " " !important;
   background-color: var(--dig_primary_color) !important;
-  -webkit-mask-image: url(../img/svg-icons/epic-games.svg);
+  -webkit-mask-image: url(assets/img/svg-icons/epic-games.svg);
   -webkit-mask-size: 22px 31px;
-  mask-image: url(../img/svg-icons/epic-games.svg);
+  mask-image: url(assets/img/svg-icons/epic-games.svg);
   mask-size: 22px 31px;
   width: 22px;
   height: 31px;
@@ -3786,9 +3786,9 @@ li a[data-tab=downloads] {
 .um-field-gamertag-ea .um-field-label::before {
   content: " " !important;
   background-color: var(--dig_primary_color) !important;
-  -webkit-mask-image: url(../img/svg-icons/electronic-arts.svg);
+  -webkit-mask-image: url(assets/img/svg-icons/electronic-arts.svg);
   -webkit-mask-size: 22px 31px;
-  mask-image: url(../img/svg-icons/electronic-arts.svg);
+  mask-image: url(assets/img/svg-icons/electronic-arts.svg);
   mask-size: 22px 31px;
   width: 22px;
   height: 31px;
@@ -3811,9 +3811,9 @@ li a[data-tab=downloads] {
 .um-field-gamertag-fallguys .um-field-label::before {
   content: " " !important;
   background-color: var(--dig_primary_color) !important;
-  -webkit-mask-image: url(../img/svg-icons/fall-guys.svg);
+  -webkit-mask-image: url(assets/img/svg-icons/fall-guys.svg);
   -webkit-mask-size: 22px 31px;
-  mask-image: url(../img/svg-icons/fall-guys.svg);
+  mask-image: url(assets/img/svg-icons/fall-guys.svg);
   mask-size: 22px 31px;
   width: 22px;
   height: 31px;
@@ -3836,9 +3836,9 @@ li a[data-tab=downloads] {
 .um-field-gamertag-2k .um-field-label::before {
   content: " " !important;
   background-color: var(--dig_primary_color) !important;
-  -webkit-mask-image: url(../img/svg-icons/2k.svg);
+  -webkit-mask-image: url(assets/img/svg-icons/2k.svg);
   -webkit-mask-size: 22px 31px;
-  mask-image: url(../img/svg-icons/2k.svg);
+  mask-image: url(assets/img/svg-icons/2k.svg);
   mask-size: 22px 31px;
   width: 22px;
   height: 31px;
@@ -3861,9 +3861,9 @@ li a[data-tab=downloads] {
 .um-field-gamertag-activision .um-field-label::before {
   content: " " !important;
   background-color: var(--dig_primary_color) !important;
-  -webkit-mask-image: url(../img/svg-icons/activision.svg);
+  -webkit-mask-image: url(assets/img/svg-icons/activision.svg);
   -webkit-mask-size: 22px 31px;
-  mask-image: url(../img/svg-icons/activision.svg);
+  mask-image: url(assets/img/svg-icons/activision.svg);
   mask-size: 22px 31px;
   width: 22px;
   height: 31px;
@@ -5929,7 +5929,7 @@ section.landing-page-main-nav {
 }
 
 #dig-landing-page-get-started {
-  background: var(--dig_neutral1) url(../img/new-background-flourish.png) no-repeat top left;
+  background: var(--dig_neutral1) url(assets/img/new-background-flourish.png) no-repeat top left;
   padding-bottom: 30px !important;
   background-size: 70%;
 }
@@ -5949,7 +5949,7 @@ div#dig-landing-page-what-dig-is .fas,
 
 .dig-landing-page-teaser {
   height: 100%;
-  background: url(../img/landing-page-teaser-marching.png) no-repeat center center;
+  background: url(assets/img/landing-page-teaser-marching.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -6096,22 +6096,22 @@ div#dig-landing-page-what-dig-is p {
 
 /* Brackets */
 .discover.brackets {
-  background: url(../img/new-bg-brackets.jpg) no-repeat center center;
+  background: url(assets/img/new-bg-brackets.jpg) no-repeat center center;
 }
 
 /* Tournament */
 .discover.tournament {
-  background: url(../img/new-bg-tournaments.jpg) no-repeat center center;
+  background: url(assets/img/new-bg-tournaments.jpg) no-repeat center center;
 }
 
 /* Matches */
 .discover.match {
-  background: url(../img/new-bg-matches.jpg) no-repeat center center;
+  background: url(assets/img/new-bg-matches.jpg) no-repeat center center;
 }
 
 /* Call to action */
 .discover.call-to-action {
-  background: url(../img/new-background-tile-blue-pattern.png);
+  background: url(assets/img/new-background-tile-blue-pattern.png);
   padding-top: 50px !important;
   padding-bottom: 50px !important;
   justify-content: center;
@@ -8436,9 +8436,9 @@ h4.card-title {
 i.fab.dig-switch::before {
   content: " " !important;
   background-color: var(--dig_neutral5) !important;
-  -webkit-mask-image: url(../img/svg-icons/nintendo-switch-filled.svg);
+  -webkit-mask-image: url(assets/img/svg-icons/nintendo-switch-filled.svg);
   -webkit-mask-size: 17px 17px;
-  mask-image: url(../img/svg-icons/nintendo-switch-filled.svg);
+  mask-image: url(assets/img/svg-icons/nintendo-switch-filled.svg);
   mask-size: 17px 17px;
   width: 17px;
   height: 17px;
@@ -11793,8 +11793,8 @@ div.jQBracket .lose .bubble {
   background-color: currentColor;
   padding: 0 0.5em;
   margin: 0 0.125rem;
-  -webkit-mask-image: url("../img/svg-icons/1st-place.svg");
-  mask-image: url("../img/svg-icons/1st-place.svg");
+  -webkit-mask-image: url("assets/img/svg-icons/1st-place.svg");
+  mask-image: url("assets/img/svg-icons/1st-place.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -11816,8 +11816,8 @@ div.jQBracket .lose .bubble {
   background-color: currentColor;
   padding: 0 0.5em;
   margin: 0 0.125rem;
-  -webkit-mask-image: url("../img/svg-icons/2nd-place.svg");
-  mask-image: url("../img/svg-icons/2nd-place.svg");
+  -webkit-mask-image: url("assets/img/svg-icons/2nd-place.svg");
+  mask-image: url("assets/img/svg-icons/2nd-place.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -11839,8 +11839,8 @@ div.jQBracket .lose .bubble {
   background-color: currentColor;
   padding: 0 0.5em;
   margin: 0 0.125rem;
-  -webkit-mask-image: url("../img/svg-icons/3rd-place.svg");
-  mask-image: url("../img/svg-icons/3rd-place.svg");
+  -webkit-mask-image: url("assets/img/svg-icons/3rd-place.svg");
+  mask-image: url("assets/img/svg-icons/3rd-place.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -11862,8 +11862,8 @@ div.jQBracket .lose .bubble {
   background-color: currentColor;
   padding: 0 0.5em;
   margin: 0 0.125rem;
-  -webkit-mask-image: url("../img/svg-icons/4th-place.svg");
-  mask-image: url("../img/svg-icons/4th-place.svg");
+  -webkit-mask-image: url("assets/img/svg-icons/4th-place.svg");
+  mask-image: url("assets/img/svg-icons/4th-place.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;

@@ -1,8 +1,6 @@
 import {toast} from "react-toastify";
 import restApi, {iPostC6RestResponse, POST} from "api/API";
-import authenticated from "api/hoc/authenticated";
-import getUsers from "api/rest/getUsers";
-import DigApi from "DigApi";
+
 import {
     C6,
     iDig_Parent_User,
@@ -39,20 +37,6 @@ export default restApi<iPostUser, iUsers & iDig_Temp_Invite & iDig_Parent_User &
             console.error('An internal error occurred while creating your account. Please contact Drop-In Gaming if problems persist.', _response, request, id)
 
             return;
-
-        }
-
-        // if the user is signing up the current user is not authenticated; thus 0.
-        // If the user is creating a new user the current user is authenticated
-        if (0 === DigApi.digApi.state.id) {
-
-            authenticated()
-
-        } else {
-
-            getUsers({
-                userIds: [id],
-            })
 
         }
 

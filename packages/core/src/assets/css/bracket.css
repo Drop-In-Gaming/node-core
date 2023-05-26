@@ -213,8 +213,8 @@ div.jQBracket .lose .bubble {
   background-color: currentColor;
   padding: 0 0.5em;
   margin: 0 0.125rem;
-  -webkit-mask-image: url("../img/svg-icons/1st-place.svg");
-  mask-image: url("../img/svg-icons/1st-place.svg");
+  -webkit-mask-image: url("assets/img/svg-icons/1st-place.svg");
+  mask-image: url("assets/img/svg-icons/1st-place.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -236,8 +236,8 @@ div.jQBracket .lose .bubble {
   background-color: currentColor;
   padding: 0 0.5em;
   margin: 0 0.125rem;
-  -webkit-mask-image: url("../img/svg-icons/2nd-place.svg");
-  mask-image: url("../img/svg-icons/2nd-place.svg");
+  -webkit-mask-image: url("assets/img/svg-icons/2nd-place.svg");
+  mask-image: url("assets/img/svg-icons/2nd-place.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -259,8 +259,8 @@ div.jQBracket .lose .bubble {
   background-color: currentColor;
   padding: 0 0.5em;
   margin: 0 0.125rem;
-  -webkit-mask-image: url("../img/svg-icons/3rd-place.svg");
-  mask-image: url("../img/svg-icons/3rd-place.svg");
+  -webkit-mask-image: url("assets/img/svg-icons/3rd-place.svg");
+  mask-image: url("assets/img/svg-icons/3rd-place.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -282,8 +282,8 @@ div.jQBracket .lose .bubble {
   background-color: currentColor;
   padding: 0 0.5em;
   margin: 0 0.125rem;
-  -webkit-mask-image: url("../img/svg-icons/4th-place.svg");
-  mask-image: url("../img/svg-icons/4th-place.svg");
+  -webkit-mask-image: url("assets/img/svg-icons/4th-place.svg");
+  mask-image: url("assets/img/svg-icons/4th-place.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
