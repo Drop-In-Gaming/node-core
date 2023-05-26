@@ -18,6 +18,7 @@ declare module '*.png';
 declare module '*.jpg';
 declare module '*.jpeg';
 declare module "*.pdf";
+declare module '*.gif';
 
 // @link https://www.npmjs.com/package/typescript-plugin-css-modules
 declare module '*.module.css' {

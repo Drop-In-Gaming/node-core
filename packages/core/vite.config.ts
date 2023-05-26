@@ -1,6 +1,6 @@
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
-import { defineConfig } from 'vite';
+import {defineConfig} from 'vite';
 import sassDts from 'vite-plugin-sass-dts'
 import dts from 'vite-plugin-dts';
 import tsconfigPaths from 'vite-tsconfig-paths';
@@ -33,7 +33,10 @@ export default defineConfig({
     ],
     resolve: {
         alias: [
-            /// { find: '@', replacement: path.resolve(__dirname, 'src') },
+            {
+                find: '@',
+                replacement: path.resolve(__dirname, 'src')
+            },
         ]
     },
     css: {
