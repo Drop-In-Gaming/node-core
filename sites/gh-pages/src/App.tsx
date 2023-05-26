@@ -81,7 +81,7 @@ export default function App() {
                                 )}>
                                     <h1 className={classNames(dig.mx3)}>Drop-In Gaming Documentation</h1>
                                     <br/>
-                                    <h2>Use this page to interface with{' '}
+                                    <h2>Use this page to interface with our non-production servers{' '}
                                         <a href={'https://preprod.dropingaming.pro/'}>
                                             https://preprod.dropingaming.pro/
                                         </a>
@@ -95,7 +95,7 @@ export default function App() {
                                         may first need to <a href={'https://www.dropingaming.pro/support/'}>contact
                                         us</a>.
                                         Anyone is allowed to interface with our API by using the Drop-In Gaming
-                                        <b> Organization ID: 1</b> on NON-Production. Drop-In Gaming is a public
+                                        <b> Organization ID: 1</b> on <b>NON-Production</b>. Drop-In Gaming is a public
                                         organization that
                                         all our members belong to, so that anyone can is able to test our
                                         (non-production) API.
@@ -123,8 +123,8 @@ export default function App() {
                                         environment is not connected to any real email service; more information on this
                                         in step #3.
                                         More examples will be added in the future. Complete the form below
-                                        and click the submit button to test the API. The source code for the example is
-                                        available by selecting the &quot;View Code&quot; button. Moreover, you can view
+                                        and click the submit button to test the API. This examples source code for the example is
+                                        available by selecting the &quot;View Code&quot; button or view
                                         the
                                         the full source by visiting our{' '}
                                         <a href={'https://github.com/Drop-In-Gaming/node-core'}>
@@ -155,7 +155,7 @@ export default function App() {
                                         the <a href={'https://github.com/mailhog/MailHog'}>
                                         open source MailHog project
                                     </a>
-                                        members for making this possible. You can verify members are created in the
+                                        members for making this possible. You can verify members are created in the{' '}
                                         <a href={''}>IAM page</a> or if your using the public org key you can see all
                                         users on <a href={''}>the community page</a>.
                                         It&apos;s
