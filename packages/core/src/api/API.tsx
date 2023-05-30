@@ -494,7 +494,7 @@ export default function restApi<CustomAndRequiredFields extends {}, RequestTable
 
             let returnGetNextPageFunction = false;
 
-            let restRequestUri: string = 'https://' + DigApi.digApi.state.subdomain + '.dropingaming.' + DigApi.digApi.state.tld;
+            let restRequestUri: string = 'https://' + DigApi.digApi.state.subdomain + '.dropingaming.' + DigApi.digApi.state.tld + DropVariables.restURI + operatingTable + '/';
 
             const needsConditionOrPrimaryCheck = (PUT === requestMethod || DELETE === requestMethod)
                 && false === skipPrimaryCheck;
