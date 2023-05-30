@@ -1,6 +1,5 @@
 import {AxiosInstance, AxiosResponse, AxiosPromise} from "axios";
 import DigApi from "DigApi";
-import {isAppLocal} from "index";
 import {toast} from "react-toastify";
 import isTest from "variables/isTest";
 import isVerbose from "variables/isVerbose";
