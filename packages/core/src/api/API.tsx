@@ -1,5 +1,6 @@
 import {AxiosInstance, AxiosResponse, AxiosPromise} from "axios";
 import DigApi from "DigApi";
+import {isAppLocal} from "index";
 import {toast} from "react-toastify";
 import isTest from "variables/isTest";
 import isVerbose from "variables/isVerbose";
@@ -494,7 +495,9 @@ export default function restApi<CustomAndRequiredFields extends {}, RequestTable
 
             let returnGetNextPageFunction = false;
 
-            let restRequestUri: string = 'http://local.dropingaming.' + DigApi.digApi.state.tld + ':8080' + DropVariables.restURI + operatingTable + '/';
+            let restRequestUri: string = isAppLocal
+                ? 'http://local.dropingaming.' + DigApi.digApi.state.tld + ':8080' + DropVariables.restURI + operatingTable + '/'
+                : 'https://' + DigApi.digApi.state.subdomain + '.dropingaming.' + DigApi.digApi.state.tld;
 
             const needsConditionOrPrimaryCheck = (PUT === requestMethod || DELETE === requestMethod)
                 && false === skipPrimaryCheck;
