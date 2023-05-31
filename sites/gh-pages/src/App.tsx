@@ -121,8 +121,8 @@ export default function App() {
                                                 "react-router-dom": "^6.10.0",
                                                 "react-toastify": "^9.1.2"
                                             }
-                                        }, null, 2))} If you already import <b>react-router-dom</b>
-                                        {codeBlock('<BrowserRouter />')} If can be replaced with our <b>{'<DigApi /> '}</b>
+                                        }, null, 2))} If you already use <b>react-router-dom</b> by means of:
+                                        {codeBlock('<BrowserRouter />')} If <b>SHOULD</b> be replaced with our <b>{'<DigApi /> '}</b>
                                         component as DigApi returns the following:
                                         {codeBlock('return <BrowserRouter><GlobalHistory />{this.props.children}<ToastContainer /></BrowserRouter>;')}
                                         This example app imports our Rest API in the index.tsx file:
