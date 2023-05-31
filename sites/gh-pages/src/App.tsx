@@ -1,11 +1,14 @@
 import classNames from "classnames";
-import {Button, DigApi, Input, mergeStyles} from '@drop-in-gaming/core';
+import {Button, Input, mergeStyles} from '@drop-in-gaming/core';
 import {useState} from "react";
 import Styles from 'src/App.module.scss';
 import Bootstrap from 'src/bootstrap.module.scss';
 // import {CodeBlock} from "react-code-blocks";
-import {CodeBlock, dracula, googlecode} from 'react-code-blocks';
+import {CodeBlock, googlecode} from 'react-code-blocks';
 import Examples from "src/Examples";
+
+
+import Root from '!!raw-loader!./index.tsx';
 
 import "react-datetime/css/react-datetime.css";
 import "@drop-in-gaming/core/style.css";
@@ -28,12 +31,12 @@ export function getStyles<iCSS extends {}>(overrides: iCSS = {} as iCSS): tBasic
 
 }
 
-export const codeBlock = (markdown: String, highlight: String = "", language: String = "typescript", dark: boolean = true) => {
+export const codeBlock = (markdown: String, highlight: String = "", language: String = "typescript") => {
     return <CodeBlock
         text={markdown}
         language={language}
         showLineNumbers={true}
-        theme={dark ? dracula : googlecode}
+        theme={googlecode}
         highlight={highlight}
     />
 };
@@ -59,7 +62,7 @@ export default function App() {
     const ExampleCode = example.exampleCode;
 
     return (
-        <DigApi apiKey={"1"} organizationId={'1'} tld={'pro'} subdomain={'preprod'}>
+
             <div className={classNames(dig.App)}>
                 <header className={classNames(dig.appHeader)}>
                     <div className={classNames(
@@ -86,6 +89,48 @@ export default function App() {
                                             https://preprod.dropingaming.pro/
                                         </a>
                                     </h2>
+                                    <br/>
+                                    <h3>Installation & Requirements</h3>
+                                    <p>
+                                        To use the Drop-In Gaming API, you can install using npm
+                                        {codeBlock('npm install @drop-in-gaming/core')}
+                                        then wrap your application in the{' '}
+                                        {codeBlock("<DigApi apiKey={'1'} organizationId={'1'} tld={'pro'} subdomain={'preprod'}>")}
+                                        component which can be imported using{' '}
+                                        {codeBlock('import {DigApi} from \'@drop-in-gaming/core\'; ')}
+                                        The apiKey (currently just organization Id) and organizationId are required.
+                                        For production use please change the subdomain to &quot;www&quot;. Our peer
+                                        dependencies include
+                                        {codeBlock(JSON.stringify({
+                                            "peerDependencies": {
+                                                "axios": "^1.3.4",
+                                                "axios-cache-adapter": "^2.7.3",
+                                                "bootstrap": "5.2.3",
+                                                "classnames": "^2.3.2",
+                                                "dangerously-set-html-content": "^1.0.9",
+                                                "deepmerge": "^4.2.2",
+                                                "dropzone": "^5.7.1",
+                                                "history": "^5.3.0",
+                                                "json": "11.0.0",
+                                                "moment-timezone": "^0.5.43",
+                                                "qs": "^6.11.1",
+                                                "react": "^18.2.0",
+                                                "react-dom": "^18.2.0",
+                                                "react-loading-skeleton": "^3.2.0",
+                                                "react-outside-click-handler": "^1.3.0",
+                                                "react-router-dom": "^6.10.0",
+                                                "react-toastify": "^9.1.2"
+                                            }
+                                        }, null, 2))} If you already import <b>react-router-dom</b>
+                                        {codeBlock('<BrowserRouter />')} If can be replaced with our <b>{'<DigApi /> '}</b>
+                                        component as DigApi returns the following:
+                                        {codeBlock('return <BrowserRouter><GlobalHistory />{this.props.children}<ToastContainer /></BrowserRouter>;')}
+                                        This example app imports our Rest API in the index.tsx file:
+                                        {codeBlock(Root)}
+                                    </p>
+
+                                    <br/>
+                                    <h2>Live Demo&apos;s</h2>
 
                                     <h3>Step #1</h3>
 
@@ -113,6 +158,7 @@ export default function App() {
 
                                         }}/>
 
+                                    <br/>
                                     <h3>Step #2</h3>
 
                                     <p>
@@ -123,13 +169,15 @@ export default function App() {
                                         environment is not connected to any real email service; more information on this
                                         in step #3.
                                         More examples will be added in the future. Complete the form below
-                                        and click the submit button to test the API. This examples source code for the example is
+                                        and click the submit button to test the API. This examples source code for the
+                                        example is
                                         available by selecting the &quot;View Code&quot; button or view
                                         the
                                         the full source by visiting our{' '}
                                         <a href={'https://github.com/Drop-In-Gaming/node-core'}>
                                             GitHub
-                                        </a>. This repository is public and open source, but expected to change locations
+                                        </a>. This repository is public and open source, but expected to change
+                                        locations
                                         soon.
                                     </p>
 
@@ -142,8 +190,19 @@ export default function App() {
 
 
                                     {!toggle && <Component organization_id={organizationId}/>}
-                                    
 
+
+                                </div>
+
+
+                                <div className={classNames(dig.w100, dig.mAuto)}>
+                                    {toggle && codeBlock(ExampleCode)}
+                                </div>
+
+
+                                <div className={classNames(
+                                    dig.cardBody, dig.w50, dig.mxAuto
+                                )}>
                                     <br/>
                                     <h3>Step #3</h3>
 
@@ -151,37 +210,21 @@ export default function App() {
                                         Finally, see the generated email captured in{' '}
                                         <a href={'https://preprod.dropingaming.pro/mailhog/'}>
                                             our MailHog server
-                                        </a> and conveniently proxy it back to our Developers and you. Special thanks to
-                                        the <a href={'https://github.com/mailhog/MailHog'}>
+                                        </a> and conveniently proxy it back to our developers and you. Special thanks to
+                                        the <a href={'https://github.com/mailhog/MailHog'}>{' '}
                                         open source MailHog project
-                                    </a>
+                                    </a>{' '}
                                         members for making this possible. You can verify members are created in the{' '}
                                         <a href={''}>IAM page</a> or if your using the public org key you can see all
                                         users on <a href={''}>the community page</a>.
-                                        It&apos;s
-                                        important to note our developers will be
-                                        actively working on this project and may delete captured emails at any time.
-                                        Moreover, our test servers are regularly (~weekly) reset and all data is
-                                        refreshed.
-                                        We currently have no SOA, though if a server is undergoing a database reset we
-                                        expect only 2-3 minute window is expected to cause downtime. This may also cause
-                                        unexpected behavior in the API.
                                     </p>
-
-
                                 </div>
-
-                                <div className={classNames(dig.w100, dig.mAuto)}>
-                                    {toggle && codeBlock(ExampleCode)}
-                                </div>
-
 
                             </div>
                         </div>
                     </div>
                 </header>
             </div>
-        </DigApi>
     );
 }
 
