@@ -80,7 +80,7 @@ export default function App() {
                             )}>
 
                                 <div className={classNames(
-                                    dig.cardBody, dig.w50, dig.mxAuto
+                                    dig.cardBody, dig.w75, dig.mxAuto
                                 )}>
                                     <h1 className={classNames(dig.mx3)}>Drop-In Gaming Documentation</h1>
                                     <br/>
@@ -92,15 +92,15 @@ export default function App() {
                                     <br/>
                                     <h3>Installation & Requirements</h3>
                                     <p>
-                                        To use the Drop-In Gaming API, you can install using npm
+                                        To use the Drop-In Gaming API, you can install using npm command:
                                         {codeBlock('npm install @drop-in-gaming/core')}
-                                        then wrap your application in the{' '}
+                                        Then wrap your application in out <b>DigApi</b> component.{' '}
                                         {codeBlock("<DigApi apiKey={'1'} organizationId={'1'} tld={'pro'} subdomain={'preprod'}>")}
-                                        component which can be imported using{' '}
+                                        You can import <b>DigApi</b> using <b>@drop-in-gaming/core</b>.{' '}
                                         {codeBlock('import {DigApi} from \'@drop-in-gaming/core\'; ')}
                                         The apiKey (currently just organization Id) and organizationId are required.
-                                        For production use please change the subdomain to &quot;www&quot;. Our peer
-                                        dependencies include
+                                        For production use please change the subdomain to &quot;<b>www</b>&quot;. Our peer
+                                        dependencies include:
                                         {codeBlock(JSON.stringify({
                                             "peerDependencies": {
                                                 "axios": "^1.3.4",
@@ -201,7 +201,7 @@ export default function App() {
 
 
                                 <div className={classNames(
-                                    dig.cardBody, dig.w50, dig.mxAuto
+                                    dig.cardBody, dig.w75, dig.mxAuto
                                 )}>
                                     <br/>
                                     <h3>Step #3</h3>
