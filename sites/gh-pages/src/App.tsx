@@ -85,7 +85,7 @@ export default function App() {
                                     <h1 className={classNames(dig.mx3)}>Drop-In Gaming Documentation</h1>
                                     <br/>
                                     <h2>Use this page to interface with our non-production servers{' '}
-                                        <a href={'https://preprod.dropingaming.pro/'}>
+                                        <a target={'_blank'} href={'https://preprod.dropingaming.pro/'}>
                                             https://preprod.dropingaming.pro/
                                         </a>
                                     </h2>
@@ -137,10 +137,10 @@ export default function App() {
                                     <p>
                                         Obtain an organization ID from Drop-In Gaming&apos;s IAM. Approval is required
                                         so you
-                                        may first need to <a href={'https://www.dropingaming.pro/support/'}>contact
+                                        may first need to <a target={'_blank'} href={'https://www.dropingaming.pro/support/'}>contact
                                         us</a>.
                                         Anyone is allowed to interface with our API by using the Drop-In Gaming
-                                        <b> Organization ID: 1</b> on <b>NON-Production</b>. Drop-In Gaming is a public
+                                        <b> Organization ID: 1</b> on <b><a target={'_blank'} href={'https://preprod.dropingaming.com/'}>NON-Production</a></b>. Drop-In Gaming is a public
                                         organization that
                                         all our members belong to, so that anyone can is able to test our
                                         (non-production) API.
@@ -174,7 +174,7 @@ export default function App() {
                                         available by selecting the &quot;View Code&quot; button or view
                                         the
                                         the full source by visiting our{' '}
-                                        <a href={'https://github.com/Drop-In-Gaming/node-core'}>
+                                        <a target={'_blank'} href={'https://github.com/Drop-In-Gaming/node-core'}>
                                             GitHub
                                         </a>. This repository is public and open source, but expected to change
                                         locations
@@ -208,15 +208,15 @@ export default function App() {
 
                                     <p>
                                         Finally, see the generated email captured in{' '}
-                                        <a href={'https://preprod.dropingaming.pro/mailhog/'}>
+                                        <a target={'_blank'} href={'https://preprod.dropingaming.pro/mailhog/'}>
                                             our MailHog server
                                         </a> and conveniently proxy it back to our developers and you. Special thanks to
-                                        the <a href={'https://github.com/mailhog/MailHog'}>{' '}
+                                        the <a target={'_blank'} href={'https://github.com/mailhog/MailHog'}>{' '}
                                         open source MailHog project
                                     </a>{' '}
                                         members for making this possible. You can verify members are created in the{' '}
-                                        <a href={''}>IAM page</a> or if your using the public org key you can see all
-                                        users on <a href={''}>the community page</a>.
+                                        <a target={'_blank'} href={'https://preprod.dropingaming.pro/iam/'}>IAM page</a> or if your using the public org key you can see all
+                                        users on <a href={'https://preprod.dropingaming.pro/community/'}>the community page</a>.
                                     </p>
                                 </div>
 
