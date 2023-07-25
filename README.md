@@ -1,6 +1,10 @@
 # Drop-In Gaming Public Node API
 You can request access to the api is available at https://www.dropingaming.pro/api/
 
+# Demo 
+
+https://drop-in-gaming.github.io/node-core/
+
 ## Getting Started
 Once your account is able to create an "organization", you'll be able to access the IAM dashboard through the following gateways:
 
